@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+*{
+  box-sizing: border-box;
+  font-family: "Vazir-Medium";
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*............ Margin ...........*/
+.ma-0{
+  margin: 0;
+}
+.ma-top-15{
+  margin-top: 15px;
+}
+.ma-top-20{
+  margin-top: 20px;
+}
+.ma-top-25{
+  margin-top: 25px;
+}
+.ma-top-30{
+  margin-top: 30px;
+}
+.ma-top-50{
+  margin-top: 50px;
+}
+.ma-top-60{
+  margin-top: 60px;
+}
+.ma-top-80{
+  margin-top: 80px;
+}
+.ma-top-100{
+  margin-top: 100px;
+}
+
+.ma-right-15{
+  margin-right: 15px;
+}
+.ma-right-20{
+  margin-right: 20px;
+}
+.ma-right-25{
+  margin-right: 25px;
+}
+.ma-right-30{
+  margin-right: 30px;
+}
+.ma-right-50{
+  margin-right: 50px;
+}
+.ma-right-60{
+  margin-right: 60px;
+}
+.ma-right-80{
+  margin-right: 80px;
+}
+.ma-right-100{
+  margin-right: 100px;
+}
+
+.ma-left-15{
+  margin-left: 15px;
+}
+.ma-left-20{
+  margin-left: 20px;
+}
+.ma-left-25{
+  margin-left: 25px;
+}
+.ma-left-30{
+  margin-left: 30px;
+}
+.ma-left-50{
+  margin-left: 50px;
+}
+.ma-left-60{
+  margin-left: 60px;
+}
+.ma-left-80{
+  margin-left: 80px;
+}
+.ma-left-100{
+  margin-left: 100px;
+}
+
+.ma-bottom-15{
+  margin-bottom: 15px;
+}
+.ma-bottom-20{
+  margin-bottom: 20px;
+}
+.ma-bottom-25{
+  margin-bottom: 25px;
+}
+.ma-bottom-30{
+  margin-bottom: 30px;
+}
+.ma-bottom-50{
+  margin-bottom: 50px;
+}
+.ma-bottom-60{
+  margin-bottom: 60px;
+}
+.ma-bottom-80{
+  margin-bottom: 80px;
+}
+.ma-bottom-100{
+  margin-bottom: 100px;
+}
+
+
+.pa-0{
+  padding: 0 !important;
+}
+
+/*......... Text-align .........*/
+
+.text-align-center{
+  text-align: center !important;
+}
+.text-align-right{
+  text-align: right;
+}
+.text-align-left{
+  text-align: right;
+}
+
+/*....... Position ...........*/
+
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+
+/*....... img-responsive ...........*/
+
+.img-responsive{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ------------- No Gutters ------------ */
+
+.no-gutter{
+
+    padding-left: 0;
+    padding-right: 0;
+  
+}
+  
+.no-gutter-left{
+  
+    padding-left: 0;
+}
+  
+.no-gutter-right{
+  
+    padding-right: 0;
+}
