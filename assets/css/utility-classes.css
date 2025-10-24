@@ -9,6 +9,11 @@
   padding: 0;
 }
 
+/* ........... Font ............ */
+*{
+  font-family: Sahel-Medium;
+}
+
 /*............ Margin ...........*/
 .ma-0{
   margin: 0;
