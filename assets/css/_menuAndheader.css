@@ -1,0 +1,75 @@
+div.menu-wrapper{
+
+    background-color: var(--Primary-Color);
+    height: 70px;
+}
+div.menu-wrapper div.home{
+
+    width: 7%;
+    display: inline-block;
+    /* top: -111px; */
+    top: -192px;
+}
+div.menu-wrapper div.home a span.material-icons{
+
+    font-size: 35px;
+    color: var(--Secondery-Color);
+    padding-right: 15px;
+}
+div.menu-wrapper div#our-products, div.menu-wrapper div#our-agency,
+div.menu-wrapper div#social-media, div.menu-wrapper div#abut-us{
+
+    width: 20%;
+    display: inline-block;
+}
+div.menu-wrapper div#our-products{
+
+    /* top: 5px; */
+    top: 19px;
+}
+div.menu-wrapper div#our-products div.title-our-products,
+div.menu-wrapper div#our-agency div.title-our-agency{
+
+    overflow: hidden;
+    background-color: rgb(81, 81, 219);
+    box-shadow: 1px 2px 2px rgb(68, 68, 68);
+    height: 33px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+div.menu-wrapper div#our-products div.title-our-products span#title-one,
+div.menu-wrapper div#our-agency div.title-our-agency span#title-two{
+
+    font-size: 15px;
+    color: var(--Secondery-Color);
+    padding-top: 5px;
+    font-family: Sahel-Bold;
+}
+div.menu-wrapper div#our-products div.title-our-products span.material-icons,
+div.menu-wrapper div#our-agency div.title-our-agency span.material-icons{
+
+    font-size: 15px;
+    color: var(--Secondery-Color);
+    padding-top: 9px;
+    font-weight: bold;
+}
+div.menu-wrapper div#our-products div.product-submenu,
+div.menu-wrapper div#our-agency div.agency-submenu{
+
+    background-color: #fff;
+    height: 230px;
+}
+div.menu-wrapper div#our-products div.product-submenu a,
+div.menu-wrapper div#our-agency div.agency-submenu a{
+
+    display: block;
+    color: var(--WriteColor-1);
+    padding: 7px 15px;
+    font-size: 14px;
+}
+div.menu-wrapper div#our-agency{
+
+    top: 19px;
+    margin-right: 2%;
+}
