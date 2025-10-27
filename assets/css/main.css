@@ -1,5 +1,19 @@
+@import '_menu&header.css';
 
 
+
+body{
+    background-color: rgb(216, 207, 207);
+}
+
+:root{
+    --Primary-Color: rgb(94, 94, 216);
+    --Secondery-Color: #fff;
+    --Third-Color: Orange;
+    --WriteColor-1: rgb(34, 33, 33);
+    --WriteColor-2: black;
+}
+  
 
 @font-face {
     font-family: "Sahel-Bold";
