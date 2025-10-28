@@ -68,6 +68,7 @@ div.menu-wrapper div#abut-us div.title-abut-us span.material-icons{
     color: var(--Secondery-Color);
     padding-top: 9px;
     font-weight: bold;
+    transition: transform .3s ease-out .2s;
 }
 div.menu-wrapper div#our-products div.product-submenu,
 div.menu-wrapper div#our-agency div.agency-submenu,
@@ -77,6 +78,7 @@ div.menu-wrapper div#abut-us div.abut-us-submenu{
     background-color: #fff;
     /* height: 230px; */
     height: 0;
+    transition: .5s ease-out;
 }
 div.menu-wrapper div#our-products div.product-submenu a,
 div.menu-wrapper div#our-agency div.agency-submenu a,
@@ -116,22 +118,33 @@ div.menu-wrapper div#our-agency{
     top: 6px;
     margin-right: 2%;
 }
+div.menu-wrapper div#our-agency:hover{
+    cursor: pointer;
+}
 div.menu-wrapper div#social-media{
 
     top: 7px;
     margin-right: 2%;
+}
+div.menu-wrapper div#social-media:hover{
+
+    cursor: pointer;
 }
 div.menu-wrapper div#abut-us{
 
     top: 7px;
     margin-right: 2%;
 }
+div.menu-wrapper div#abut-us:hover{
+
+    cursor: pointer;
+}
 
 div.menu-wrapper div.icon-section img{
 
     width: 90px;
     height: 60px;
-    left: -60%;
+    right: 49%;
     top: -39px;
 }
 div.menu-wrapper div.icon-section span#login{
@@ -139,7 +152,7 @@ div.menu-wrapper div.icon-section span#login{
     font-size: 37px;
     color: var(--Secondery-Color);
     top: 14px;
-    right: 30%;
+    right: 19%;
 }
 div.menu-wrapper div.icon-section span#login:hover{
 
@@ -152,10 +165,98 @@ div.menu-wrapper div.icon-section span#shopping{
     font-size: 35px;
     color: var(--Secondery-Color);
     top: 14px;
-    right: 25%;
+    right: 13%;
 }
 div.menu-wrapper div.icon-section span#shopping:hover{
 
     color: var(--Third-Color);
     cursor: pointer;
 }
+div.menu-wrapper div.icon-section i.fas{
+
+    font-size: 35px;
+    color: var(--Secondery-Color);
+    top: -89px;
+    right: 83%;
+    display: none;
+}
+
+/*.....................this classes add  with JS for show of Accordion Menu......................*/
+
+.showCuntries{
+
+    height: 230px !important;
+}
+.showItems{
+ 
+   /* visibility: visible !important; */
+   display: block !important;
+}
+.animArrow{
+ 
+    transform: rotate(-90deg);
+}
+
+.homeIcon{
+
+    top: -192px !important;
+}
+.homeIcon-scondTop{
+
+    top: -127px !important;
+}
+.fixProductsMenu-firstTop{
+
+    top: 19px !important;
+}
+.fixProductsMenu-secondTop{
+
+    top: -200px !important;
+}
+.fixProductsMenu-thirdTop{
+
+    top: -203px !important;
+}
+.fixProductsMenu-fourthTop{
+
+    top: -139px !important;
+}
+.fixAgencyMenu-firstTop{
+
+    top: -204px !important;
+}
+.fixAgencyMenu-secondtTop{
+
+    top: 22px !important;
+}
+.fixAgencyMenu-thirdTop{
+
+    top: -138px !important;
+}
+.fixSocialMedia-firstTop{
+
+    top: -203px !important;
+}
+.fixSocialMedia-secondTop{
+
+    top: 18px !important;
+}
+.fixSocialMedia-thirdTop{
+
+    top: -137px !important;
+}
+.fixAbutUs{
+
+    top: -202px !important;
+}
+.fixAbutUs-seconddTop{
+
+    top: -205px !important;
+}
+.fixAbutUs-thirdTop{
+
+    top: 20px !important;
+}
+
+/*..............................................................................................*/
+
