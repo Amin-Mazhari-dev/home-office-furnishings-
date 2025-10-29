@@ -1,0 +1,218 @@
+div.menu-wrapper{
+
+    background-color: var(--Primary-Color);
+    height: 70px;
+}
+div.menu-wrapper div.home{
+
+    width: 7%;
+    display: inline-block;
+    top: 15px;
+}
+div.menu-wrapper div.home a span.material-icons{
+
+    font-size: 35px;
+    color: var(--Secondery-Color);
+    padding-right: 15px;
+}
+div.menu-wrapper div.home a span.material-icons:hover{
+
+    color: var(--Third-Color);
+}
+
+div.menu-wrapper div#our-products, div.menu-wrapper div#our-agency,
+div.menu-wrapper div#social-media, div.menu-wrapper div#abut-us{
+
+    width: 20%;
+    display: inline-block;
+}
+div.menu-wrapper div#our-products{
+
+    /* top: 5px; */
+    top: 5px;
+}
+div.menu-wrapper div#our-products:hover{
+    cursor: pointer;
+}
+
+div.menu-wrapper div#our-products div.title-our-products,
+div.menu-wrapper div#our-agency div.title-our-agency,
+div.menu-wrapper div#social-media div.title-social-media,
+div.menu-wrapper div#abut-us div.title-abut-us{
+
+    overflow: hidden;
+    background-color: rgb(81, 81, 219);
+    box-shadow: 1px 2px 2px rgb(68, 68, 68);
+    height: 33px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 1s ease-out;
+}
+div.menu-wrapper div#our-products div.title-our-products:hover{
+
+    background-color: rgb(15, 17, 95);
+}
+div.menu-wrapper div#our-agency div.title-our-agency:hover{
+
+    background-color: rgb(15, 17, 95);
+
+}
+div.menu-wrapper div#social-media div.title-social-media:hover{
+
+    background-color: rgb(15, 17, 95);
+}
+div.menu-wrapper div#abut-us div.title-abut-us:hover{
+
+    background-color: rgb(15, 17, 95);
+}
+
+div.menu-wrapper div#our-products div.title-our-products span#title-one,
+div.menu-wrapper div#our-agency div.title-our-agency span#title-two,
+div.menu-wrapper div#social-media div.title-social-media span#title-three,
+div.menu-wrapper div#abut-us div.title-abut-us span#title-four{
+
+    font-size: 15px;
+    color: var(--Secondery-Color);
+    padding-top: 5px;
+    font-family: Sahel-Bold;
+}
+div.menu-wrapper div#our-products div.title-our-products span.material-icons,
+div.menu-wrapper div#our-agency div.title-our-agency span.material-icons,
+div.menu-wrapper div#social-media div.title-social-media span.material-icons,
+div.menu-wrapper div#abut-us div.title-abut-us span.material-icons{
+
+    font-size: 15px;
+    color: var(--Secondery-Color);
+    padding-top: 9px;
+    font-weight: bold;
+    transition: transform .3s ease-out .2s;
+}
+div.menu-wrapper div#our-products div.product-submenu,
+div.menu-wrapper div#our-agency div.agency-submenu,
+div.menu-wrapper div#social-media div.social-media-submenu,
+div.menu-wrapper div#abut-us div.abut-us-submenu{
+
+    background-color: #fff;
+    /* height: 230px; */
+    height: 0;
+    transition: .5s ease-out;
+}
+div.menu-wrapper div#our-products div.product-submenu a,
+div.menu-wrapper div#our-agency div.agency-submenu a,
+div.menu-wrapper div#social-media div.social-media-submenu a,
+div.menu-wrapper div#abut-us div.abut-us-submenu a{
+
+    display: none;
+    color: var(--WriteColor-1);
+    padding: 7px 15px;
+    font-size: 14px;
+}
+div.menu-wrapper div#our-products div.product-submenu a:hover{
+
+    background-color: var(--Third-Color);
+}
+div.menu-wrapper div#our-agency div.agency-submenu a:hover{
+
+    background-color: var(--Third-Color);
+}
+div.menu-wrapper div#social-media div.social-media-submenu a:hover{
+
+    background-color: var(--Third-Color);
+}
+div.menu-wrapper div#abut-us div.abut-us-submenu a:hover{
+
+    background-color: var(--Third-Color);
+}
+
+div.menu-wrapper div#abut-us div.abut-us-submenu a{
+    font-size: 12px;
+}
+div.menu-wrapper div#social-media div.social-media-submenu a{
+    font-size: 18px;
+}
+div.menu-wrapper div#our-agency{
+
+    top: 6px;
+    margin-right: 2%;
+}
+div.menu-wrapper div#our-agency:hover{
+    cursor: pointer;
+}
+div.menu-wrapper div#social-media{
+
+    top: 7px;
+    margin-right: 2%;
+}
+div.menu-wrapper div#social-media:hover{
+
+    cursor: pointer;
+}
+div.menu-wrapper div#abut-us{
+
+    top: 7px;
+    margin-right: 2%;
+}
+div.menu-wrapper div#abut-us:hover{
+
+    cursor: pointer;
+}
+
+div.menu-wrapper div.icon-section img{
+
+    width: 90px;
+    height: 60px;
+    right: 49%;
+    top: -39px;
+}
+div.menu-wrapper div.icon-section span#login{
+
+    font-size: 37px;
+    color: var(--Secondery-Color);
+    top: 14px;
+    right: 19%;
+}
+div.menu-wrapper div.icon-section span#login:hover{
+
+    color: var(--Third-Color);
+    cursor: pointer;
+}
+
+div.menu-wrapper div.icon-section span#shopping{
+    
+    font-size: 35px;
+    color: var(--Secondery-Color);
+    top: 14px;
+    right: 13%;
+}
+div.menu-wrapper div.icon-section span#shopping:hover{
+
+    color: var(--Third-Color);
+    cursor: pointer;
+}
+div.menu-wrapper div.icon-section i.fas{
+
+    font-size: 35px;
+    color: var(--Secondery-Color);
+    top: -89px;
+    right: 83%;
+    display: none;
+}
+
+/*.....................this classes add  with JS for show of Accordion Menu......................*/
+
+.showCuntries{
+
+    height: 230px !important;
+}
+.showItems{
+ 
+   display: block !important;
+}
+.animArrow{
+ 
+    transform: rotate(-90deg);
+}
+
+/*..............................................................................................*/
+
