@@ -6,6 +6,12 @@ const ourAgency = document.getElementById('our-agency')
 const socialMedia = document.getElementById('social-media')
 const abutUs = document.getElementById('abut-us')
 
+const myLogo = document.querySelector('.logo')
+const myShopping = document.getElementById('shopping')
+const userLogin = document.getElementById('login')
+const menuWrapper = document.querySelector('.menu-wrapper')
+const myHorizontalBars = document.getElementById('horizontalBars')
+
 // This part is for products menu
 const titleOurProducts = document.querySelector('.title-our-products')
 const arrowProducts = document.querySelector('.arrow-products')
@@ -319,4 +325,417 @@ function fixPositionAbutUs(abut){
 
         abut.style.cssText = 'top: 6px;'
     }
+}
+
+
+//......... This codes are for responsive Menu (min-width:992px and max-width:1329px) ............
+
+function handleCustomRangeDesktop(){
+
+    titleAbutUs.addEventListener('click', function(){
+
+        if(window.innerWidth >= 992 && window.innerWidth <= 1154){
+
+          socialMedia.classList.toggle('responsiveTop')
+          ourAgency.classList.toggle('responsiveTop')
+          ourProducts.classList.toggle('responsiveTop')
+          homeIconn.classList.toggle('responsiveHomeIconTop')
+            
+          abutUs.classList.remove('responsiveTopTwo')
+          socialMedia.classList.remove('responsiveTopTwo')
+          ourAgency.classList.remove('responsiveTopTwo')
+
+        }
+    })
+
+    titleSocialMedia.addEventListener('click', function(){
+
+        if(window.innerWidth >= 992 && window.innerWidth <= 1329){
+
+            socialMedia.classList.remove('responsiveTop')
+            ourProducts.classList.remove('responsiveTop')
+            ourAgency.classList.remove('responsiveTop')
+            homeIconn.classList.remove('responsiveHomeIconTop')
+
+            socialMedia.classList.remove('responsiveTopTwo')
+            ourAgency.classList.remove('responsiveTopTwo')
+            abutUs.classList.remove('responsiveTopTwo')
+
+        }
+    })
+
+    titleOurAgency.addEventListener('click', function(){
+
+        if(window.innerWidth >= 992 && window.innerWidth <= 1329){
+
+            ourAgency.classList.remove('responsiveTop')
+            socialMedia.classList.remove('responsiveTop')
+            ourProducts.classList.remove('responsiveTop')
+            homeIconn.classList.remove('responsiveHomeIconTop')
+
+            ourAgency.classList.remove('responsiveTopTwo')
+            socialMedia.classList.remove('responsiveTopTwo')
+            abutUs.classList.remove('responsiveTopTwo')
+
+        }
+    })
+
+    titleOurProducts.addEventListener('click', function(){
+
+        if(window.innerWidth >= 992 && window.innerWidth <= 1329){
+
+            ourProducts.classList.remove('responsiveTop')
+            socialMedia.classList.remove('responsiveTop')
+            ourAgency.classList.remove('responsiveTop')
+            homeIconn.classList.remove('responsiveHomeIconTop')
+
+            socialMedia.classList.remove('responsiveTopTwo')
+            ourAgency.classList.remove('responsiveTopTwo')
+            abutUs.classList.remove('responsiveTopTwo')
+
+        }
+    })
+}
+handleCustomRangeDesktop()
+
+window.addEventListener('resize', handleCustomRangeDesktop);
+
+
+function handleCustomRangeDesktopTwo(){
+
+    titleAbutUs.addEventListener('click', function(){
+
+        if(window.innerWidth >= 1155 && window.innerWidth <= 1274){
+            
+            socialMedia.classList.toggle('responsiveTopThree')
+            ourAgency.classList.toggle('responsiveTopThree')
+            ourProducts.classList.toggle('responsiveTopThree')
+            homeIconn.classList.toggle('responsiveHomeIconTopTwo')
+            
+            abutUs.classList.remove('responsiveTopTwo')
+            socialMedia.classList.remove('responsiveTopTwo')
+            ourAgency.classList.remove('responsiveTopTwo')
+        }
+    })
+
+    titleSocialMedia.addEventListener('click', function(){
+
+        if(window.innerWidth >= 1155 && window.innerWidth <= 1274){
+            
+            ourProducts.classList.remove('responsiveTopThree')
+            socialMedia.classList.remove('responsiveTopThree')
+            ourAgency.classList.remove('responsiveTopThree')
+            abutUs.classList.remove('responsiveTopThree')
+            homeIconn.classList.remove('responsiveHomeIconTopTwo')
+
+        }
+    })
+
+    titleOurAgency.addEventListener('click', function(){
+
+        if(window.innerWidth >= 1155 && window.innerWidth <= 1274){
+
+            ourProducts.classList.remove('responsiveTopThree')
+            ourAgency.classList.remove('responsiveTopThree')
+            socialMedia.classList.remove('responsiveTopThree')
+            abutUs.classList.remove('responsiveTopThree')
+            homeIconn.classList.remove('responsiveHomeIconTopTwo')
+
+        }
+    })
+
+    titleOurProducts.addEventListener('click', function(){
+
+        if(window.innerWidth >= 1155 && window.innerWidth <= 1274){
+
+            ourProducts.classList.remove('responsiveTopThree')
+            socialMedia.classList.remove('responsiveTopThree')
+            ourAgency.classList.remove('responsiveTopThree')
+            abutUs.classList.remove('responsiveTopThree')
+            homeIconn.classList.remove('responsiveHomeIconTopTwo')
+
+        }
+     })
+
+}
+handleCustomRangeDesktopTwo()
+
+window.addEventListener('resize', handleCustomRangeDesktopTwo);
+
+
+function handleCustomRangeDesktopThree(){
+
+    titleAbutUs.addEventListener('click', function(){
+
+        if(window.innerWidth >= 1275 && window.innerWidth <= 1329){
+           
+           socialMedia.classList.toggle('responsiveTopFour')
+           ourAgency.classList.toggle('responsiveTopFour')
+           ourProducts.classList.toggle('responsiveTopFour')
+           homeIconn.classList.toggle('responsiveHomeIconTopThree')
+            
+            abutUs.classList.remove('responsiveTopTwo')
+            socialMedia.classList.remove('responsiveTopTwo')
+            ourAgency.classList.remove('responsiveTopTwo')
+        }
+    })
+
+    titleSocialMedia.addEventListener('click', function(){
+
+        if(window.innerWidth >= 1275 && window.innerWidth <= 1329){
+
+            ourProducts.classList.remove('responsiveTopFour')
+            socialMedia.classList.remove('responsiveTopFour')
+            ourAgency.classList.remove('responsiveTopFour')
+            abutUs.classList.remove('responsiveTopFour')
+            homeIconn.classList.remove('responsiveHomeIconTopThree')
+
+        }
+    })
+
+    titleOurAgency.addEventListener('click', function(){
+
+        if(window.innerWidth >= 1275 && window.innerWidth <= 1329){
+
+            ourProducts.classList.remove('responsiveTopFour')
+            ourAgency.classList.remove('responsiveTopFour')
+            socialMedia.classList.remove('responsiveTopFour')
+            abutUs.classList.remove('responsiveTopFour')
+            homeIconn.classList.remove('responsiveHomeIconTopThree')
+
+        }
+    })
+
+    titleOurProducts.addEventListener('click', function(){
+
+        if(window.innerWidth >= 1275 && window.innerWidth <= 1329){
+
+            ourProducts.classList.remove('responsiveTopFour')
+            socialMedia.classList.remove('responsiveTopFour')
+            ourAgency.classList.remove('responsiveTopFour')
+            abutUs.classList.remove('responsiveTopFour')
+            homeIconn.classList.remove('responsiveHomeIconTopThree')
+
+        }
+    })
+
+
+}
+handleCustomRangeDesktopThree()
+
+window.addEventListener('resize', handleCustomRangeDesktopThree);
+
+function refreshMenu(){
+
+    if(window.innerWidth >= 992  && window.innerWidth <= 1154 || window.innerWidth >= 1155 && window.innerWidth <= 1274 || window.innerWidth >= 1275 && window.innerWidth <= 1329){
+
+        location.reload()
+    }
+}
+
+window.addEventListener('resize', refreshMenu)
+
+
+//......... This codes are for responsive Menu in Mobile & Tablet ............
+
+function handleResponsiveClick(){
+
+    let width = window.innerWidth
+    
+    //This codes are for responsive Menu (min-width: 576px) and (max-width: 768px)
+    if(width >= 576 && width <= 768){
+
+        handleCustomRangeMobile()
+
+     //This codes are for responsive Menu (min-width: 768px) and (max-width: 992px)
+    }else if(width > 768 && width <= 992){
+
+        handleCustomRangeTablet()
+    }
+
+
+}
+  
+myHorizontalBars.addEventListener('click', handleResponsiveClick)
+
+function fixElementsMenu(){
+
+    titleOurProducts.addEventListener('click', function(){
+
+        if(window.innerWidth >= 576 && window.innerWidth <= 768){
+
+            if(noSubmenuOpen()) {
+                clearFixClasses()
+                return
+            }
+          
+            addResponsiveClass()
+        }else if(window.innerWidth >= 768 && window.innerWidth <= 992){
+
+            if(noSubmenuOpen()) {
+                clearFixClasses()
+                return
+            }
+          
+            addResponsiveClass()
+        }
+    })
+
+    titleOurAgency.addEventListener('click', function(){
+        
+        if(window.innerWidth >= 576 && window.innerWidth <= 768){
+
+            if(noSubmenuOpen()) {
+                clearFixClasses()
+                return
+            }
+          
+            addResponsiveClass() 
+        }else if(window.innerWidth >= 768 && window.innerWidth <= 992){
+
+            if(noSubmenuOpen()) {
+                clearFixClasses()
+                return
+            }
+          
+            addResponsiveClass()
+        }
+    })
+
+    titleSocialMedia.addEventListener('click', function(){
+
+        if(window.innerWidth >= 576 && window.innerWidth <= 768){
+
+            if(noSubmenuOpen()) {
+                clearFixClasses()
+                return
+            }
+          
+            addResponsiveClass()
+        }else if(window.innerWidth >= 768 && window.innerWidth <= 992){
+
+            if(noSubmenuOpen()) {
+                clearFixClasses()
+                return
+            }
+          
+            addResponsiveClass()
+        }
+    })
+
+    titleAbutUs.addEventListener('click', function(){
+
+        if(window.innerWidth >= 576 && window.innerWidth <= 768){
+
+            if(noSubmenuOpen()) {
+                clearFixClasses()
+                return
+            }
+          
+            addResponsiveClass()
+        }else if(window.innerWidth >= 768 && window.innerWidth <= 992){
+
+            if(noSubmenuOpen()) {
+                clearFixClasses()
+                return
+            }
+          
+            addResponsiveClass()
+        }
+    })
+    
+}
+fixElementsMenu()
+
+window.addEventListener('resize', fixElementsMenu)
+
+function addResponsiveClass(){
+
+    ourProducts.classList.add('fixTopProductMenu')
+    ourAgency.classList.add('fixTopAgencyMenu')
+    socialMedia.classList.add('fixTopSocialMediaMenu')
+    abutUs.classList.add('fixTopAbutUsMenu')
+
+    myLogo.classList.add('fixTopLogoImg')
+    homeIconn.classList.add('fixTopHomeIcon')
+    myShopping.classList.add('fixTopShopping')
+    userLogin.classList.add('fixTopLogin')
+    myHorizontalBars.classList.add('fixTopHorizontalBars')
+}
+
+function clearFixClasses() {
+    ourProducts.classList.remove('fixTopProductMenu')
+    ourAgency.classList.remove('fixTopAgencyMenu')
+    socialMedia.classList.remove('fixTopSocialMediaMenu')
+    abutUs.classList.remove('fixTopAbutUsMenu')
+  
+    myLogo.classList.remove('fixTopLogoImg')
+    homeIconn.classList.remove('fixTopHomeIcon')
+    myShopping.classList.remove('fixTopShopping')
+    userLogin.classList.remove('fixTopLogin')
+    myHorizontalBars.classList.remove('fixTopHorizontalBars')
+}
+
+function noSubmenuOpen() {
+    return !(
+      productSubmenu.classList.contains('showCuntries') ||
+      agencySubmenu.classList.contains('showCuntries') ||
+      socialMediaSubmenu.classList.contains('showCuntries') ||
+      abutUsSubmenu.classList.contains('showCuntries')
+    )
+}
+
+
+//.........  ............
+
+function handleCustomRangeMobile(){
+
+    homeIconn.classList.toggle('responsiveHome')
+    myLogo.classList.toggle('responsiveLogo')
+    myShopping.classList.toggle('responsiveShopping')
+    userLogin.classList.toggle('responsiveLogin')
+    ourProducts.classList.toggle('responsiveAccordionMenu')
+    ourProducts.classList.toggle('responsiveOurProducts')
+    socialMedia.classList.toggle('responsiveAccordionMenu')
+    ourAgency.classList.toggle('responsiveAccordionMenu')
+    abutUs.classList.toggle('responsiveAccordionMenu')
+    menuWrapper.classList.toggle('responsiveMenu')
+    myHorizontalBars.classList.toggle('responsiveBars')
+
+    if(
+        productSubmenu.classList.contains('showCuntries') ||
+        agencySubmenu.classList.contains('showCuntries') ||
+        socialMediaSubmenu.classList.contains('showCuntries') ||
+        abutUsSubmenu.classList.contains('showCuntries')
+
+    ){
+        location.reload()
+    }
+}
+
+
+function handleCustomRangeTablet(){
+
+    homeIconn.classList.toggle('responsiveHomeTablet')
+    myLogo.classList.toggle('responsiveLogoTablet')
+    myShopping.classList.toggle('responsiveShoppingTablet')
+    userLogin.classList.toggle('responsiveLoginTablet')
+    ourProducts.classList.toggle('responsiveAccordionMenuTablet')
+    ourProducts.classList.toggle('responsiveOurProducts')
+    socialMedia.classList.toggle('responsiveAccordionMenuTablet')
+    ourAgency.classList.toggle('responsiveAccordionMenuTablet')
+    abutUs.classList.toggle('responsiveAccordionMenuTablet')
+    menuWrapper.classList.toggle('responsiveMenu')
+    myHorizontalBars.classList.toggle('responsiveHorizontalBarsTablet')
+    
+    if(
+        productSubmenu.classList.contains('showCuntries') ||
+        agencySubmenu.classList.contains('showCuntries') ||
+        socialMediaSubmenu.classList.contains('showCuntries') ||
+        abutUsSubmenu.classList.contains('showCuntries')
+    
+    ){
+        location.reload()
+    }
+    
 }
