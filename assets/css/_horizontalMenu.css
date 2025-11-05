@@ -2,6 +2,7 @@ div.menu-wrapper{
 
     background-color: var(--Primary-Color);
     height: 70px;
+    transition: 1s ease-in;
 }
 div.menu-wrapper div.home{
 
@@ -194,9 +195,14 @@ div.menu-wrapper div.icon-section i.fas{
 
     font-size: 35px;
     color: var(--Secondery-Color);
-    top: -89px;
-    right: 83%;
+    top: 18px;
+    right: 65%;
     display: none;
+}
+div.menu-wrapper div.icon-section i.fas:hover{
+
+    cursor: pointer;
+    color: var(--Third-Color);
 }
 
 /*.....................this classes add  with JS for show of Accordion Menu......................*/
@@ -216,3 +222,307 @@ div.menu-wrapper div.icon-section i.fas{
 
 /*..............................................................................................*/
 
+
+ /* .......... This codes are for responsive Menu (min-width:992px and max-width:1329px) ..... */
+
+ .responsiveTop{
+
+    top: -204px !important;
+ }
+ .responsiveTopTwo{
+
+    top: -202px !important;
+ }
+ .responsiveTopThree{
+
+    top: -183px !important;
+ }
+ .responsiveTopFour{
+
+    top: -161px !important;
+ }
+ .responsiveHomeIconTop{
+
+    top: -192px !important;
+ }
+ .responsiveHomeIconTopTwo{
+
+    top: -170px !important;
+ }
+ .responsiveHomeIconTopThree{
+
+    top: -150px !important;
+ }
+
+ @media only screen and (min-width: 992px) and (max-width: 1035px){
+
+    div.menu-wrapper div#our-products div.product-submenu a{
+
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1150px){
+
+    div.menu-wrapper div.icon-section span#shopping{
+
+        right: 7%;
+    }
+    div.menu-wrapper div.icon-section span#login{
+
+        right: 14%;
+    }
+}
+
+/* ........ This codes are for responsive Menu (min-width: 576px) and (max-width: 768px) ...... */
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+    nav#wrapperHorizontalMenu{
+
+        overflow: hidden; 
+    }
+
+    div.menu-wrapper div.icon-section img,
+    div.menu-wrapper div.icon-section span#login,
+    div.menu-wrapper div.icon-section span#shopping{
+
+        display: none;
+    }
+
+    div.menu-wrapper div#our-products,
+    div.menu-wrapper div#our-agency,
+    div.menu-wrapper div#social-media,
+    div.menu-wrapper div#abut-us{
+
+        display: none;
+    }
+    div.menu-wrapper div.icon-section i.fas{
+
+        display: block !important;
+        right: 91%;
+        top: -27px;
+
+    }
+
+    /* ............. This classes add to elements with JS ............... */
+
+    
+    .responsiveHome{
+
+        position: relative;
+        right: 15% !important;
+        top: 22px !important;
+    }
+    .responsiveLogo{
+
+        display: block !important;
+        position: relative;
+        right: 5% !important;
+        top: -380px !important;
+        width: 70px !important;
+        height: 50px !important;
+    }
+    .responsiveShopping{
+
+        display: block !important;
+        position: relative;
+        right: 20% !important;
+        top: -273px !important;
+        width: 70px;
+        height: 50px;
+    }
+    .responsiveLogin{
+
+        display: block !important;
+        position: relative;
+        right: 28% !important;
+        top: -325px !important;
+        width: 70px;
+        height: 50px;
+    }
+    .responsiveAccordionMenu{
+
+        display: block !important;
+        width: 50% !important;
+        margin-top: 30px;
+        position: relative;
+    }
+    .responsiveOurProducts{
+
+        position: relative;
+        right: 2%;
+    }
+    .responsiveMenu{
+
+        height: 600px !important;
+    }
+    .responsiveBars{
+
+        display: block !important;
+        right: 90% !important;
+        top: -420px !important;
+    }
+
+    .fixTopAgencyMenu{
+
+        top: 18px !important;
+    }
+    .fixTopSocialMediaMenu{
+
+        top: 22px !important;
+    }
+    .fixTopAbutUsMenu{
+
+        top: 28px !important;
+    }
+    .fixTopLogoImg{
+
+        top: -590px !important;
+    }
+    .fixTopHomeIcon{
+
+        top: 38px !important;
+    }
+    .fixTopShopping{
+
+        top: -485px !important;
+    }
+    .fixTopLogin{
+
+        top: -534px !important;
+    }
+    .fixTopHorizontalBars{
+
+        top: -630px !important;
+    }
+
+    .fixTopProductMenu{
+
+        top: 26px !important;
+    }
+
+
+    .logo,
+       #horizontalBars,
+       #shopping,
+       #login {
+       transition: top 0.4s ease-in-out;
+    }
+
+          
+}
+
+
+/* ...... This codes are for responsive Menu (min-width: 768px) and (max-width: 992px) ..... */
+
+@media only screen and (min-width: 768px) and (max-width: 992px){
+
+    nav#wrapperHorizontalMenu{
+
+        overflow: hidden; 
+    }
+
+    div.menu-wrapper div.icon-section img,
+    div.menu-wrapper div.icon-section span#login,
+    div.menu-wrapper div.icon-section span#shopping{
+
+        display: none;
+    }
+
+    div.menu-wrapper div#our-products,
+    div.menu-wrapper div#our-agency,
+    div.menu-wrapper div#social-media,
+    div.menu-wrapper div#abut-us{
+
+        display: none;
+    }
+    div.menu-wrapper div.icon-section i.fas{
+
+        display: block !important;
+        right: 70%; 
+        top: 15px;
+
+    }
+
+    /* ............. This classes add to elements with JS ............... */
+
+    .responsiveHorizontalBarsTablet{
+
+        /* top: 20px !important; */
+        top: -117px !important;
+    }
+    .responsiveMenu{
+
+        height: 600px !important;
+    }
+    .responsiveOurProducts{
+
+        position: relative;
+        right: 2%;
+    }
+    .responsiveAccordionMenuTablet{
+
+        display: block !important;
+        width: 70% !important;
+        margin-top: 30px;
+        position: relative;
+    }
+    .responsiveHomeTablet{
+
+        position: relative;
+        right: 21% !important;
+        top: 24px !important;
+    }
+    .responsiveLogoTablet{
+
+        display: block !important;
+        position: relative;
+        right: -333% !important;
+        top: -78px !important;
+        width: 70px !important;
+        height: 50px !important;
+    }
+    .responsiveShoppingTablet{
+
+        display: block !important;
+        position: relative;
+        right: -259% !important;
+        top: 26px !important;
+        width: 70px;
+        height: 50px;
+    }
+    .responsiveLoginTablet{
+
+        display: block !important;
+        position: relative;
+        right: -221% !important;
+        top: -25px !important;
+        width: 70px;
+        height: 50px;
+    }
+
+    .fixTopProductMenu{
+
+        top: 26px !important;
+    }
+    .fixTopAgencyMenu{
+
+        top: 18px !important;
+    }
+    .fixTopSocialMediaMenu{
+
+        top: 22px !important;
+    }
+    .fixTopAbutUsMenu{
+
+        top: 28px !important;
+    }
+
+    .logo,
+       #horizontalBars,
+       #shopping,
+       #login {
+       transition: top 0.4s ease-in-out;
+    }
+}
