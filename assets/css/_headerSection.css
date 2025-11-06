@@ -1,0 +1,200 @@
+aside.aside-menu{
+
+    background-color: var(--Primary-Color);
+    height: 580px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+aside.aside-menu div.icon-wrapper-aside{
+    margin-top: 40px;
+    /* text-align: center; */
+}
+aside.aside-menu div.icon-wrapper-aside span#login-aside{
+
+    font-size: 45px;
+    color: var(--Secondery-Color);
+    margin-right: 30%;
+}
+aside.aside-menu div.icon-wrapper-aside span#login-aside:hover{
+
+    color: var(--Third-Color);
+    cursor: pointer;
+}
+aside.aside-menu div.icon-wrapper-aside span#shopping-aside{
+
+    font-size: 40px;
+    color: var(--Secondery-Color);
+    margin-right: 10%; 
+}
+aside.aside-menu div.icon-wrapper-aside span#shopping-aside:hover{
+
+    color: var(--Third-Color);
+    cursor: pointer;
+}
+aside.aside-menu div#products-aside,aside.aside-menu div#agency-aside,
+aside.aside-menu div#social-media-aside,aside.aside-menu div#abut-us-aside{
+
+    margin-top: 25px;
+    margin-right: 10%;
+    width: 70%;
+}
+aside.aside-menu div#products-aside:hover{
+
+    cursor: pointer;
+}
+aside.aside-menu div#agency-aside:hover{
+
+    cursor: pointer;
+}
+aside.aside-menu div#social-media-aside:hover{
+
+    cursor: pointer;
+}
+aside.aside-menu div#abut-us-aside:hover{
+
+    cursor: pointer;
+}
+aside.aside-menu div#products-aside div.title-our-products-aside,
+aside.aside-menu div#agency-aside div.title-our-agency-aside,
+aside.aside-menu div#social-media-aside div.title-social-media-aside,
+aside.aside-menu div#abut-us-aside div.title-abut-us-aside{
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(81, 81, 219);
+    box-shadow: 1px 2px 2px rgb(68, 68, 68);
+    height: 45px;
+}
+aside.aside-menu div#products-aside div.title-our-products-aside:hover{
+
+    background-color: rgb(15, 17, 95); 
+}
+aside.aside-menu div#agency-aside div.title-our-agency-aside:hover{
+
+    background-color: rgb(15, 17, 95);
+}
+aside.aside-menu div#social-media-aside div.title-social-media-aside:hover{
+
+    background-color: rgb(15, 17, 95);
+}
+aside.aside-menu div#abut-us-aside div.title-abut-us-aside:hover{
+
+    background-color: rgb(15, 17, 95);
+}
+aside.aside-menu div#products-aside div.title-our-products-aside span#title-one-aside,
+aside.aside-menu div#agency-aside div.title-our-agency-aside span#title-two-aside,
+aside.aside-menu div#social-media-aside div.title-social-media-aside span#title-three-aside,
+aside.aside-menu div#abut-us-aside div.title-abut-us-aside span#title-four-aside{
+
+    color: var(--Secondery-Color);
+    padding-right: 10%;
+    margin-top: 7px;
+    display: inline-block;
+    font-size: 18px;
+    font-family: Sahel-Bold;
+}
+aside.aside-menu div#products-aside div.title-our-products-aside span.arrow-products-aside,
+aside.aside-menu div#agency-aside div.title-our-agency-aside span.arrow-agency-aside,
+aside.aside-menu div#social-media-aside div.title-social-media-aside span.arrow-social-media-aside,
+aside.aside-menu div#abut-us-aside div.title-abut-us-aside span.arrow-abut-us-aside{
+
+    font-size: 18px;
+    color: var(--Secondery-Color);
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px 25px;
+    transition: transform .3s ease-out .2s;
+}
+
+aside.aside-menu div#products-aside div.product-submenu-aside,
+aside.aside-menu div#agency-aside div.agency-submenu-aside,
+aside.aside-menu div#social-media-aside div.social-media-submenu-aside,
+aside.aside-menu div#abut-us-aside div.abut-us-submenu-aside{
+
+    background-color: #fff;
+    /* height: 238px; */
+    height: 0; 
+    transition: .5s ease-out;
+}
+aside.aside-menu div#products-aside div.product-submenu-aside a.product-aside,
+aside.aside-menu div#agency-aside div.agency-submenu-aside a.agency-aside,
+aside.aside-menu div#social-media-aside div.social-media-submenu-aside a.media-aside,
+aside.aside-menu div#abut-us-aside div.abut-us-submenu-aside a.abutUs-aside{
+
+    display: none;
+    color: var(--WriteColor-1);
+    padding: 7px 15px;
+    font-size: 15px;
+}
+aside.aside-menu div#social-media-aside div.social-media-submenu-aside a.media-aside{
+
+    font-size: 19px;
+}
+aside.aside-menu div#products-aside div.product-submenu-aside a.product-aside:hover{
+
+    background-color: var(--Third-Color);
+}
+aside.aside-menu div#agency-aside div.agency-submenu-aside a.agency-aside:hover{
+
+    background-color: var(--Third-Color);
+}
+aside.aside-menu div#social-media-aside div.social-media-submenu-aside a.media-aside:hover{
+
+    background-color: var(--Third-Color);
+}
+aside.aside-menu div#abut-us-aside div.abut-us-submenu-aside a.abutUs-aside:hover{
+
+    background-color: var(--Third-Color);
+}
+
+/*.....................this classes add  with JS for show of Accordion Menu......................*/
+
+.showAsideMenu{
+
+    height: 238px !important;
+}
+.showAsideMenuItems{
+ 
+   display: block !important;
+}
+.animAsideMenuArrow{
+    transform: rotate(-90deg);
+}
+
+/* ............. Fix some elements ..............  */
+
+@media only screen and (max-width: 992px){
+
+    div.aside-menu-wrapper{
+
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1100px){
+
+    aside.aside-menu div#products-aside div.title-our-products-aside span#title-one-aside,
+    aside.aside-menu div#agency-aside div.title-our-agency-aside span#title-two-aside,
+    aside.aside-menu div#social-media-aside div.title-social-media-aside span#title-three-aside,
+    aside.aside-menu div#abut-us-aside div.title-abut-us-aside span#title-four-aside{
+
+        font-size: 15px;
+    }
+
+    aside.aside-menu div#products-aside div.title-our-products-aside span.arrow-products-aside,
+    aside.aside-menu div#agency-aside div.title-our-agency-aside span.arrow-agency-aside,
+    aside.aside-menu div#social-media-aside div.title-social-media-aside span.arrow-social-media-aside,
+    aside.aside-menu div#abut-us-aside div.title-abut-us-aside span.arrow-abut-us-aside{
+
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+
+    aside.aside-menu div#abut-us-aside div.abut-us-submenu-aside a.abutUs-aside{
+
+        font-size: 13px;
+    }
+}
