@@ -1,3 +1,7 @@
+nav#wrapperHorizontalMenu{
+
+    display: none;
+}
 div.menu-wrapper{
 
     background-color: var(--Primary-Color);
