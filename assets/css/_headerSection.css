@@ -1,3 +1,5 @@
+/* ................... aside styles ........................ */
+
 aside.aside-menu{
 
     background-color: var(--Primary-Color);
@@ -196,5 +198,242 @@ aside.aside-menu div#abut-us-aside div.abut-us-submenu-aside a.abutUs-aside:hove
     aside.aside-menu div#abut-us-aside div.abut-us-submenu-aside a.abutUs-aside{
 
         font-size: 13px;
+    }
+}
+
+
+/* ................... Logo & Search Box & Slider styles ........................ */
+
+div.header-section{
+
+    margin-top: 15px;
+    height: 70px;
+}
+div.header-section img{
+
+    width: 111px;
+    height: 65px;
+    left: 8%;
+}
+div.header-section input{
+
+    width: 70%;
+    height: 40px;
+    outline: 0px;
+    border: 2px solid rgb(155, 153, 153);
+    border-radius: 8px;
+    left: 23%;
+    padding-right: 50px;
+    font-size: 17px;
+}
+div.header-section span{
+
+    right: 9%;
+    top: 6px;
+    font-size: 30px;
+}
+div.container-slider{
+
+    width: 100%;
+    height: 84vh;
+    text-align: center;
+}
+div.container-slider div.slider{
+
+    border: 2px solid #9b9999;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px #9b9999;
+    height: 90%;
+    width: 90%;
+    margin-right: 5%;
+}
+div.container-slider div.slider img.img-slid{
+
+    border-radius: 16px;
+ 
+}
+div.container-slider div.slider div.slider-item{
+
+    text-align: center;
+}
+div.container-slider div.slider a#more-seen{
+
+    display: inline-block;
+    top: 210px;
+    right: 40%;
+    border: 2px solid var(--Third-Color);
+    background-color: var(--Third-Color);
+    color: var(--Secondery-Color);
+    font-family: Sahel-Bold;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+}
+div.container-slider div.slider a#more-seen:hover{
+
+    background-color: rgb(165, 109, 4);
+}
+div.container-slider div.slider button.prev,
+div.container-slider div.slider button.next{
+
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: rgb(110, 110, 110);
+    border: none;
+}
+div.container-slider div.slider button.next{
+    right: -5%;
+    top: 200px;
+}
+div.container-slider div.slider button.next:hover{
+
+    cursor: pointer;
+    background-color: rgb(51, 50, 50);
+}
+div.container-slider div.slider button.prev{
+
+    right: 100%;
+    top: 200px;
+}
+div.container-slider div.slider button.prev:hover{
+
+    cursor: pointer;
+    background-color: rgb(51, 50, 50);
+}
+div.container-slider div.slider button.prev span.prev-icon,
+div.container-slider div.slider button.next span.next-icon{
+
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--Secondery-Color);
+}
+div.container-slider div.slider button.prev span.prev-icon{
+
+    padding-right: 2px;
+}
+div.container-slider div.slider button.next span.next-icon{
+
+    padding-left: 2px;
+}
+div.container-slider button.btn-slider{
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 6px;
+    margin-top: 15px;
+}
+div.container-slider button.btn-slider:hover{
+
+    cursor: pointer;
+}
+
+/* ......... This class add to Button with JS .......... */
+.active{
+
+    background-color: rgb(43, 42, 42);
+}
+
+/* ........ Responsive Slider ...... */
+
+@media only screen and (min-width: 576px) and (max-width: 610px){
+
+    div.container-slider div.slider{
+
+        height: 290px;
+    }
+    div.header-section img{
+        width: 90px;
+    }
+    div.container-slider div.slider button.next,
+    div.container-slider div.slider button.prev{
+
+        top: 120px;
+    }
+    div.container-slider div.slider button.prev{
+
+        right: 98%;
+    }
+    
+}
+
+@media only screen and (min-width: 610px) and (max-width: 700px){
+
+    div.container-slider div.slider{
+
+        height: 325px;
+    }
+    div.header-section img{
+        width: 90px;
+    }
+    div.container-slider div.slider button.next,
+    div.container-slider div.slider button.prev{
+
+        top: 120px;
+    }
+    div.container-slider div.slider button.prev{
+
+        right: 98%;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 768px){
+
+    div.container-slider div.slider{
+
+        height: 370px;
+    }
+    div.header-section img{
+        width: 90px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 850px){
+
+    div.container-slider div.slider{
+
+        height: 415px;
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 950px){
+
+    div.container-slider div.slider{
+
+        height: 470px;
+    }
+}
+
+@media only screen and (min-width: 951px) and (max-width: 992px){
+
+    div.container-slider div.slider{
+
+        height: 492px;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1100px){
+
+    div.container-slider div.slider{
+
+        height: 360px;
+    }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1200px){
+
+    div.container-slider div.slider{
+
+        height: 397px;
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1300px){
+
+    div.container-slider div.slider{
+
+        height: 424px;
     }
 }
