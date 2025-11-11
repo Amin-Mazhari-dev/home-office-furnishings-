@@ -1,6 +1,9 @@
 nav#wrapperHorizontalMenu{
 
     display: none;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 div.menu-wrapper{
 
@@ -529,4 +532,15 @@ div.menu-wrapper div.icon-section i.fas:hover{
        #login {
        transition: top 0.4s ease-in-out;
     }
+}
+
+/* ....... Show Horizontal Menu (max-width: 992px).......  */
+
+@media only screen and (max-width: 992px){
+
+    nav#wrapperHorizontalMenu{
+
+        display: block;
+    }
+    
 }
