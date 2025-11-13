@@ -256,7 +256,7 @@ div.container-slider div.slider div.slider-item{
 
     text-align: center;
 }
-div.container-slider div.slider a#more-seen{
+div.container-slider div.slider a#more-see{
 
     display: inline-block;
     top: 210px;
@@ -268,7 +268,7 @@ div.container-slider div.slider a#more-seen{
     padding: 10px;
     transition: 0.5s ease-in-out;
 }
-div.container-slider div.slider a#more-seen:hover{
+div.container-slider div.slider a#more-see:hover{
 
     background-color: rgb(165, 109, 4);
 }
