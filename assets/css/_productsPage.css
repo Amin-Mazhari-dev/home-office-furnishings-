@@ -1,0 +1,156 @@
+nav#horizontalMenu-show-product{
+    position: sticky;
+    top: 0; 
+    z-index: 999;
+}
+div.img-wrapper{
+
+    border: 2px solid #005bea;
+    height: 385px;
+}
+div.img-wrapper div.card-one,
+div.img-wrapper div.card-two,
+div.img-wrapper div.card-three{
+    margin-top: 15px;
+}
+div.product-details-one, div.product-details-two{
+
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+div.product-details-two{
+    margin-top: 10px;
+}
+div.product-details-one div.product-name,
+div.product-details-one div.product-id{
+
+    display: flex;
+    flex-direction: row;
+}
+div.product-details-one div.product-name h4,
+div.product-details-one div.product-id h4,
+div.product-details-two div.product-status h4,
+div.product-details-two div.product-price h4{
+
+    padding: 10px;
+    font-family: Sahel-Bold;
+}
+div.product-details-two div.product-status,
+div.product-details-two div.product-price{
+
+    display: flex;
+    flex-direction: row;
+}
+
+/* ........ This codes are for product description section ........ */
+
+div.product-description-wrapper{
+
+    margin-bottom: 300px;
+}
+div.product-description-wrapper button.description-btn{
+
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%)
+}
+div.product-description-wrapper button.description-btn:hover{
+
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+div.product-description-wrapper div.tabs{
+
+    margin-top: 10px;
+    border-top: 2px solid var(--Primary-Color);
+}
+div.product-description-wrapper div.tabs div.about-product,
+div.product-description-wrapper div.tabs div.customer-reviews{
+
+    background-color: hsl(0, 100%, 99%);
+    min-height: 560px;
+    transform: rotateX(-25deg);
+    transform-origin: top center;
+    transition: opacity .3s, transform 1s;
+    opacity: 0;
+}
+div.product-description-wrapper div.tabs div.customer-reviews{
+
+    width: 100%;
+    top: 59px;
+}
+div.product-description-wrapper div.tabs div.about-product h3{
+
+    padding-top: 25px;
+    padding-bottom: 15px;
+    padding-right: 40px;
+}
+div.product-description-wrapper div.tabs div.about-product p{
+
+    text-align: justify;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 16px;
+    line-height: 33px;
+}
+div.product-description-wrapper div.tabs div.customer-reviews div.customer-one div.header,
+div.product-description-wrapper div.tabs div.customer-reviews div.customer-two div.header,
+div.product-description-wrapper div.tabs div.customer-reviews div.customer-three div.header{
+
+    display: flex;
+
+}
+div.product-description-wrapper div.tabs div.customer-reviews div.customer-one div.header img,
+div.product-description-wrapper div.tabs div.customer-reviews div.customer-two div.header img,
+div.product-description-wrapper div.tabs div.customer-reviews div.customer-three div.header img{
+    width: 10%;
+    height: 10%;
+    padding-right: 35px;
+    padding-top: 40px;
+}
+div.product-description-wrapper div.tabs div.customer-reviews div.customer-one div.header h4,
+div.product-description-wrapper div.tabs div.customer-reviews div.customer-two div.header h4,
+div.product-description-wrapper div.tabs div.customer-reviews div.customer-three div.header h4{
+
+    padding-top: 95px;
+    padding-right: 10px;
+    font-size: 17px;
+    color: rgb(17, 17, 141);
+}
+div.product-description-wrapper div.tabs div.customer-reviews p{
+
+    padding-top: 25px;
+    padding-right: 35px;
+}
+
+/* ..... This class add with JS ........ */
+
+.showTab{
+
+    transform: rotate(0) !important;
+    opacity: 1 !important;
+    z-index: 1 !important;
+}
+
+/* ........ This Codes are for Responsive .......... */
+
+@media only screen and (max-width: 992px){
+
+    nav#horizontalMenu-show-product{
+
+        overflow: hidden;
+    }
+    
+}
