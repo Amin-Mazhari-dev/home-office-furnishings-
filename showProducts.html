@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/grid-system.css">
+    <link rel="stylesheet" href="assets/css/utility-classes.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Show Products</title>
+</head>
+<body>
+
+    <!-- Start Horizontal menu -->
+    <nav class="container-fluid" id="horizontalMenu-show-product">
+
+        <div class="row menu-wrapper">
+    
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+    
+                <div class="home relative">
+                    <a href="#"><span class="material-icons">home</span></a>
+                </div>
+    
+                <div class="relative" id="our-products">
+    
+                    <div class="title-our-products">
+    
+                        <span id="title-one">محصولات </span>
+                        <span class="material-icons arrow-products">arrow_back_ios</span>
+    
+                    </div>
+    
+                    <div class="product-submenu">
+    
+                        <a class="product" href="#">مبلمان منزل</a>
+                        <a class="product" href="#">مبلمان اداری</a>
+                        <a class="product" href="#">میز تحریر</a>
+                        <a class="product" href="#">میز کامپیوتر</a>
+                        <a class="product" href="#">صندلی اداری و خانگی</a>
+                        <a class="product" href="#">تختخواب</a>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="relative" id="our-agency">
+    
+                    <div class="title-our-agency">
+    
+                        <span id="title-two">نمایندگی ها </span>
+                        <span class="material-icons arrow-agency">arrow_back_ios</span>
+    
+                    </div>
+    
+                    <div class="agency-submenu">
+    
+                        <a class="agency" href="#">تهران</a>
+                        <a class="agency" href="#">گیلان</a>
+                        <a class="agency" href="#">اصفهان</a>
+                        <a class="agency" href="#">شیراز</a>
+                        <a class="agency" href="#">تبریز</a>
+                        <a class="agency" href="#">کیش</a>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="relative" id="social-media">
+    
+                    <div class="title-social-media">
+    
+                        <span id="title-three">شبکه های اجتماعی </span>
+                        <span class="material-icons arrow-social-media">arrow_back_ios</span>
+    
+                    </div>
+    
+                    <div class="social-media-submenu">
+    
+                        <a class="media" href="#"><i class="fas fa-rss"></i></a>
+                        <a class="media" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="media" href="#"><i class="fab fa-facebook"></i></a>
+                        <a class="media" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="media" href="#"><i class="fab fa-telegram-plane"></i></a>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="relative" id="abut-us">
+    
+                    <div class="title-abut-us">
+    
+                        <span id="title-four">در بــــاره مــــا</span>
+                        <span class="material-icons arrow-abut-us">arrow_back_ios</span>
+    
+                    </div>
+    
+                    <div class="abut-us-submenu">
+    
+                        <a class="abutUs" href="#">مدیریت فروش: وحید اسماعیلیان</a>
+                        <a class="abutUs" href="#">آدرس : رشت - گلسار، نبش خیابان 120</a>
+                        <a class="abutUs" href="#">شماره تماس: 66894157-013</a>
+                        <a class="abutUs" href="#">Email : Royal-city@gmail.com</a>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+    
+                <div class="icon-section">
+    
+                    <span id="shopping" class="material-icons relative">shopping_cart</span>
+                    <span id="login" class="material-icons relative">perm_identity</span>
+                    <img class="img-responsive relative logo" src="assets/img/Logo-100.png" alt="">
+                    <i id="horizontalBars" class="fas fa-bars relative"></i>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </nav>
+    <!-- Ende Horizontal menu -->
+
+    <!-- Start view product details section -->
+
+    <section class="container-fluid">
+
+        <div class="row">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="img-wrapper ma-top-80">
+
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                            <div class="card-one">1</div>
+                        </div>
+        
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                            <div class="card-two">2</div>
+                        </div>
+        
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                            <div class="card-three">3</div>
+                        </div>
+    
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="product-details-one ma-top-15">
+
+                        <div class="product-name">
+                            <h4>نــام محصــول :</h4>
+                            <h4 id="-show-product-name"></h4>
+                        </div>
+
+                        <div class="product-id">
+                            <h4>کــد محصـــول :</h4>
+                            <h4 id="show-product-id"></h4>
+                        </div>
+
+                    </div>
+
+                    <div class="product-details-two">
+
+                        <div class="product-status">
+
+                            <h4>وضعیت محصـول :</h4>
+                            <h4 id="show-product-status"></h4>
+
+                        </div>
+
+                        <div class="product-price">
+
+                           <h4>قیمت محصــول :</h4>
+                           <h4 id="show-product-price"></h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row ma-top-50">
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+                        <div class="product-description-wrapper relative">
+
+                            <button type="button" class="description-btn description-btn">در بـــاره محصــول</button>
+                            <button type="button" class="description-btn customers-btn">نظــرات مشتــریان</button>
+
+                            <div class="tabs">
+
+                                <div class="about-product">
+
+                                    <h3 id="about-product-name"></h3>
+                                    <p id="about-product-description"></p>
+
+                                </div>
+
+                                <div class="customer-reviews absolute">
+
+                                    <div class="customer-one">
+                                        
+                                        <div class="header">
+                                            <img class="img-responsive" src="assets/img/Person - 3.jpg" alt="">
+                                            <h4>الیاس حق گو</h4>
+                                        </div>
+
+                                        <p>من تقریبا یکسال است که این محصول را خریدم. خیلی راحت و با کیفیت است و به نظر من قیمتش هم مناسب است</p>
+
+                                    </div>
+
+                                    <div class="customer-two">
+
+                                        <div class="header">
+                                            <img class="img-responsive" src="assets/img/Person - 2.jpg" alt="">
+                                            <h4>فریبا وطن دوست</h4>
+                                        </div>
+
+                                        <p>به نظر من کیفیت این محصول خوبه. قیمتش هم بد نیست اما رنگ بندیش خیلی محدوده</p>
+
+                                    </div>
+
+                                    
+                                    <div class="customer-three">
+
+                                        <div class="header">
+                                            <img class="img-responsive" src="assets/img/Person - 1.jpg" alt="">
+                                            <h4>مانی حکمت دوست</h4>
+                                        </div>
+
+                                        <p>من این محصول را نزدیک به دوسال گرفتم. راحت و با دوام است. اما فکر میکنم قیمتش کمی گران است</p>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Ende view product details section -->
+    
+
+
+    <script src="assets/js/horizontalMenu.js"></script>
+    <script src="assets/js/navsTabs.js"></script>
+</body>
+</html>
