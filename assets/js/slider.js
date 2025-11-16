@@ -1,17 +1,24 @@
+let sliderProductsArray = [
+
+    {codeProduct: 1, urlParams: "id=1&title=Siena Calm"},
+    {codeProduct: 2, urlParams: "id=2&title=California Puff"},
+    {codeProduct: 3, urlParams: "id=3&title=Berlin Flex"},
+    {codeProduct: 4, urlParams: "id=4&title=Pacific Curve"},
+    {codeProduct: 5, urlParams: "id=5&title=Oslo Arc"}
+]
+
 const nextImg = document.querySelector('.next')
 const prevImg = document.querySelector('.prev')
 const containerSlider = document.querySelector('.container-slider')
 const imgSlid = document.querySelector('.img-slid')
 const sliderItem = document.querySelector('.slider-item')
+const moreSeebtn = document.getElementById('more-see')
 
 let imgArray = ['assets/img/Slide--Image--1.jpg','assets/img/Slide--Image--2.jpg','assets/img/Slide--Image--3.jpg','assets/img/Slide--Image--4.jpg','assets/img/Slide--Image--5.jpg']
 let imgIndex = 0
 
 let btnFragment = document.createDocumentFragment()
 let allButtons = []
-
-let seeMoreBtnFragment = document.createDocumentFragment()
-let allSeeMoreBtn = []
 
 imgArray.forEach(function(items, index){
 
@@ -42,7 +49,7 @@ containerSlider.append(btnFragment)
 
 allButtons[0].classList.add('active')
 imgSlid.setAttribute('src', imgArray[0])
-
+updateActiveButton()
 
 nextImg.addEventListener('click', function(){
 
@@ -83,22 +90,10 @@ function updateActiveButton(){
             btn.classList.add('active')
         }
     })
+
+    moreSeebtn.setAttribute('href', `showProducts.html?${sliderProductsArray[imgIndex].urlParams}`)
+
 }
-
-// ....... creates 'seen more button'
-
-imgArray.forEach(function(items){
-
-    const seeMoreBtn = document.createElement('a')
-    seeMoreBtn.setAttribute('href', '#')
-    seeMoreBtn.setAttribute('id', 'more-see')
-    seeMoreBtn.classList.add('absolute')
-    seeMoreBtn.innerHTML = 'مشــــاهـــده بیشتـــر ...'
-
-    allSeeMoreBtn.push(seeMoreBtn)
-    seeMoreBtnFragment.append(seeMoreBtn)
-})
-sliderItem.append(seeMoreBtnFragment)
 
 setInterval( function(){
     
