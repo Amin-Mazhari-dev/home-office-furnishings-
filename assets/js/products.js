@@ -94,7 +94,6 @@ let productsArray = [
 
 let locationSearchParams = new URLSearchParams(location.search)
 let productIdParams = locationSearchParams.get('id')
-console.log(productIdParams)
 let sliderProducts = productsArray.find(function(products){
 
     return products.codeProduct === Number(productIdParams)
