@@ -213,7 +213,7 @@ div.menu-wrapper div.icon-section i.fas:hover{
     color: var(--Third-Color);
 }
 
-/*.....................this classes add  with JS for show of Accordion Menu......................*/
+/*.....................these classes add  with JS for show of Accordion Menu......................*/
 
 .showCuntries{
 
@@ -228,10 +228,15 @@ div.menu-wrapper div.icon-section i.fas:hover{
     transform: rotate(-90deg);
 }
 
-/*..............................................................................................*/
+/*........................... This class shows Basket card ..............................*/
+
+.showBasketCard{
+
+    display: block !important;
+}
 
 
- /* .......... This codes are for responsive Menu (min-width:992px and max-width:1329px) ..... */
+ /* .......... These codes are for responsive Menu (min-width:992px and max-width:1329px) ..... */
 
  .responsiveTop{
 
@@ -282,7 +287,7 @@ div.menu-wrapper div.icon-section i.fas:hover{
     }
 }
 
-/* ........ This codes are for responsive Menu (min-width: 576px) and (max-width: 768px) ...... */
+/* ........ These codes are for responsive Menu (min-width: 576px) and (max-width: 768px) ...... */
 
 @media only screen and (min-width: 576px) and (max-width: 768px){
 
@@ -313,7 +318,7 @@ div.menu-wrapper div.icon-section i.fas:hover{
 
     }
 
-    /* ............. This classes add to elements with JS ............... */
+    /* ............. These classes add to elements with JS ............... */
 
     
     .responsiveHome{
@@ -335,10 +340,11 @@ div.menu-wrapper div.icon-section i.fas:hover{
 
         display: block !important;
         position: relative;
-        right: 20% !important;
+        right: 25% !important;
         top: -273px !important;
-        width: 70px;
+        width: 38px;
         height: 50px;
+
     }
     .responsiveLogin{
 
@@ -422,7 +428,7 @@ div.menu-wrapper div.icon-section i.fas:hover{
 }
 
 
-/* ...... This codes are for responsive Menu (min-width: 768px) and (max-width: 992px) ..... */
+/* ...... These codes are for responsive Menu (min-width: 768px) and (max-width: 992px) ..... */
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
 
@@ -453,7 +459,7 @@ div.menu-wrapper div.icon-section i.fas:hover{
 
     }
 
-    /* ............. This classes add to elements with JS ............... */
+    /* ............. These classes add to elements with JS ............... */
 
     .responsiveHorizontalBarsTablet{
 
