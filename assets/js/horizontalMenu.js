@@ -1,5 +1,3 @@
-// ....... JS codes for accordion menu .............
-
 const homeIconn = document.querySelector('.home')
 const ourProducts = document.getElementById('our-products')
 const ourAgency = document.getElementById('our-agency')
@@ -11,6 +9,8 @@ const myShopping = document.getElementById('shopping')
 const userLogin = document.getElementById('login')
 const menuWrapper = document.querySelector('.menu-wrapper')
 const myHorizontalBars = document.getElementById('horizontalBars')
+
+const basketCardSection = document.querySelector('.basket-card-section')
 
 // This part is for products menu
 const titleOurProducts = document.querySelector('.title-our-products')
@@ -525,17 +525,6 @@ handleCustomRangeDesktopThree()
 
 window.addEventListener('resize', handleCustomRangeDesktopThree);
 
-function refreshMenu(){
-
-    if(window.innerWidth >= 992  && window.innerWidth <= 1154 || window.innerWidth >= 1155 && window.innerWidth <= 1274 || window.innerWidth >= 1275 && window.innerWidth <= 1329){
-
-        location.reload()
-    }
-}
-
-window.addEventListener('resize', refreshMenu)
-
-
 //......... This codes are for responsive Menu in Mobile & Tablet ............
 
 function handleResponsiveClick(){
@@ -739,3 +728,14 @@ function handleCustomRangeTablet(){
     }
     
 }
+
+myShopping.addEventListener('click', function(){
+
+    basketCardSection.classList.toggle('showBasketCard')
+})
+
+
+window.addEventListener('resize', function(){
+
+    location.reload()
+})
