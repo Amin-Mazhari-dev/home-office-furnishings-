@@ -1,11 +1,5 @@
-let sliderProductsArray = [
+import {productsArray} from './products-data.js';
 
-    {codeProduct: 1, urlParams: "id=1&title=Siena Calm"},
-    {codeProduct: 2, urlParams: "id=2&title=California Puff"},
-    {codeProduct: 3, urlParams: "id=3&title=Berlin Flex"},
-    {codeProduct: 4, urlParams: "id=4&title=Pacific Curve"},
-    {codeProduct: 5, urlParams: "id=5&title=Oslo Arc"}
-]
 
 const nextImg = document.querySelector('.next')
 const prevImg = document.querySelector('.prev')
@@ -91,7 +85,7 @@ function updateActiveButton(){
         }
     })
 
-    moreSeebtn.setAttribute('href', `showProducts.html?${sliderProductsArray[imgIndex].urlParams}`)
+    moreSeebtn.setAttribute('href', `showProducts.html?${productsArray[imgIndex].urlParams}`)
 
 }
 
