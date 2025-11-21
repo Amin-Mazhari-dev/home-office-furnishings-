@@ -13,21 +13,51 @@ const aboutProductDescription = document.getElementById('about-product-descripti
 
 let locationSearchParams = new URLSearchParams(location.search)
 let productIdParams = locationSearchParams.get('id')
-let sliderProducts = productsArray.find(function(products){
+let showProduct = productsArray.find(function(products){
 
     return products.codeProduct === Number(productIdParams)
 })
 
-if(sliderProducts){
+if(showProduct){
 
-    cardOneImg.setAttribute('src', sliderProducts.productImg[0])
-    cardTwoImg.setAttribute('src', sliderProducts.productImg[1])
-    cardThreeImg.setAttribute('src', sliderProducts.productImg[2])
-    showProductName.textContent = sliderProducts.productName
-    showProductId.textContent = sliderProducts.codeProduct
-    showProductStatus.textContent = sliderProducts.productStatus
-    showProductPrice.textContent = sliderProducts.productPrice
-    aboutProductName.textContent = sliderProducts.productName
-    aboutProductDescription.textContent = sliderProducts.productDescription
+    cardOneImg.setAttribute('src', showProduct.productImg[0])
+    cardTwoImg.setAttribute('src', showProduct.productImg[1])
+    cardThreeImg.setAttribute('src', showProduct.productImg[2])
+    showProductName.textContent = showProduct.productName
+    showProductId.textContent = showProduct.codeProduct
+    showProductStatus.textContent = showProduct.productStatus
+    showProductPrice.textContent = showProduct.productPrice
+    aboutProductName.textContent = showProduct.productName
+    aboutProductDescription.textContent = showProduct.productDescription
 
 }
+
+
+// ......... These codes are for (Add to besket cart Button) ................
+
+const addProductBtn = document.getElementById('add-product-btn')
+
+function handelUserBasket(){
+
+    if(showProduct){
+
+        let basket = JSON.parse(localStorage.getItem('userBasket')) || [];
+
+        let existingProduct = basket.find(function(items){
+
+            return items.codeProduct === showProduct.codeProduct
+        })
+
+        if(existingProduct){
+
+            existingProduct.counter++
+        }else{
+            basket.push(showProduct);
+        }
+
+        localStorage.setItem('userBasket', JSON.stringify(basket));
+    }
+}
+
+
+addProductBtn.addEventListener('click', handelUserBasket)
