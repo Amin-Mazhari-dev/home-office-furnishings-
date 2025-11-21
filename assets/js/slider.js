@@ -5,7 +5,6 @@ const nextImg = document.querySelector('.next')
 const prevImg = document.querySelector('.prev')
 const containerSlider = document.querySelector('.container-slider')
 const imgSlid = document.querySelector('.img-slid')
-const sliderItem = document.querySelector('.slider-item')
 const moreSeebtn = document.getElementById('more-see')
 
 let imgArray = ['assets/img/Slide--Image--1.jpg','assets/img/Slide--Image--2.jpg','assets/img/Slide--Image--3.jpg','assets/img/Slide--Image--4.jpg','assets/img/Slide--Image--5.jpg']
