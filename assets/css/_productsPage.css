@@ -196,10 +196,11 @@ div.basket-card-section{
     position: relative;
     right: 31%;
     top: -1655px;
-    min-height: 300px;
+    height: 500px;
     width: 50%;
     z-index: 10;
     display: none;
+    overflow: scroll;
 }
 div.basket-card-section div.basket-wrapper{
 
@@ -232,6 +233,11 @@ div.basket-card-section div.basket-wrapper div.basket-information-wrapper div.ba
     padding-top: 45px;
     padding-right: 1px;
     margin-right: -12%;
+}
+div.basket-card-section div.basket-wrapper div.basket-information-wrapper div.basket-information-one div.basket-info-one span.name-product,
+div.basket-card-section div.basket-wrapper div.basket-information-wrapper div.basket-information-one div.basket-info-two span.code-product{
+
+    padding-right: 10px;
 }
 
 div.basket-card-section div.basket-wrapper div.basket-information-wrapper div.basket-information-two{
@@ -266,7 +272,8 @@ div.basket-card-section div.basket-wrapper div.basket-img-wrapper img.basket-img
 }
 div.basket-card-section div.total-price{
 
-    margin-top: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     padding-right: 60px;
 }
 div.basket-card-section div.total-price span.titel-price{
