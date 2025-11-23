@@ -529,6 +529,8 @@ window.addEventListener('resize', handleCustomRangeDesktopThree);
 
 function handleResponsiveClick(){
 
+    //basketCardSection.classList.remove('showBasketCard')
+
     let width = window.innerWidth
     
     //This codes are for responsive Menu (min-width: 576px) and (max-width: 768px)
@@ -546,6 +548,7 @@ function handleResponsiveClick(){
 }
   
 myHorizontalBars.addEventListener('click', handleResponsiveClick)
+
 
 function fixElementsMenu(){
 
