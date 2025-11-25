@@ -5,6 +5,7 @@ const productSubmenuAside = document.querySelector('.product-submenu-aside')
 const arrowProductsAside = document.querySelector('.arrow-products-aside')
 const productAside = document.querySelectorAll('.product-aside')
 
+
 function handleShowProductItems(){
 
     removeClassesAgencySection()
@@ -169,3 +170,5 @@ function removeClassesAbutUsSection(){
         arrowAbutUsAside.classList.remove('animAsideMenuArrow')
     }
 }
+
+
