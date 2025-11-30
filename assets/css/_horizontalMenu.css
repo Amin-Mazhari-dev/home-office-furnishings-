@@ -193,6 +193,7 @@ div.menu-wrapper div.icon-section span#shopping{
     color: var(--Secondery-Color);
     top: 14px;
     right: 13%;
+    text-align: center;
 }
 div.menu-wrapper div.icon-section span#shopping:hover{
 
@@ -228,13 +229,6 @@ div.menu-wrapper div.icon-section i.fas:hover{
     transform: rotate(-90deg);
 }
 
-/*........................... This class shows Basket card ..............................*/
-
-.showBasketCard{
-
-    display: block !important;
-}
-
 
  /* .......... These codes are for responsive Menu (min-width:992px and max-width:1329px) ..... */
 
@@ -252,7 +246,11 @@ div.menu-wrapper div.icon-section i.fas:hover{
  }
  .responsiveTopFour{
 
-    top: -161px !important;
+    top: -181px !important;
+ }
+ .responsiveTopFive{
+
+    top: -160px !important;
  }
  .responsiveHomeIconTop{
 
@@ -263,6 +261,10 @@ div.menu-wrapper div.icon-section i.fas:hover{
     top: -170px !important;
  }
  .responsiveHomeIconTopThree{
+
+    top: -171px !important;
+ }
+ .responsiveHomeIconTopFour{
 
     top: -150px !important;
  }
@@ -287,9 +289,10 @@ div.menu-wrapper div.icon-section i.fas:hover{
     }
 }
 
-/* ........ These codes are for responsive Menu (min-width: 576px) and (max-width: 768px) ...... */
+/* ........ These codes are for responsive Menu (min-width: 360px) and (max-width: 576px) ...... */
 
-@media only screen and (min-width: 576px) and (max-width: 768px){
+
+@media only screen and (min-width: 360px) and (max-width: 768px){
 
     nav#wrapperHorizontalMenu{
 
@@ -301,6 +304,19 @@ div.menu-wrapper div.icon-section i.fas:hover{
     div.menu-wrapper div.icon-section span#shopping{
 
         display: none;
+    }
+
+    div.menu-wrapper div.home{
+
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    div.menu-wrapper div.icon-section span#shopping{
+        margin-right: 20px;
+    }
+
+    div.menu-wrapper div.icon-section span#login{
+        margin-right: 20px;
     }
 
     div.menu-wrapper div#our-products,
