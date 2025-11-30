@@ -1,6 +1,8 @@
 const newbasketCardSection = document.querySelector('.basket-card-section')
+const basketHorizontalMenuHtmlIndex = document.querySelector('.basket-horizontalMenu-htmlIndex')
 
-function getElementTop(element) {
+ function getElementTop(element) {
+
     const style = getComputedStyle(element);
     const topValue = style.top; 
     
@@ -16,4 +18,6 @@ window.addEventListener('scroll', function(event){
 
     let newTop = currentTop + myscroll
     newbasketCardSection.style.top = newTop + "px";
+    basketHorizontalMenuHtmlIndex.style.top = newTop + "px";
 })
+
