@@ -1,9 +1,8 @@
-/* ........ These styles are for Basket card section ..........  */
+/* ........ These styles are for Basket cart section ..........  */
 
 div.basket-card-section{
 
     background-color: rgb(243, 156, 18); 
-    position: relative;
     right: 31%;
     top: -1655px;
     height: 500px;
@@ -12,6 +11,13 @@ div.basket-card-section{
     display: none;
     overflow: scroll;
 }
+
+div.basket-asideMenu{
+
+    top: -510px;
+    right: 35%;
+}
+
 div.basket-card-section div.basket-wrapper{
 
     display: flex;
@@ -114,8 +120,121 @@ div.basket-card-section div.total-price a.pay:hover{
     background-position: right center; 
     text-decoration: none;
 }
+/*........................... This class shows Basket card ..............................*/
 
-/* ..... These codes are for responsive of Basket card ..... */
+.showBasketCard{
+
+    display: block !important;
+}
+
+/* ..... These codes are for responsive of Basket cart ..... */
+
+@media only screen and (min-width: 360px) and (max-width: 460px){
+
+    div.basket-card-section{
+
+        width: 90%;
+        right: 5%;
+        top: -3000px;
+        z-index: 1000;
+    }
+    span.title-product,span.name-product{
+    
+        font-size: 12px;
+    }
+    span.title-code-product{
+
+        font-size: 12px;
+    }
+    span.title-product{
+
+        margin-right: -27px;
+    }
+    span.title-code-product{
+
+        padding-right: 10px;
+    }
+    input.cart-quantity-input{
+
+        width: 70px !important;
+        margin-right: -15px !important;
+    }
+    div.basket-img-wrapper{
+
+        display: none;
+    }
+    span.titel-price{
+        margin-right: -25px !important;
+        font-size: 14px !important;
+
+    }
+    span.sum-price{
+
+        font-size: 14px !important;
+    }
+    a.pay{
+
+        padding: 8px 10px !important;
+    }
+    div.basket-horizontalMenu-htmlIndex{
+
+        top: -1140px;
+    } 
+}
+
+@media only screen and (min-width: 460px) and (max-width: 576px){
+
+    div.basket-card-section{
+
+        width: 90%;
+        right: 5%;
+        top: -2700px;
+        z-index: 1000;
+    }
+    span.title-product,span.name-product{
+    
+        font-size: 12px;
+    }
+    span.title-code-product{
+
+        font-size: 12px;
+    }
+    span.title-product{
+
+        margin-right: -27px;
+    }
+    span.title-code-product{
+
+        padding-right: 10px;
+    }
+    input.cart-quantity-input{
+
+        width: 70px !important;
+        margin-right: -15px !important;
+    }
+    div.basket-img-wrapper{
+
+        display: none;
+    }
+    span.titel-price{
+        margin-right: -25px !important;
+        font-size: 14px !important;
+
+    }
+    span.sum-price{
+
+        font-size: 14px !important;
+    }
+    a.pay{
+
+        padding: 8px 10px !important;
+    }
+    div.basket-horizontalMenu-htmlIndex{
+
+        top: -1110px;
+    } 
+
+}
 
 @media only screen and (min-width: 576px) and (max-width: 768px){
 
@@ -126,6 +245,10 @@ div.basket-card-section div.total-price a.pay:hover{
         top: -2840px;
         z-index: 1000;
     }
+    div.basket-horizontalMenu-htmlIndex{
+
+        top: -1110px;
+    } 
 
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
@@ -137,6 +260,11 @@ div.basket-card-section div.total-price a.pay:hover{
         top: -2050px;
         z-index: 1000; 
     }
+    div.basket-horizontalMenu-htmlIndex{
+
+        top: -1110px;
+        
+    } 
 }
 @media only screen and (min-width: 992px) and (max-width: 1100px){
 
@@ -146,6 +274,10 @@ div.basket-card-section div.total-price a.pay:hover{
         right: 12%;
         top: -1560px;
     }
+    div.basket-asideMenu{
+
+        top: -460px !important;
+    }
 }
 @media only screen and (min-width: 1100px) and (max-width: 1200px){
 
@@ -153,6 +285,17 @@ div.basket-card-section div.total-price a.pay:hover{
 
         width: 70%;
         right: 12%;
-        /*top: -1560px; */
+    }
+    div.basket-asideMenu{
+
+        top: -460px !important;
+    }
+
+}
+@media only screen and (min-width: 1200px){
+
+    div.basket-asideMenu{
+
+        top: -510px !important;
     }
 }
