@@ -467,7 +467,7 @@ function handleCustomRangeDesktopThree(){
 
     titleAbutUs.addEventListener('click', function(){
 
-        if(window.innerWidth >= 1275 && window.innerWidth <= 1329){
+        if(window.innerWidth >= 1275 && window.innerWidth <= 1286){
            
            socialMedia.classList.toggle('responsiveTopFour')
            ourAgency.classList.toggle('responsiveTopFour')
@@ -482,7 +482,7 @@ function handleCustomRangeDesktopThree(){
 
     titleSocialMedia.addEventListener('click', function(){
 
-        if(window.innerWidth >= 1275 && window.innerWidth <= 1329){
+        if(window.innerWidth >= 1275 && window.innerWidth <= 1286){
 
             ourProducts.classList.remove('responsiveTopFour')
             socialMedia.classList.remove('responsiveTopFour')
@@ -495,7 +495,7 @@ function handleCustomRangeDesktopThree(){
 
     titleOurAgency.addEventListener('click', function(){
 
-        if(window.innerWidth >= 1275 && window.innerWidth <= 1329){
+        if(window.innerWidth >= 1275 && window.innerWidth <= 1286){
 
             ourProducts.classList.remove('responsiveTopFour')
             ourAgency.classList.remove('responsiveTopFour')
@@ -508,7 +508,7 @@ function handleCustomRangeDesktopThree(){
 
     titleOurProducts.addEventListener('click', function(){
 
-        if(window.innerWidth >= 1275 && window.innerWidth <= 1329){
+        if(window.innerWidth >= 1275 && window.innerWidth <= 1286){
 
             ourProducts.classList.remove('responsiveTopFour')
             socialMedia.classList.remove('responsiveTopFour')
@@ -525,26 +525,89 @@ handleCustomRangeDesktopThree()
 
 window.addEventListener('resize', handleCustomRangeDesktopThree);
 
+
+function handleCustomRangeDesktopFour(){
+
+    titleAbutUs.addEventListener('click', function(){
+
+        if(window.innerWidth >= 1286 && window.innerWidth <= 1329){
+           
+           socialMedia.classList.toggle('responsiveTopFive')
+           ourAgency.classList.toggle('responsiveTopFive')
+           ourProducts.classList.toggle('responsiveTopFive')
+           homeIconn.classList.toggle('responsiveHomeIconTopFour')
+            
+            abutUs.classList.remove('responsiveTopTwo')
+            socialMedia.classList.remove('responsiveTopTwo')
+            ourAgency.classList.remove('responsiveTopTwo')
+        }
+    })
+
+    titleSocialMedia.addEventListener('click', function(){
+
+        if(window.innerWidth >= 1286 && window.innerWidth <= 1329){
+
+            ourProducts.classList.remove('responsiveTopFive')
+            socialMedia.classList.remove('responsiveTopFive')
+            ourAgency.classList.remove('responsiveTopFive')
+            abutUs.classList.remove('responsiveTopFive')
+            homeIconn.classList.remove('responsiveHomeIconTopFour')
+
+        }
+    })
+
+    titleOurAgency.addEventListener('click', function(){
+
+        if(window.innerWidth >= 1286 && window.innerWidth <= 1329){
+
+            ourProducts.classList.remove('responsiveTopFive')
+            ourAgency.classList.remove('responsiveTopFive')
+            socialMedia.classList.remove('responsiveTopFive')
+            abutUs.classList.remove('responsiveTopFive')
+            homeIconn.classList.remove('responsiveHomeIconTopFour')
+
+        }
+    })
+
+    titleOurProducts.addEventListener('click', function(){
+
+        if(window.innerWidth >= 1286 && window.innerWidth <= 1329){
+
+            ourProducts.classList.remove('responsiveTopFive')
+            socialMedia.classList.remove('responsiveTopFive')
+            ourAgency.classList.remove('responsiveTopFive')
+            abutUs.classList.remove('responsiveTopFive')
+            homeIconn.classList.remove('responsiveHomeIconTopFour')
+
+        }
+    })
+
+
+}
+handleCustomRangeDesktopFour()
+
+window.addEventListener('resize', handleCustomRangeDesktopFour);
+
+
 //......... This codes are for responsive Menu in Mobile & Tablet ............
 
 function handleResponsiveClick(){
 
-    //basketCardSection.classList.remove('showBasketCard')
-
     let width = window.innerWidth
-    
+
     //This codes are for responsive Menu (min-width: 576px) and (max-width: 768px)
-    if(width >= 576 && width <= 768){
+    if(width >= 360 && width <= 768){
 
+        basketCardSection.classList.remove('showBasketCard')
         handleCustomRangeMobile()
-
-     //This codes are for responsive Menu (min-width: 768px) and (max-width: 992px)
+    
+    //This codes are for responsive Menu (min-width: 768px) and (max-width: 992px)
     }else if(width > 768 && width <= 992){
 
+        basketCardSection.classList.remove('showBasketCard')
         handleCustomRangeTablet()
     }
-
-
+    
 }
   
 myHorizontalBars.addEventListener('click', handleResponsiveClick)
@@ -554,7 +617,7 @@ function fixElementsMenu(){
 
     titleOurProducts.addEventListener('click', function(){
 
-        if(window.innerWidth >= 576 && window.innerWidth <= 768){
+        if(window.innerWidth >= 360 && window.innerWidth <= 768){
 
             if(noSubmenuOpen()) {
                 clearFixClasses()
@@ -562,6 +625,7 @@ function fixElementsMenu(){
             }
           
             addResponsiveClass()
+
         }else if(window.innerWidth >= 768 && window.innerWidth <= 992){
 
             if(noSubmenuOpen()) {
@@ -575,7 +639,7 @@ function fixElementsMenu(){
 
     titleOurAgency.addEventListener('click', function(){
         
-        if(window.innerWidth >= 576 && window.innerWidth <= 768){
+        if(window.innerWidth >= 360 && window.innerWidth <= 768){
 
             if(noSubmenuOpen()) {
                 clearFixClasses()
@@ -596,7 +660,7 @@ function fixElementsMenu(){
 
     titleSocialMedia.addEventListener('click', function(){
 
-        if(window.innerWidth >= 576 && window.innerWidth <= 768){
+        if(window.innerWidth >= 360 && window.innerWidth <= 768){
 
             if(noSubmenuOpen()) {
                 clearFixClasses()
@@ -617,7 +681,7 @@ function fixElementsMenu(){
 
     titleAbutUs.addEventListener('click', function(){
 
-        if(window.innerWidth >= 576 && window.innerWidth <= 768){
+        if(window.innerWidth >= 360 && window.innerWidth <= 768){
 
             if(noSubmenuOpen()) {
                 clearFixClasses()
@@ -731,12 +795,6 @@ function handleCustomRangeTablet(){
     }
     
 }
-
-myShopping.addEventListener('click', function(){
-
-    basketCardSection.classList.toggle('showBasketCard')
-})
-
 
 window.addEventListener('resize', function(){
 
