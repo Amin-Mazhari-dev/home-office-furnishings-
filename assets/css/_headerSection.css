@@ -336,7 +336,172 @@ div.container-slider button.btn-slider:hover{
     background-color: rgb(43, 42, 42);
 }
 
-/* ........ Responsive Slider ...... */
+/* ........ Responsive Slider & Logo & Search Box  ...... */
+
+@media only screen and (min-width: 360px) and (max-width: 460px){
+
+    div.header-section img{
+
+        width: 80px;
+        height: 45px;
+        /* left: 8%; */
+    }
+    div.header-section input{
+
+        width: 50%;
+        height: 30px;
+        margin-left: 40px;
+        margin-top: 8px;
+    }
+    div.header-section span{
+
+        right: 17%;
+        top: 11px;
+        font-size: 24px;
+    }
+    div.container-slider div.slider{
+
+        height: 32%;
+        width: 90%;
+    }
+    div.container-slider div.slider a#more-see{
+
+        display: inline-block;
+        top: 65px;
+        right: 20%;
+        font-family: Sahel-Bold;
+        padding: 0 6px;
+    }
+    div.container-slider div.slider button.prev{
+        top: 60px;
+        right: 95%;
+        width: 30px;
+        height: 30px;
+    }
+    div.container-slider div.slider button.next{
+
+        top: 60px;
+        right: -7%;
+        width: 30px;
+        height: 30px;
+    }
+    div.container-slider div.slider button.prev span.prev-icon,
+    div.container-slider div.slider button.next span.next-icon{
+
+      font-weight: bold;
+      font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 460px) and (max-width: 505px){
+
+    div.header-section img{
+
+        width: 80px;
+        height: 45px;
+        /* left: 8%; */
+    }
+    div.header-section input{
+
+        width: 55%;
+        height: 30px;
+        margin-left: 40px;
+        margin-top: 8px;
+    }
+    div.header-section span{
+
+        right: 15%;
+        top: 11px;
+        font-size: 24px;
+    }
+    div.container-slider div.slider{
+
+        height: 47%;
+        width: 90%;
+    }
+    div.container-slider div.slider a#more-see{
+
+        display: inline-block;
+        top: 65px;
+        right: 33%;
+        font-family: Sahel-Bold;
+        padding: 0 6px;
+    }
+    div.container-slider div.slider button.prev{
+        top: 90px;
+        right: 97%;
+        width: 30px;
+        height: 30px;
+    }
+    div.container-slider div.slider button.next{
+
+        top: 90px;
+        right: -7%;
+        width: 30px;
+        height: 30px;
+    }
+    div.container-slider div.slider button.prev span.prev-icon,
+    div.container-slider div.slider button.next span.next-icon{
+
+      font-weight: bold;
+      font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 505px) and (max-width: 576px){
+
+    div.header-section img{
+
+        width: 80px;
+        height: 45px;
+        /* left: 8%; */
+    }
+    div.header-section input{
+
+        width: 55%;
+        height: 30px;
+        margin-left: 40px;
+        margin-top: 8px;
+    }
+    div.header-section span{
+
+        right: 15%;
+        top: 11px;
+        font-size: 24px;
+    }
+    div.container-slider div.slider{
+
+        height: 50%;
+        width: 90%;
+    }
+    div.container-slider div.slider a#more-see{
+
+        display: inline-block;
+        top: 65px;
+        right: 33%;
+        font-family: Sahel-Bold;
+        padding: 0 6px;
+    }
+    div.container-slider div.slider button.prev{
+        top: 90px;
+        right: 97%;
+        width: 30px;
+        height: 30px;
+    }
+    div.container-slider div.slider button.next{
+
+        top: 90px;
+        right: -7%;
+        width: 30px;
+        height: 30px;
+    }
+    div.container-slider div.slider button.prev span.prev-icon,
+    div.container-slider div.slider button.next span.next-icon{
+
+      font-weight: bold;
+      font-size: 20px;
+    }
+}
 
 @media only screen and (min-width: 576px) and (max-width: 610px){
 
