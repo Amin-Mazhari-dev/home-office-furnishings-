@@ -38,7 +38,7 @@ function basketCartGenerator(basketCart, container){
     })
 
     
-    attachCartEvents(container, basketCart);
+    attachCartEvents(container, basketCart)
 
     let totalPrice = calcTotalPrice(basketCart)
 
