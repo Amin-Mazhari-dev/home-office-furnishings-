@@ -1,7 +1,8 @@
 div.modal-wrapper{
 
-    /* top: -1600px; */
-    transition: 2s ease-in;
+    top: -510px; 
+    display: none;
+    transition: 1s ease-in; 
 }
 div.modal{
 
@@ -32,6 +33,14 @@ div.modal div.header-login span{
     font-size: 26px;
     font-weight: 600;
     color: var(--Secondery-Color);
+}
+div.modal div.header-login span.close-index-login:hover{
+
+    cursor: pointer;
+}
+div.modal div.header-login span.close-products-login{
+
+    cursor: pointer;
 }
 div.modal form.body-login label.userName,
 div.modal form.body-login label.userPassword{
@@ -121,4 +130,15 @@ div.modal div.footer-login a.register{
 div.modal div.footer-login a.register{
 
     margin-right: 4%;
+}
+/* ................... Add animation ..................... */
+
+.show-login-index{
+
+    display: block !important;
+} 
+.show-login-products{
+
+    display: block !important;
+    top: -1650px !important;
 }
