@@ -115,7 +115,7 @@
                 <div class="icon-section">
 
                     <span id="shopping" class="material-icons shopping-cart relative" data-target="#index-basket">shopping_cart</span>
-                    <span id="login" class="material-icons relative">perm_identity</span>
+                    <span id="login" class="material-icons myLogin relative" data-targ="#index-login">perm_identity</span>
                     <img class="img-responsive relative logo" src="assets/img/Logo-100.png" alt="">
                     <i id="horizontalBars" class="fas fa-bars relative"></i>
 
@@ -139,7 +139,7 @@
     
                     <div class="icon-wrapper-aside">
                        
-                       <span id="login-aside" class="material-icons">perm_identity</span>
+                       <span id="login-aside" class="material-icons myLogin" data-targ="#index-login">perm_identity</span>
                        <span id="shopping-aside" class="material-icons shopping-cart" data-target="#index-basket">shopping_cart</span>
 
                     </div>
@@ -321,14 +321,14 @@
     <!-- Ende Basket cart section -->
 
     <!-- Start login section -->
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-lg-offset-4 col-xl-offset-4 modal-wrapper relative">
+    <div id="index-login" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-lg-offset-4 col-xl-offset-4 modal-wrapper relative">
     
         <div class="modal">
 
             <div class="header-login">
 
               <h4>ورود</h4>
-              <span class="material-icons">clear</span>
+              <span class="material-icons close-index-login">clear</span>
 
             </div>
           
@@ -344,7 +344,7 @@
                <i class="far fa-eye"></i>
                <p class="password-message"></p>
 
-               <button class="absolute" type="submit">ورود</button>
+               <button class="absolute login-btn" type="submit">ورود</button>
 
             </form>
 
@@ -359,7 +359,7 @@
 
     </div>
     <!-- Ende login section -->
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     
 
 
@@ -369,6 +369,7 @@
     <script type="module" src="assets/js/asideMenu.js"></script>
     <script type="module" src="assets/js/FixBasketPosition.js"></script>
     <script type="module" src="assets/js/slider.js"></script>
+    <script type="module" src="assets/js/login.js"></script>
     
 </body>
 </html>
