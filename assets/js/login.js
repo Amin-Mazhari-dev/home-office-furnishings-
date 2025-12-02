@@ -35,20 +35,25 @@ document.addEventListener('DOMContentLoaded', function(){
     const closeIndexLogin = document.querySelector('.close-index-login')
     const indexLogin = document.getElementById('index-login')
     
+    if(closeIndexLogin){
 
-    closeIndexLogin.addEventListener('click', function(){
+        closeIndexLogin.addEventListener('click', function(){
 
-        indexLogin.classList.remove('show-login-index')
-    })
-
+            indexLogin.classList.remove('show-login-index')
+        })
+    }
 })
 document.addEventListener('DOMContentLoaded', function(){
 
     const closeProductsLogin = document.querySelector('.close-products-login')
     const showProductsLogin = document.getElementById('showProducts-login')
 
-    closeProductsLogin.addEventListener('click', function(){
+    if(closeProductsLogin){
 
-        showProductsLogin.classList.remove('show-login-products')
-    })
+        closeProductsLogin.addEventListener('click', function(){
+
+            showProductsLogin.classList.remove('show-login-products')
+        })
+    }
+
 })
