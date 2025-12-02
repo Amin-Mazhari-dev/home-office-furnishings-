@@ -17,7 +17,15 @@ window.addEventListener('scroll', function(event){
     let myscroll = document.documentElement.scrollTop
 
     let newTop = currentTop + myscroll
-    newbasketCardSection.style.top = newTop + "px";
-    basketHorizontalMenuHtmlIndex.style.top = newTop + "px";
+
+    if(newbasketCardSection){
+
+        newbasketCardSection.style.top = newTop + "px";
+    }
+    
+    if(basketHorizontalMenuHtmlIndex){
+
+        basketHorizontalMenuHtmlIndex.style.top = newTop + "px";
+    }
 })
 
