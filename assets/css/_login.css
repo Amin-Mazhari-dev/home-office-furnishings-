@@ -14,7 +14,6 @@ div.modal{
     border-radius: 15px;
     width: 95%;
     height: 455px;
-    
 }
 div.modal div.header-login{
     padding-top: 20px;
@@ -94,10 +93,6 @@ div.modal form.body-login i.fa-eye-slash:hover{
 div.modal form.body-login i.fa-eye:hover{
 
     cursor: pointer;
-}
-div.modal form.body-login i.fa-eye{
-
-    display: none;
 }
 div.modal form.body-login button{
 
