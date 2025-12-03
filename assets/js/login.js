@@ -66,7 +66,6 @@ const userNameMessage = document.querySelector('.userName-message')
 const userPassword = document.getElementById('pass')
 const passwordMessage = document.querySelector('.password-message')
 const eyeSlash = document.querySelector('.fa-eye-slash')
-const eye = document.querySelector('.fa-eye')
 
 const loginBtn = document.querySelector('.login-btn')
 
@@ -79,7 +78,8 @@ function userNamevalidation(){
 
         userNameMessage.textContent = 'نام کاربری باید حداقل 3 کراکتر و حداکثر 15 کراکتر باشد (فضای خالی یک کراکتر محسوب میشود)'
         userNameMessage.style.color = 'rgb(104, 4, 4)'
-        eyeSlash.style.top = '170px'
+        
+        handlerEyeSlashPosition(eyeElem)
 
     }else{
 
@@ -123,6 +123,36 @@ function showPassword(){
     
 }
 
+// .... This function fix position of eye's icon
+
+function handlerEyeSlashPosition(eyeElem){
+
+    if(window.innerWidth >= 360 && window.innerWidth <= 460){
+        
+        eyeSlash.style.cssText = 'position: relative; top: -43px; right: 75%;'
+
+    }else if(window.innerWidth >= 460 && window.innerWidth <= 576){
+
+        eyeSlash.style.cssText = 'position: relative; top: -43px; right: 75%;'
+
+    }else if(window.innerWidth >= 576 && window.innerWidth <= 768){
+
+        eyeSlash.style.cssText = 'position: relative; top: -43px; right: 75%;'
+
+    }else if(window.innerWidth >= 768 && window.innerWidth <= 992){
+
+        eyeSlash.style.cssText = 'position: relative; top: -43px; right: 75%;'
+
+    }else if(window.innerWidth >= 992 && window.innerWidth <= 1200){
+
+        eyeSlash.style.cssText = 'position: relative; top: -30px; right: 62%;'
+
+    }else{
+
+        eyeSlash.style.cssText = 'position: relative; top: -30px; right: 42%;'
+    }
+}
+handlerEyeSlashPosition(eyeSlash)
 
 userName.addEventListener('input', userNamevalidation)
 userPassword.addEventListener('input', userPasswordvalidation)
