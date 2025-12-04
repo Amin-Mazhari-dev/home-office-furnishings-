@@ -232,6 +232,10 @@ div.header-section span{
     top: 6px;
     font-size: 30px;
 }
+div.header-section span:hover{
+
+    cursor: pointer;
+}
 div.container-slider{
 
     width: 100%;
