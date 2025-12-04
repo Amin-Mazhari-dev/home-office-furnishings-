@@ -601,18 +601,12 @@ function handleResponsiveClick(){
     //This codes are for responsive Menu (min-width: 576px) and (max-width: 768px)
     if(width >= 360 && width <= 768){
 
-        //basketCardSection.classList.remove('showBasketCard')
-        //indexLogin.classList.remove('show-login-index')
-        //showProductsLogin.classList.remove('show-login-products')
         handelCloseBasketLogin()
         handleCustomRangeMobile()
     
     //This codes are for responsive Menu (min-width: 768px) and (max-width: 992px)
     }else if(width > 768 && width <= 992){
 
-        //basketCardSection.classList.remove('showBasketCard')
-        //indexLogin.classList.remove('show-login-index')
-        //showProductsLogin.classList.remove('show-login-products')
         handelCloseBasketLogin()
         handleCustomRangeTablet()
     }
