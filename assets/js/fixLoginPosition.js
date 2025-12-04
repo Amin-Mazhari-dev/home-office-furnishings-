@@ -1,10 +1,19 @@
 const fixPositionProduct = document.querySelector('.fix-position-product')
+const fixPositionLoginIndex = document.querySelector('.fix-position-login-index')
 
-function getElementTopValue(elem){
+function getElementTopValue(elemProduct, elemIndex){
+
 
     if(fixPositionProduct){
-
-        const styleElement = getComputedStyle(elem);
+        const styleElement = getComputedStyle(elemProduct);
+        const elementTopValue = styleElement.top;
+    
+        if(!elementTopValue || elementTopValue === 'auto') return 0;
+    
+        return parseFloat(elementTopValue.replace(/px|rem|em|%/g, '')) || 0;
+    }
+    if(fixPositionLoginIndex){
+        const styleElement = getComputedStyle(elemIndex);
         const elementTopValue = styleElement.top;
     
         if(!elementTopValue || elementTopValue === 'auto') return 0;
@@ -13,7 +22,7 @@ function getElementTopValue(elem){
     }
 }
 
-let currentTopValue = getElementTopValue(fixPositionProduct);
+let currentTopValue = getElementTopValue(fixPositionProduct, fixPositionLoginIndex);
 
 window.addEventListener('scroll', function(event){
 
@@ -21,6 +30,13 @@ window.addEventListener('scroll', function(event){
 
     let newTop = currentTopValue + myScroll;
     
-    fixPositionProduct.style.top = newTop + "px";
+    if(fixPositionProduct){
+
+        fixPositionProduct.style.top = newTop + "px";
+    }
+    if(fixPositionLoginIndex){
+
+        fixPositionLoginIndex.style.top = newTop + "px";
+    }
     
 })
