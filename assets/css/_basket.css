@@ -2,7 +2,7 @@
 
 div.basket-card-section{
 
-    background-color: rgb(243, 156, 18); 
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     right: 31%;
     top: -1655px;
     height: 500px;
@@ -23,7 +23,7 @@ div.basket-card-section div.basket-wrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 1px solid #c9c4c4;
+    border-bottom: 1px solid #9c9a9a;
 }
 div.basket-card-section div.basket-wrapper div.basket-information-wrapper span.material-icons{
 
