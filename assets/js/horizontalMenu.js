@@ -12,6 +12,9 @@ const myHorizontalBars = document.getElementById('horizontalBars')
 
 const basketCardSection = document.querySelector('.basket-card-section')
 
+const indexLogin = document.getElementById('index-login')
+const showProductsLogin = document.getElementById('showProducts-login')
+
 // This part is for products menu
 const titleOurProducts = document.querySelector('.title-our-products')
 const arrowProducts = document.querySelector('.arrow-products')
@@ -598,13 +601,19 @@ function handleResponsiveClick(){
     //This codes are for responsive Menu (min-width: 576px) and (max-width: 768px)
     if(width >= 360 && width <= 768){
 
-        basketCardSection.classList.remove('showBasketCard')
+        //basketCardSection.classList.remove('showBasketCard')
+        //indexLogin.classList.remove('show-login-index')
+        //showProductsLogin.classList.remove('show-login-products')
+        handelCloseBasketLogin()
         handleCustomRangeMobile()
     
     //This codes are for responsive Menu (min-width: 768px) and (max-width: 992px)
     }else if(width > 768 && width <= 992){
 
-        basketCardSection.classList.remove('showBasketCard')
+        //basketCardSection.classList.remove('showBasketCard')
+        //indexLogin.classList.remove('show-login-index')
+        //showProductsLogin.classList.remove('show-login-products')
+        handelCloseBasketLogin()
         handleCustomRangeTablet()
     }
     
@@ -795,6 +804,26 @@ function handleCustomRangeTablet(){
     }
     
 }
+
+//The following function is written so that when you click on the hamburger menu,
+//if the shopping cart and login are open, they will also be closed when the menu is closed.
+
+function handelCloseBasketLogin(){
+
+    if(basketCardSection){
+
+        basketCardSection.classList.remove('showBasketCard')
+    }
+    if(indexLogin){
+
+        indexLogin.classList.remove('show-login-index')
+    }
+    if(showProductsLogin){
+
+        showProductsLogin.classList.remove('show-login-products')
+    }
+}
+//.........................................................................................
 
 window.addEventListener('resize', function(){
 
