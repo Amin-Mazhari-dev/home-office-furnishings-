@@ -1,0 +1,46 @@
+div.search-wrapper{
+
+    top: -525px;
+    display: none;
+}
+div.inner-search-wrapper{
+
+    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+    width: 70%;
+    margin-right: 7%;
+    height: 224px;
+    border-radius: 15px;
+}
+div.inner-search-wrapper div.information-search-wrapper div.name-search-product,
+div.inner-search-wrapper div.information-search-wrapper div.status-search-product,
+div.inner-search-wrapper div.information-search-wrapper div.price-search-product{
+
+    padding: 15px;
+}
+div.inner-search-wrapper div.information-search-wrapper div.name-search-product span.name-product,
+div.inner-search-wrapper div.information-search-wrapper div.status-search-product span.status-product,
+div.inner-search-wrapper div.information-search-wrapper div.price-search-product span.price-product{
+
+    font-size: 17px;
+    color: var(--WriteColor-1);
+}
+div.inner-search-wrapper div.information-search-wrapper div.name-search-product span.name-search,
+div.inner-search-wrapper div.information-search-wrapper div.status-search-product span.status-search,
+div.inner-search-wrapper div.information-search-wrapper div.price-search-product span.price-search{
+
+    font-size: 17px;
+    color: var(--WriteColor-1);
+    padding-right: 7px;
+}
+div.information-search-wrapper p.search-message{
+
+    font-size: 17px;
+    font-family: Sahel-Bold;
+    color: rgb(172, 18, 18);
+    display: none;
+}
+div.inner-search-wrapper img.img-search{
+
+    padding-top: 20px;
+    padding-left: 20px;
+}
