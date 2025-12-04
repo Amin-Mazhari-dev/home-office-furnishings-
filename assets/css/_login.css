@@ -10,7 +10,7 @@ div.fix-position-product{
 }
 div.modal{
 
-    background-color: rgb(114, 114, 216);
+    background-color: rgb(114, 114, 209);
     border-radius: 15px;
     width: 95%;
     height: 455px;
@@ -149,7 +149,7 @@ div.modal div.footer-login a.register{
     div.fix-position-login-index{
 
         top: -1150px;
-        right: 3%;
+        right: 0%;
         z-index: 1000;
     }
     div.header-login h4{
