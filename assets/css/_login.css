@@ -152,6 +152,13 @@ div.modal div.footer-login a.register{
         right: 0%;
         z-index: 1000;
     }
+    div.fix-position-product{
+
+        top: -3000px;
+        right: 0%;
+        z-index: 1000;
+    }
+
     div.header-login h4{
 
         display: none;
@@ -214,6 +221,13 @@ div.modal div.footer-login a.register{
         right: 0%;
         z-index: 1000;
     }
+    div.fix-position-product{
+
+        top: -2720px;
+        right: 0%;
+        z-index: 1000;
+    }
+
     div.header-login h4{
 
         display: none;
@@ -275,6 +289,13 @@ div.modal div.footer-login a.register{
         right: 0%;
         z-index: 1000;
     }
+    div.fix-position-product{
+
+        top: -2720px;
+        right: 0%;
+        z-index: 1000;
+    }
+
     div.header-login h4{
 
         display: none;
@@ -336,6 +357,13 @@ div.modal div.footer-login a.register{
         right: 0%;
         z-index: 1000;
     }
+    div.fix-position-product{
+
+        top: -2050px;
+        right: 0%;
+        z-index: 1000;
+    }
+
     div.header-login h4{
 
         display: none;
@@ -392,6 +420,12 @@ div.modal div.footer-login a.register{
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px){
+
+    div.fix-position-product{
+
+        top: -1552px;
+        z-index: 1000;
+    }
     
     div.modal{
 
