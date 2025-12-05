@@ -37,10 +37,138 @@ div.information-search-wrapper p.search-message{
     font-size: 17px;
     font-family: Sahel-Bold;
     color: rgb(172, 18, 18);
-    display: none;
 }
 div.inner-search-wrapper img.img-search{
 
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-top: 30px;
+    padding-left: 60px;
+    width: 190px;
+    height: 170px;
+}
+div.inner-search-wrapper span.search-close{
+
+    left: 2%;
+    top: 13px;
+    font-weight: 600;
+    color: rgb(172, 18, 18);
+}
+div.inner-search-wrapper span.search-close:hover{
+
+    cursor: pointer;
+}
+
+/* ......... These codes are for responsive design .........*/
+
+@media only screen and (min-width: 360px) and (max-width: 460px){
+
+    div.search-wrapper{
+
+        top: -550px;
+    }
+    div.inner-search-wrapper{
+
+        width: 100%;
+        margin-right: 0%;
+    }
+    div.info-search-wrapper{
+
+        display: block !important;
+        width: 100% !important;
+    }
+    div.img-wrapper-search{
+
+        display: none;
+    }
+}
+@media only screen and (min-width: 460px) and (max-width: 576px){
+
+    div.search-wrapper{
+
+        top: -520px;
+    }
+    div.inner-search-wrapper{
+
+        width: 85% !important;
+        margin-right: 0%; 
+    }
+    img.img-search{
+
+        width: 160px !important;
+        height: 140px !important;
+        padding-top: 50px !important;
+    }
+    span.name-product{
+
+        font-size: 14px !important;
+    }
+    span.name-search{
+
+        font-size: 14px !important;
+    }
+    span.status-product{
+
+        font-size: 14px !important;
+    }
+    span.status-search{
+
+        font-size: 14px !important;
+    }
+    span.price-product{
+
+        font-size: 14px !important;
+    }
+    span.price-search{
+
+        font-size: 14px !important;
+    }
+    p.search-message{
+
+        text-align: right !important;
+        font-size: 13px !important;
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+    div.search-wrapper{
+
+        top: -507px;
+    }
+    div.inner-search-wrapper{
+
+        width: 95% !important;
+        margin-right: 0%; 
+    }
+    img.img-search{
+
+        padding-top: 50px !important;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+
+    div.search-wrapper{
+
+        top: -507px;
+    }
+    div.inner-search-wrapper{
+
+        width: 88% !important;
+        margin-right: 6%; 
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+
+    div.search-wrapper{
+
+        top: -509px;
+    }
+    div.inner-search-wrapper{
+
+        width: 88% !important;
+        margin-right: 6%; 
+    }
+    img.img-search{
+
+        padding-top: 50px !important;
+    }
 }
