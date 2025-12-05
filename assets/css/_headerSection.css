@@ -352,14 +352,16 @@ div.container-slider button.btn-slider:hover{
     }
     div.header-section input{
 
-        width: 50%;
+        width: 55%;
         height: 30px;
         margin-left: 40px;
         margin-top: 8px;
+        font-size: 10px;
+        padding-right: 32px;
     }
     div.header-section span{
 
-        right: 17%;
+        right: 12%;
         top: 11px;
         font-size: 24px;
     }
@@ -403,7 +405,6 @@ div.container-slider button.btn-slider:hover{
 
         width: 80px;
         height: 45px;
-        /* left: 8%; */
     }
     div.header-section input{
 
@@ -411,6 +412,8 @@ div.container-slider button.btn-slider:hover{
         height: 30px;
         margin-left: 40px;
         margin-top: 8px;
+        font-size: 10px;
+        padding-right: 32px;
     }
     div.header-section span{
 
