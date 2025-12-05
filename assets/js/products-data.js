@@ -2,6 +2,7 @@ export let productsArray = [
 
     {
         codeProduct: 1,
+        category: 'furnishings-home',
         section: 'slider',
         productName: 'Siena Calm',
         productStatus: 'موجود',
@@ -19,6 +20,7 @@ export let productsArray = [
 
     {
         codeProduct: 2,
+        category: 'furnishings-home',
         section: 'slider',
         productName: 'California Puff',
         productStatus: 'موجود',
@@ -36,6 +38,7 @@ export let productsArray = [
 
     {
         codeProduct: 3,
+        category: 'furnishings-home',
         section: 'slider',
         productName: 'Berlin Flex',
         productStatus: 'موجود',
@@ -53,6 +56,7 @@ export let productsArray = [
 
     {
         codeProduct: 4,
+        category: 'furnishings-home',
         section: 'slider',
         productName: 'Pacific Curve',
         productStatus: 'موجود',
@@ -70,6 +74,7 @@ export let productsArray = [
 
     {
         codeProduct: 5,
+        category: 'furnishings-home',
         section: 'slider',
         productName: 'Oslo Arc',
         productStatus: 'موجود',
