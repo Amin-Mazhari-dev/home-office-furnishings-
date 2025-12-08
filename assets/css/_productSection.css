@@ -1,0 +1,350 @@
+div.parent-product-wrapper{
+
+    margin-top: 160px;
+}
+div.parent-product-wrapper h4.titel-product{
+
+    padding-right: 15%;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+div.parent-product-wrapper h4.titel-product::after{
+
+    content: '';
+    width: 50PX;
+    height: 3PX;
+    background-color: var(--Third-Color);
+    position: absolute;
+    top: 18PX;
+    right: 11%;
+}
+div.parent-product-wrapper h4.titel-product::before{
+    content: '';
+    width: 50PX;
+    height: 3PX;
+    background-color: var(--Third-Color);
+    position: absolute;
+    top: 18PX;
+    right: 30%;
+}
+section.back-wraper{
+    
+    background-image: linear-gradient(-20deg, #dcb0ed 0%, #99c99c 100%); 
+    box-shadow: 2px 2px 2px 2px #9b9999;
+    border-radius: 8px;
+}
+section.back-wraper div.product-wraper-one img.product-tish-one,
+section.back-wraper div.product-wraper-one img.product-tisch-two,
+section.back-wraper div.product-wraper-one img.product-tisch-three,
+section.back-wraper div.product-wraper-one img.product-tisch-four,
+section.back-wraper div.product-wraper-one img.product-tisch-five{
+
+    border-radius: 8px;
+    height: 220px;
+}
+section.back-wraper div.product-wraper-two img.product-tisch-six{
+
+    border-radius: 8px;
+    height: 470px;
+}
+section.back-wraper div.product-wraper-one div.my-animat-1,
+section.back-wraper div.product-wraper-one div.my-animat-2,
+section.back-wraper div.product-wraper-one div.my-animat-3,
+section.back-wraper div.product-wraper-one div.my-animat-4,
+section.back-wraper div.product-wraper-one div.my-animat-5,
+section.back-wraper div.my-animat-6{
+
+    transition: 1s all ease;
+}
+section.back-wraper div.product-wraper-one div.my-animat-1:hover{
+
+    border-right: 2px solid var(--Third-Color);
+    transform: scale(1.5);
+}
+section.back-wraper div.product-wraper-one div.my-animat-2:hover{
+
+    border-right: 2px solid var(--Third-Color);
+    transform: scale(1.5);
+}
+section.back-wraper div.product-wraper-one div.my-animat-3:hover{
+
+    border-right: 2px solid var(--Third-Color);
+    transform: scale(1.5);
+}
+section.back-wraper div.product-wraper-one div.my-animat-4:hover{
+
+    border-right: 2px solid var(--Third-Color);
+    transform: scale(1.5);
+}
+section.back-wraper div.product-wraper-one div.my-animat-5:hover{
+
+    border-right: 2px solid var(--Third-Color);
+    transform: scale(1.5);
+}
+section.back-wraper div.my-animat-6:hover{
+
+    border-right: 2px solid var(--Third-Color);
+    transform: scale(1.2);
+}
+
+/*........... These codes are for responsive design ........*/
+
+@media only screen and (min-width: 360px) and (max-width: 460px){
+
+    div.parent-product-wrapper{
+
+        position: relative;
+        top: -430px;
+    }
+    h4.titel-product::after{
+
+        width: 222px !important;
+        top: 33PX !important;
+    }
+    h4.titel-product::before{
+
+        display: none;
+    }
+    h4.titel-product{
+
+        padding-right: 19%;
+        margin-bottom: 20px;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-1:hover{
+
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-2:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-3:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-4:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-5:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.my-animat-6:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+}
+@media only screen and (min-width: 460px) and (max-width: 576px){
+
+    div.parent-product-wrapper{
+
+        position: relative;
+        top: -310px;
+    }
+    h4.titel-product::after{
+
+        width: 222px !important;
+        top: 33PX !important;
+    }
+    h4.titel-product::before{
+
+        display: none;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-1:hover{
+
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-2:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-3:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-4:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-5:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.my-animat-6:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+    
+    div.parent-product-wrapper{
+
+        position: relative;
+        top: -200px;
+    }
+    h4.titel-product::after{
+
+        width: 222px !important;
+        top: 33PX !important;
+    }
+    h4.titel-product::before{
+
+        display: none;
+    }
+    section.back-wraper div.product-wraper-one img.product-tish-one,
+    section.back-wraper div.product-wraper-one img.product-tisch-two,
+    section.back-wraper div.product-wraper-one img.product-tisch-three,
+    section.back-wraper div.product-wraper-one img.product-tisch-four,
+    section.back-wraper div.product-wraper-one img.product-tisch-five{
+
+        position: relative;
+        width: 60%;
+        height: 250px;
+        right: 15%;
+    }
+    section.back-wraper div.product-wraper-two img.product-tisch-six{
+        
+        position: relative;
+        width: 65%;
+        height: 400px;
+        right: 15%;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-1:hover{
+
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-2:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-3:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-4:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-5:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.my-animat-6:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+
+    div.parent-product-wrapper{
+
+        margin-top: 220px;
+    }
+    div.parent-product-wrapper{
+
+        position: relative;
+        top: -140px;
+    }
+    h4.titel-product::after{
+
+        width: 222px !important;
+        top: 33PX !important;
+        right: 14% !important;
+    }
+    h4.titel-product::before{
+
+        display: none;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-1:hover{
+
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-2:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-3:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-4:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.product-wraper-one div.my-animat-5:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.my-animat-6:hover{
+    
+        border-right: none;
+        transform: none;
+    }
+    section.back-wraper div.product-wraper-one img.product-tish-one,
+    section.back-wraper div.product-wraper-one img.product-tisch-two,
+    section.back-wraper div.product-wraper-one img.product-tisch-three,
+    section.back-wraper div.product-wraper-one img.product-tisch-four,
+    section.back-wraper div.product-wraper-one img.product-tisch-five{
+
+        position: relative;
+        width: 60%;
+        height: 250px;
+        right: 15%;
+    }
+    section.back-wraper div.product-wraper-two img.product-tisch-six{
+        
+        position: relative;
+        width: 60%;
+        height: 400px;
+        right: 15%;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+
+    h4.titel-product::after{
+
+        
+        right: 9% !important;
+    }
+    h4.titel-product::before{
+
+        right: 35% !important;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1350px){
+
+    h4.titel-product::after{
+
+        
+        right: 9% !important;
+    }
+    h4.titel-product::before{
+
+        right: 33% !important;
+    }
+}
