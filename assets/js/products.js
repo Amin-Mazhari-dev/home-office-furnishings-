@@ -11,6 +11,29 @@ const aboutProductName = document.getElementById('about-product-name')
 const aboutProductDescription = document.getElementById('about-product-description')
 
 
+// ................ Manage product clicks in (index.html) ......................
+
+document.addEventListener('DOMContentLoaded', function(){
+
+    const productLinks = document.querySelectorAll('[data-code]')
+
+    productLinks.forEach(function(link){
+
+        link.addEventListener('click', function(event){
+
+            event.preventDefault()
+
+            let code = Number(link.dataset.code)
+
+            window.location.href = `showProducts.html?id=${code}`
+        })
+    })
+})
+
+
+
+// ..................... Show product details in (showProducts.html) ..............
+
 let locationSearchParams = new URLSearchParams(location.search)
 let productIdParams = locationSearchParams.get('id')
 let showProduct = productsArray.find(function(products){
@@ -20,16 +43,16 @@ let showProduct = productsArray.find(function(products){
 
 if(showProduct){
 
-    cardOneImg.setAttribute('src', showProduct.productImg[0])
-    cardTwoImg.setAttribute('src', showProduct.productImg[1])
-    cardThreeImg.setAttribute('src', showProduct.productImg[2])
-    showProductName.textContent = showProduct.productName
-    showProductId.textContent = showProduct.codeProduct
-    showProductStatus.textContent = showProduct.productStatus
-    showProductPrice.textContent = showProduct.productPrice
-    aboutProductName.textContent = showProduct.productName
-    aboutProductDescription.textContent = showProduct.productDescription
+    if(cardOneImg){ cardOneImg.setAttribute('src', showProduct.productImg[0])}
+    if(cardTwoImg){cardTwoImg.setAttribute('src', showProduct.productImg[1])}
+    if(cardThreeImg){cardThreeImg.setAttribute('src', showProduct.productImg[2])}
 
+    if(showProductName){showProductName.textContent = showProduct.productName}
+    if(showProductId){showProductId.textContent = showProduct.codeProduct}
+    if(showProductStatus){showProductStatus.textContent = showProduct.productStatus}
+    if(showProductPrice){showProductPrice.textContent = showProduct.productPrice}
+    if(aboutProductName){aboutProductName.textContent = showProduct.productName}
+    if(aboutProductDescription){ aboutProductDescription.textContent = showProduct.productDescription}
 }
 
 
@@ -60,4 +83,6 @@ function handelUserBasket(){
 }
 
 
-addProductBtn.addEventListener('click', handelUserBasket)
+if(addProductBtn) {
+    addProductBtn.addEventListener('click', handelUserBasket)
+}
