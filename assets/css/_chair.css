@@ -1,0 +1,439 @@
+section.parent-chair-section{
+
+    margin-top: 150px;
+}
+section.parent-chair-section h4.titel-chair{
+
+    padding-right: 15%;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+section.parent-chair-section h4.titel-chair::after{
+
+    content: '';
+    width: 50PX;
+    height: 3PX;
+    background-color: var(--Third-Color);
+    position: absolute;
+    top: 18PX;
+    right: 11%;
+}
+section.parent-chair-section h4.titel-chair::before{
+    content: '';
+    width: 50PX;
+    height: 3PX;
+    background-color: var(--Third-Color);
+    position: absolute;
+    top: 18PX;
+    right: 28%;
+}
+div.chair-wrapper{
+
+    background-image: url(../img/backgrund-01.jpg); 
+    background-size: cover;
+    box-shadow: 2px 2px 2px 2px #6b93df;
+    border-radius: 8px;
+    min-height: 350px;
+}
+div.chair-wrapper div.chair-one,
+div.chair-wrapper div.chair-two,
+div.chair-wrapper div.chair-three,
+div.chair-wrapper div.chair-four{
+
+    display: block;
+    height: 300px;
+    min-width: 250px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 25px;
+    background-color: rgb(243, 241, 241);
+    border-radius: 20px;
+}
+div.chair-wrapper div.chair-one div#chair-inner,
+div.chair-wrapper div.chair-two div#chair-inner-two,
+div.chair-wrapper div.chair-three div#chair-inner-three,
+div.chair-wrapper div.chair-four div#chair-inner-four{
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+div.chair-wrapper div.chair-one div#chair-inner ul,
+div.chair-wrapper div.chair-three div#chair-inner-three ul{
+
+    height: 100%;
+    width: 500%;
+    overflow: hidden;
+    right: 0;
+}
+div.chair-wrapper div.chair-one div#chair-inner ul div.description,
+div.chair-wrapper div.chair-three div#chair-inner-three ul div.description-four,
+div.chair-wrapper div.chair-three div#chair-inner-three ul div.description-five,
+div.chair-wrapper div.chair-three div#chair-inner-three ul div.description-six{
+
+    margin-top: 35px;
+}
+div.chair-wrapper div.chair-two div#chair-inner-two ul div.description-two,
+div.chair-wrapper div.chair-four div#chair-inner-four ul div.description-seven{
+
+    margin-top: 11px;
+}
+div.chair-wrapper div.chair-one div#chair-inner ul div.description div.show-description-label,
+div.chair-wrapper div.chair-two div#chair-inner-two ul div.description-two div.show-description-label-three,
+div.chair-wrapper div.chair-three div#chair-inner-three ul div.description-four div.show-description-label-four,
+div.chair-wrapper div.chair-three div#chair-inner-three ul div.description-five div.show-description-label-five,
+div.chair-wrapper div.chair-three div#chair-inner-three ul div.description-six div.show-description-label-six,
+div.chair-wrapper div.chair-four div#chair-inner-four ul div.description-seven div.show-description-label-seven{
+
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    color: rgb(107, 104, 104);
+    border-radius: 0 0 0 15px;
+    background-color: var(--Third-Color);
+    cursor: pointer;
+    z-index: 550;
+}
+div.chair-wrapper div.chair-one div#chair-inner ul div.description div.description-text,
+div.chair-wrapper div.chair-two div#chair-inner-two ul div.description-two div.description-text-three,
+div.chair-wrapper div.chair-three div#chair-inner-three ul div.description-four div.description-text-four,
+div.chair-wrapper div.chair-three div#chair-inner-three ul div.description-five div.description-text-five,
+div.chair-wrapper div.chair-three div#chair-inner-three ul div.description-six div.description-text-six,
+div.chair-wrapper div.chair-four div#chair-inner-four ul div.description-seven div.description-text-seven{
+
+    background-color: rgba(241, 133, 10, 0.5);
+    width: 150px;
+    top: 0;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 1s;
+}
+div.chair-wrapper div.chair-one div#chair-inner ul div.description div.description-text :nth-child(1) h2,
+div.chair-wrapper div.chair-two div#chair-inner-two ul div.description-two div.description-text-three :nth-child(1) h2,
+div.chair-wrapper div.chair-three div#chair-inner-three ul div.description-four div.description-text-four :nth-child(1) h2,
+div.chair-wrapper div.chair-three div#chair-inner-three ul div.description-five div.description-text-five :nth-child(1) h2,
+div.chair-wrapper div.chair-three div#chair-inner-three ul div.description-six div.description-text-six :nth-child(1) h2,
+div.chair-wrapper div.chair-four div#chair-inner-four ul div.description-seven div.description-text-seven :nth-child(1) h2{
+
+    font-size: 17px;
+    font-family: Sahel-Bold;
+    text-align: center;
+    padding-top: 5px;
+    color: var(--Secondery-Color);
+}
+div.chair-wrapper div.chair-one div#chair-inner ul div.description div.description-text :nth-child(2) p,
+div.chair-wrapper div.chair-two div#chair-inner-two ul div.description-two div.description-text-three :nth-child(2) p,
+div.chair-wrapper div.chair-three div#chair-inner-three ul div.description-four div.description-text-four :nth-child(2) p,
+div.chair-wrapper div.chair-three div#chair-inner-three ul div.description-five div.description-text-five :nth-child(2) p,
+div.chair-wrapper div.chair-three div#chair-inner-three ul div.description-six div.description-text-six :nth-child(2) p,
+div.chair-wrapper div.chair-four div#chair-inner-four ul div.description-seven div.description-text-seven :nth-child(2) p{
+
+    font-size: 14px;
+    padding: 7px;
+    color: var(--Secondery-Color);
+}
+div.chair-wrapper div.chair-one div#chair-inner ul li,
+div.chair-wrapper div.chair-three div#chair-inner-three ul li{
+
+    width: 20%;
+    height: 300px;
+    float: right;
+    transition: right 1s ease;
+    
+}
+div.chair-wrapper div.chair-one div#chair-inner ul li#slaide-one{
+
+    right: 0;
+}
+div.chair-wrapper div.chair-one div#chair-inner ul li#slaide-two{
+
+    right: 350px;
+}
+div.chair-wrapper div.chair-three div#chair-inner-three ul li#slaide-four{
+
+    right: 0;
+}
+div.chair-wrapper div.chair-three div#chair-inner-three ul li#slaide-five{
+
+    right: 500px;
+}
+div.chair-wrapper div.chair-three div#chair-inner-three ul li#slaide-six{
+
+    right: 750px;
+}
+div.chair-wrapper div.chair-one div#chair-inner ul li a img{
+
+    margin: auto;
+    width: 100%;
+    transition: right 1s ease;
+} 
+div.chair-wrapper div.chair-one input#chair-one-btn-one,
+div.chair-wrapper div.chair-one input#chair-one-btn-two,
+div.chair-wrapper div.chair-two input#chair-one-btn-three,
+div.chair-wrapper div.chair-three input#chair-three-btn-four,
+div.chair-wrapper div.chair-three input#chair-three-btn-five,
+div.chair-wrapper div.chair-three input#chair-three-btn-six,
+div.chair-wrapper div.chair-four input#chair-four-btn-seven{
+  
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 260px;
+  right: -4%;
+  background-color: rgb(133, 131, 131);
+  border: none;
+  cursor: pointer;
+  z-index: 100 !important;
+  transition: background-color .2s;
+}
+div.chair-wrapper div.chair-one input#chair-one-btn-one{
+
+    right: 2%;
+}
+div.chair-wrapper div.chair-one input#chair-one-btn-two{
+    right: 10%;
+}
+div.chair-wrapper div.chair-two input#chair-one-btn-three{
+
+    right: 3% !important;
+}
+div.chair-wrapper div.chair-three input#chair-three-btn-four{
+
+    right: 2%;
+}
+div.chair-wrapper div.chair-three input#chair-three-btn-five{
+
+    right: 10%;
+}
+div.chair-wrapper div.chair-three input#chair-three-btn-six{
+
+    right: 18%;
+}
+div.chair-wrapper div.chair-four input#chair-four-btn-seven{
+
+    right: 3%;
+}
+/* ........... Chair two ............ */
+
+div.chair-wrapper div.chair-two div#chair-inner-two ul{
+
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    right: 0;
+}
+div.chair-wrapper div.chair-two div#chair-inner-two ul li#slaide-three a img{
+
+    margin: 25px auto;
+    width: 100%;
+}
+div.chair-wrapper div.chair-two input#chair-one-btn-three{
+
+    right: -2%;
+}
+
+/* ........... Chair three ............ */
+
+div.chair-wrapper div.chair-three div#chair-inner-three ul li#slaide-four a img{
+
+    margin: 15px auto;
+    width: 100%;
+}
+div.chair-wrapper div.chair-three div#chair-inner-three ul li#slaide-five a img{
+
+    margin: 15px auto;
+    width: 100%;
+}
+div.chair-wrapper div.chair-three div#chair-inner-three ul li#slaide-six a img{
+
+    margin: 15px auto;
+    width: 100%;
+}
+
+/* ........... Chair four ............ */
+div.chair-wrapper div.chair-four div#chair-inner-four ul{
+
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    right: 0;
+}
+div.chair-wrapper div.chair-four div#chair-inner-four ul li#slaide-seven a img{
+
+    margin: 25px auto;
+    width: 100%;
+}
+
+/* ...... This class add to input element with JS */
+
+.active{
+
+    background-color: var(--Third-Color) !important;
+}
+.showDescriptionn{
+
+    opacity: 1 !important;
+}
+
+/* .......... These codes are for responsive design ....... */
+
+@media only screen and (min-width: 360px) and (max-width: 460px){
+
+    section.parent-chair-section{
+
+        top: -480px;
+    }
+    h4.titel-chair{
+
+        margin-bottom: 15px;
+    }
+    section.parent-chair-section h4.titel-chair::after{
+
+        width: 215px !important;
+        top: 37PX !important;
+    }
+    section.parent-chair-section h4.titel-chair::before{
+
+        display: none !important;
+    }
+
+}
+@media only screen and (min-width: 460px) and (max-width: 576px){
+
+    
+    section.parent-chair-section{
+
+        top: -350px;
+    }
+    section.parent-chair-section h4.titel-chair::after{
+
+        width: 215px !important;
+        top: 34PX !important;
+    }
+    section.parent-chair-section h4.titel-chair::before{
+
+        display: none !important;
+    }
+    div.chair-wrapper div.chair-one ul li#slaide-two div.description{
+
+        display: none;
+    }
+    div.chair-wrapper div.chair-three ul li#slaide-five div.description-five{
+
+        display: none;
+    }
+    div.chair-wrapper div.chair-three ul li#slaide-six div.description-six{
+
+        display: none;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+    section.parent-chair-section{
+
+        top: -275px;
+    }
+    section.parent-chair-section h4.titel-chair::after{
+
+        width: 215px !important;
+        top: 34PX !important;
+    }
+    section.parent-chair-section h4.titel-chair::before{
+
+        display: none !important;
+    }
+    div.chair-wrapper div.chair-one ul li#slaide-two div.description{
+
+        display: none;
+    }
+    div.chair-wrapper div.chair-three ul li#slaide-five div.description-five{
+
+        display: none;
+    }
+    div.chair-wrapper div.chair-three ul li#slaide-six div.description-six{
+
+        display: none;
+    }
+    div.chair-wrapper div.chair-four div#chair-inner-four ul li#slaide-seven a img{
+
+        height: 70%;
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+
+    section.parent-chair-section{
+
+        top: -190px;
+    }
+    section.parent-chair-section h4.titel-chair::after{
+
+        width: 215px !important;
+        top: 34PX !important;
+    }
+    section.parent-chair-section h4.titel-chair::before{
+
+        display: none !important;
+    }
+    div.chair-wrapper div.chair-one ul li#slaide-two div.description{
+
+        display: none;
+    }
+    div.chair-wrapper div.chair-three ul li#slaide-five div.description-five{
+
+        display: none;
+    }
+    div.chair-wrapper div.chair-three ul li#slaide-six div.description-six{
+
+        display: none;
+    }
+    div.chair-wrapper div.chair-one div#chair-inner{
+
+        width: 90%;
+    }
+    div.chair-wrapper div.chair-three div#chair-inner-three{
+
+        width: 85%;
+    }
+    div.chair-wrapper div.chair-four div#chair-inner-four{
+
+        width: 75%;
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+
+    section.parent-chair-section h4.titel-chair::after{
+
+        right: 9%;
+    }
+    section.parent-chair-section h4.titel-chair::before{
+
+        right: 33%;
+    }
+    div.chair-wrapper div.chair-one ul li#slaide-two div.description{
+
+        display: none;
+    }
+    div.chair-wrapper div.chair-three ul li#slaide-five div.description-five{
+
+        display: none;
+    }
+    div.chair-wrapper div.chair-three ul li#slaide-six div.description-six{
+
+        display: none;
+    }
+
+}
+@media only screen and (min-width: 1200px){
+
+    section.parent-chair-section h4.titel-chair::after{
+
+        right: 10%;
+    }
+    section.parent-chair-section h4.titel-chair::before{
+
+        right: 30%;
+    }
+}
