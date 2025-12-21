@@ -31,7 +31,7 @@ section.parent-bed-section h4.titel-bed::before{
 div.bed-wrapper{
     
     background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
-    box-shadow: 2px 2px 2px 2px #9b9999;
+    box-shadow: 2px 2px 2px 2px #81a7ec;
     border-radius: 8px;
     min-height: 350px;
 }
