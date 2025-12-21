@@ -1,0 +1,232 @@
+section.parent-office-furniture{
+
+    margin-top: 150px;
+}
+section.parent-office-furniture h4.titel-office-furniture{
+
+    padding-right: 15%;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+section.parent-office-furniture h4.titel-office-furniture::after{
+
+    content: '';
+    width: 50PX;
+    height: 3PX;
+    background-color: var(--Third-Color);
+    position: absolute;
+    top: 18PX;
+    right: 10%;
+}
+section.parent-office-furniture h4.titel-office-furniture::before{
+
+    content: '';
+    width: 50PX;
+    height: 3PX;
+    background-color: var(--Third-Color);
+    position: absolute;
+    top: 18PX;
+    right: 24%;
+}
+div.office-furniture-wrapper{
+
+    background-image: url(../img/backgrund-03.jpg);   
+    background-size: cover;
+    box-shadow: 2px 2px 2px 2px #9c9b9b;
+    border-radius: 8px;
+    min-height: 350px;
+}
+div.flip-card-one,div.flip-card-two,
+div.flip-card-three,div.flip-card-four{
+
+    width: 100%;
+    height: 280px;
+    margin: 25px auto;
+    box-shadow: 2px 2px 2px rgb(37,36,36);
+    perspective: 800px;
+}
+div.flip-card-one div.flip-card-inner-one,
+div.flip-card-two div.flip-card-inner-two,
+div.flip-card-three div.flip-card-inner-three,
+div.flip-card-four div.flip-card-inner-four{
+
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+div.flip-card-one:hover{
+
+    cursor: pointer;
+}
+div.flip-card-one:hover div.flip-card-inner-one{
+
+    transform: rotateY(180deg);
+}
+div.flip-card-two:hover{
+
+    cursor: pointer;
+}
+div.flip-card-two:hover div.flip-card-inner-two{
+
+    transform: rotateY(180deg);
+}
+div.flip-card-three:hover{
+
+    cursor: pointer;
+}
+div.flip-card-three:hover div.flip-card-inner-three{
+
+    transform: rotateY(180deg);
+}
+div.flip-card-four:hover{
+
+    cursor: pointer;
+}
+div.flip-card-four:hover div.flip-card-inner-four{
+
+    transform: rotateY(180deg);
+}
+div.flip-card-one div.flip-card-front-one,
+div.flip-card-one div.flip-card-back-one,
+div.flip-card-two div.flip-card-front-two,
+div.flip-card-two div.flip-card-back-two,
+div.flip-card-three div.flip-card-front-three,
+div.flip-card-three div.flip-card-back-three,
+div.flip-card-four div.flip-card-front-four,
+div.flip-card-four div.flip-card-back-four{
+
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+div.flip-card-one div.flip-card-front-one img,
+div.flip-card-two div.flip-card-front-two img,
+div.flip-card-three div.flip-card-front-three img,
+div.flip-card-four div.flip-card-front-four img{
+
+    width: 100%;
+    height: 100%;
+}
+div.flip-card-one div.flip-card-back-one,
+div.flip-card-two div.flip-card-back-two,
+div.flip-card-three div.flip-card-back-three,
+div.flip-card-four div.flip-card-back-four{
+
+    background-color: rgb(115, 173, 192);
+    color: var(--Secondery-Color);
+    transform: rotateY(180deg);
+}
+div.flip-card-one div.flip-card-back-one h2,
+div.flip-card-two div.flip-card-back-two h2,
+div.flip-card-three div.flip-card-back-three h2,
+div.flip-card-four div.flip-card-back-four h2{
+
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-family: Sahel-Bold;
+    color: var(--Secondery-Color);
+}
+div.flip-card-one div.flip-card-back-one p,
+div.flip-card-two div.flip-card-back-two p,
+div.flip-card-three div.flip-card-back-three p,
+div.flip-card-four div.flip-card-back-four p{
+
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: var(--Secondery-Color);
+}
+div.flip-card-one div.flip-card-back-one a,
+div.flip-card-two div.flip-card-back-two a,
+div.flip-card-three div.flip-card-back-three a,
+div.flip-card-four div.flip-card-back-four a{
+
+    font-size: 18px;
+    color: var( --WriteColor-1);
+}
+
+/* ............ These codes are for responsive design ............... */
+
+@media only screen and (min-width: 360px) and (max-width: 460px){
+
+    section.parent-office-furniture{
+
+        position: relative;
+        top: -620px;
+    }
+    section.parent-office-furniture h4.titel-office-furniture::after{
+
+        width: 130px !important;
+        top: 30PX !important;
+    }
+    section.parent-office-furniture h4.titel-office-furniture::before{
+
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 460px) and (max-width: 576px){
+
+    section.parent-office-furniture{
+
+        position: relative;
+        top: -460px;
+    }
+    section.parent-office-furniture h4.titel-office-furniture::after{
+
+        width: 130px !important;
+        top: 30PX !important;
+    }
+    section.parent-office-furniture h4.titel-office-furniture::before{
+
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+    section.parent-office-furniture{
+
+        position: relative;
+        top: -400px;
+    }
+    section.parent-office-furniture h4.titel-office-furniture::after{
+
+        width: 130px !important;
+        top: 30PX !important;
+        right: 13% !important;
+    }
+    section.parent-office-furniture h4.titel-office-furniture::before{
+
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+
+    section.parent-office-furniture{
+
+        position: relative;
+        top: -280px;
+    }
+    section.parent-office-furniture h4.titel-office-furniture::after{
+
+        width: 130px !important;
+        top: 30PX !important;
+        right: 13% !important;
+    }
+    section.parent-office-furniture h4.titel-office-furniture::before{
+
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+
+    section.parent-office-furniture h4.titel-office-furniture::after{
+
+        right: 9%;
+    }
+    section.parent-office-furniture h4.titel-office-furniture::before{
+    
+        right: 25.5%;
+    }
+}
