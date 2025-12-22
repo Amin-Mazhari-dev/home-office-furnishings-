@@ -1,0 +1,182 @@
+div.line{
+    position: relative;
+    margin-top: 120px;
+    height: 200px;
+    background-color: rgb(216, 207, 207);
+    transform: skewy(-6deg);
+    top: 100px;
+}
+footer.parent-footer{
+
+    background-color: #0e0f3a;
+}
+div.footer-wraper{
+
+    margin: 35px;
+    min-height: 350px;
+}
+div.footer-wraper ul{
+
+    margin-top: 100px;
+}
+div.footer-wraper ul li{
+
+    padding: 12px;
+    font-size: 15px;
+    transition: .5s ease;
+}
+div.footer-wraper ul li span{
+
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--Secondery-Color);
+    vertical-align: middle;
+    display: inline-block;
+}
+div.footer-wraper ul li a{
+
+    color: var(--Secondery-Color);
+    margin-right: 5px;
+    font-size: 14px;
+    transition: .5s ease;
+}
+div.footer-wraper ul li:hover{
+
+    padding-right: 20px;
+}
+div.footer-wraper ul li:hover span{
+
+    color: var(--Third-Color);
+}
+div.footer-wraper ul li:hover a{
+
+    color: var(--Third-Color);
+}
+div.footer-wraper ul a.sosial-icon{
+
+    margin-right: 10px;
+    padding: 4px;
+    top: 15px;
+    position: relative;
+    font-size: 17px;
+    color: var(--Secondery-Color);
+}
+div.footer-wraper ul a.sosial-icon:hover{
+
+    color: var(--Third-Color);
+}
+div.footer-wraper-img{
+
+    margin: 150px auto;
+    border: 2px solid #0e0f3a;
+}
+div.footer-wraper-img img{
+
+    border-radius: 20px;
+    width: 200px;
+}
+
+/* .......... These codes are for responsive design .............*/
+
+@media only screen and (min-width: 360px) and (max-width: 460px){
+
+    div.line{
+
+        margin-top: -600px;
+    }
+    div.footer-container-one{
+
+        margin-top: -255px;
+    }
+    div.footer-container-two{
+
+        margin-top: -60px;
+    }
+    div.footer-container-three{
+
+        margin-top: -140px;
+    }
+    div.footer-wraper-img img{
+
+        position: relative;
+        right: 17%;
+    }
+}
+@media only screen and (min-width: 460px) and (max-width: 576px){
+
+    div.line{
+
+        margin-top: -400px;
+    }
+    div.footer-container-one{
+
+        margin-top: -255px;
+    }
+    div.footer-container-two{
+
+        margin-top: -60px;
+    }
+    div.footer-container-three{
+
+        margin-top: -140px;
+    }
+    div.footer-wraper-img img{
+
+        position: relative;
+        right: 17%;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+    div.line{
+
+        margin-top: -400px;
+    }
+    div.footer-container-one{
+
+        margin-top: -120px;
+    }
+    div.footer-container-two{
+
+        margin-top: -60px;
+    }
+    div.footer-container-three{
+
+        margin-top: -140px;
+    }
+    div.footer-wraper-img img{
+
+        position: relative;
+        right: 27%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    
+    div.line{
+
+        margin-top: -200px;
+    }
+    div.footer-wraper ul li a{
+
+        font-size: 11px;
+    }
+    div.footer-wraper ul a.sosial-icon{
+
+        font-size: 9px;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+
+    div.line{
+
+        margin-top: 140px;
+    }
+    div.footer-wraper ul li a{
+
+        font-size: 11px;
+    }
+    div.footer-wraper ul a.sosial-icon{
+
+        font-size: 9px;
+    }
+}
