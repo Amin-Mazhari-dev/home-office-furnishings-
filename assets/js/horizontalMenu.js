@@ -817,6 +817,25 @@ function handelCloseBasketLogin(){
         showProductsLogin.classList.remove('show-login-products')
     }
 }
+
+// ............ These codes show horizontalMenu in (min-width: 992px) .....................
+
+window.addEventListener('scroll', function(event){
+
+    let newScroll = document.documentElement.scrollTop;
+    const ShowWrapperHorizontalMenu = document.getElementById('wrapperHorizontalMenu')
+    
+    if(newScroll > 693){
+
+        ShowWrapperHorizontalMenu.classList.add('showMenu')
+
+    }else if(newScroll < 680){
+
+        ShowWrapperHorizontalMenu.classList.remove('showMenu')
+    }
+})
+
+
 //.........................................................................................
 
 window.addEventListener('resize', function(){
