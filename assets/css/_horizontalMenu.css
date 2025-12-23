@@ -567,3 +567,10 @@ div.menu-wrapper div.icon-section i.fas:hover{
     }
     
 }
+
+/* .... This class show Horizontal-Menu in (min-width: 992px) .... */
+
+.showMenu{
+
+    display: block !important;
+}
