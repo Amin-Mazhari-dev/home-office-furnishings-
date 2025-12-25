@@ -258,7 +258,7 @@ section.back-wraper div.my-animat-6:hover{
 
     div.parent-product-wrapper{
 
-        margin-top: 220px;
+        margin-top: 240px;
     }
     div.parent-product-wrapper{
 
@@ -268,7 +268,7 @@ section.back-wraper div.my-animat-6:hover{
     h4.titel-product::after{
 
         width: 222px !important;
-        top: 33PX !important;
+        top: 35PX !important;
         right: 14% !important;
     }
     h4.titel-product::before{
