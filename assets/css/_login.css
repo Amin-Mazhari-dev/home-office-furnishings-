@@ -2,6 +2,7 @@ div.modal-wrapper{
 
     top: -510px; 
     display: none;
+    z-index: 999;
 }
 div.fix-position-product{
 
@@ -39,6 +40,10 @@ div.modal div.header-login span{
     color: var(--Secondery-Color);
 }
 div.modal div.header-login span.close-index-login:hover{
+
+    cursor: pointer;
+}
+div.modal div.header-login span.close-index-login-aside:hover{
 
     cursor: pointer;
 }
@@ -136,7 +141,11 @@ div.modal div.footer-login a.register{
 .show-login-index{
 
     display: block !important;
-} 
+}
+.show-login-index-aside{
+
+    display: block !important;
+}
 .show-login-products{
 
     display: block !important;
