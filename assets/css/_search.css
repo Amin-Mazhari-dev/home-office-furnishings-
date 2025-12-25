@@ -8,7 +8,7 @@ div.inner-search-wrapper{
     background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
     width: 70%;
     margin-right: 7%;
-    height: 224px;
+    height: 280px;
     border-radius: 15px;
 }
 div.inner-search-wrapper div.information-search-wrapper div.name-search-product,
@@ -36,6 +36,7 @@ div.information-search-wrapper p.search-message{
 
     font-size: 17px;
     font-family: Sahel-Bold;
+    margin-top: 15px;
     color: rgb(172, 18, 18);
 }
 div.inner-search-wrapper img.img-search{
@@ -55,6 +56,16 @@ div.inner-search-wrapper span.search-close{
 div.inner-search-wrapper span.search-close:hover{
 
     cursor: pointer;
+}
+div.inner-search-wrapper div.information-search-wrapper div.show-details-product{
+
+    text-align: center;
+    margin-top: 10px;
+}
+div.inner-search-wrapper div.information-search-wrapper div.show-details-product a{
+
+    font-family: Sahel-Bold;
+    border-bottom: 2px solid;
 }
 
 /* ......... These codes are for responsive design .........*/
