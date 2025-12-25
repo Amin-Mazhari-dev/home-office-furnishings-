@@ -1,7 +1,6 @@
 const newbasketCardSection = document.querySelector('.basket-card-section')
-const basketHorizontalMenuHtmlIndex = document.querySelector('.basket-horizontalMenu-htmlIndex')
 
- function getElementTop(element) {
+function getElementTop(element) {
 
     const style = getComputedStyle(element);
     const topValue = style.top; 
@@ -22,10 +21,53 @@ window.addEventListener('scroll', function(event){
 
         newbasketCardSection.style.top = newTop + "px";
     }
-    
-    if(basketHorizontalMenuHtmlIndex){
 
-        basketHorizontalMenuHtmlIndex.style.top = newTop + "px";
-    }
 })
 
+// These codes are for Basket - Horizontal - Menu - Html - Index
+
+const basketHorizontalMenuHtmlIndex = document.querySelector('.basket-horizontalMenu-htmlIndex')
+
+function getElementTopHtmlIndex(elementHtmlIndex){
+
+    const styleIndex = getComputedStyle(elementHtmlIndex);
+    const topValueIndex = styleIndex.top; 
+    
+    if (!topValueIndex || topValueIndex === "auto") return 0;
+    
+    return parseFloat(topValueIndex.replace(/px|rem|em|%/g, '')) || 0;
+
+}
+let currentTopIndex = getElementTop(basketHorizontalMenuHtmlIndex);
+
+window.addEventListener('scroll', function(event){
+
+    let myscrollIndex = document.documentElement.scrollTop
+
+    let newTopIndex = currentTopIndex + myscrollIndex
+
+    if(basketHorizontalMenuHtmlIndex){
+
+        basketHorizontalMenuHtmlIndex.style.top = newTopIndex + "px";
+
+    } 
+    if(myscrollIndex < 680){
+
+        basketHorizontalMenuHtmlIndex.classList.remove('showBasketCard')
+    }
+
+})
+
+// .......... These codes hide Basket-aside in (min-height: 380px)
+
+const basketAsideMenu = document.querySelector('.basket-asideMenu'); 
+
+window.addEventListener('scroll', function(event){ 
+
+    let basketAsideScroll = document.documentElement.scrollTop; 
+    
+    if(basketAsideScroll > 380){
+
+        basketAsideMenu.classList.remove('showBasketCard')
+    }
+ });
