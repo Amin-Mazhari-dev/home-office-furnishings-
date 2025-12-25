@@ -47,7 +47,8 @@ function basketCartGenerator(basketCart, container){
 
 function attachCartEvents(container, basket){
 
-    const quantityInput = document.querySelectorAll('.cart-quantity-input')
+    const quantityInput = container.querySelectorAll('.cart-quantity-input'); 
+    const deleteProduct = container.querySelectorAll('.delete-product');
 
     quantityInput.forEach(function(input, index){
 
@@ -60,8 +61,6 @@ function attachCartEvents(container, basket){
            container.querySelector('.sum-price').textContent = updatedTotal;
         })
     })
-
-    const deleteProduct = document.querySelectorAll('.delete-product')
 
     deleteProduct.forEach(function(btn, index){
 
