@@ -10,6 +10,7 @@ const statusSearch = document.querySelector('.status-search')
 const priceSearch = document.querySelector('.price-search')
 const searchMessage = document.querySelector('.search-message')
 const imgSearch = document.querySelector('.img-search')
+const showDetails = document.querySelector('.show-details')
 
 function handlerSearchProduct(){
 
@@ -32,6 +33,7 @@ function handlerSearchProduct(){
         statusSearch.textContent = findProduct.productStatus
         priceSearch.textContent = findProduct.productPrice
         imgSearch.setAttribute('src', `${findProduct.productImg[0]}`)
+        showDetails.setAttribute('href', `showProducts.html?${findProduct.urlParams}`)
 
         searchWrapper.style.display = 'block'
 
@@ -53,6 +55,7 @@ function handlerSearchClose(){
     priceSearch.innerHTML = ''
     searchMessage.innerHTML = ''
     imgSearch.setAttribute('src', '')
+    showDetails.setAttribute('href', '')
 }
 
 searchProduct.addEventListener('keydown', function(event){
