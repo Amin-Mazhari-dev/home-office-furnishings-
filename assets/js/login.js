@@ -27,9 +27,6 @@ document.addEventListener('open-login', function(event){
 
         container.classList.add('show-login-products')
 
-    }else if(container.id === 'index-login-aside'){
-
-        container.classList.add('show-login-index-aside')
     }
     
 })
