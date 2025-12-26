@@ -17,7 +17,7 @@ document.addEventListener('open-login', function(event){
 
     const targSel = event.detail.targSel
     const container = document.querySelector(targSel)
-    if(!container) return
+    if(!container) return 0;
     
     if(container.id === 'index-login'){
 
@@ -26,6 +26,10 @@ document.addEventListener('open-login', function(event){
     }else if(container.id === 'showProducts-login'){
 
         container.classList.add('show-login-products')
+
+    }else if(container.id === 'index-login-aside'){
+
+        container.classList.add('show-login-index-aside')
     }
     
 })
@@ -34,6 +38,9 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const closeIndexLogin = document.querySelector('.close-index-login')
     const indexLogin = document.getElementById('index-login')
+
+    const closeProductsLogin = document.querySelector('.close-products-login')
+    const showProductsLogin = document.getElementById('showProducts-login')
     
     if(closeIndexLogin){
 
@@ -41,13 +48,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
             indexLogin.classList.remove('show-login-index')
         })
-    }
-})
-document.addEventListener('DOMContentLoaded', function(){
 
-    const closeProductsLogin = document.querySelector('.close-products-login')
-    const showProductsLogin = document.getElementById('showProducts-login')
-
+    } 
     if(closeProductsLogin){
 
         closeProductsLogin.addEventListener('click', function(){
@@ -55,8 +57,8 @@ document.addEventListener('DOMContentLoaded', function(){
             showProductsLogin.classList.remove('show-login-products')
         })
     }
-
 })
+
 
 // These codes are for validation and display password
 
@@ -79,7 +81,7 @@ function userNamevalidation(){
         userNameMessage.textContent = 'نام کاربری باید حداقل 3 کراکتر و حداکثر 15 کراکتر باشد (فضای خالی یک کراکتر محسوب میشود)'
         userNameMessage.style.color = 'rgb(104, 4, 4)'
         
-        handlerEyeSlashPosition(eyeElem)
+        // handlerEyeSlashPosition(eyeElem)
 
     }else{
 
