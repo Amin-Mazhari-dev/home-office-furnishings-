@@ -825,6 +825,8 @@ window.addEventListener('scroll', function(event){
     let newScroll = document.documentElement.scrollTop;
     const ShowWrapperHorizontalMenu = document.getElementById('wrapperHorizontalMenu')
     
+    if (!ShowWrapperHorizontalMenu) return 0;
+
     if(newScroll > 693){
 
         ShowWrapperHorizontalMenu.classList.add('showMenu')
