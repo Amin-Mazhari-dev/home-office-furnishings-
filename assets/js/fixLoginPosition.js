@@ -38,10 +38,30 @@ window.addEventListener('scroll', function(event){
         let newTop = currentTopValue + myScroll;
         fixPositionProduct.style.top = newTop + "px";
     }
-    if(fixPositionLoginIndex){
+    if(fixPositionLoginIndex && window.innerWidth < 992){
 
         let newTopLogin = currentTopValueLogin + myScroll; 
         fixPositionLoginIndex.style.top = newTopLogin + "px";
+        
+    }else if(fixPositionLoginIndex && window.innerWidth > 992){
+
+        let newTopLogin = (currentTopValueLogin - 70) + myScroll; 
+        fixPositionLoginIndex.style.top = newTopLogin + "px";
     }
     
+})
+
+// These codes hide Login in (min-width: 992px)
+
+window.addEventListener('scroll', function(){
+
+    let widthScreen = window.innerWidth
+    let userScroll = document.documentElement.scrollTop;
+
+    if(!fixPositionLoginIndex) return 0;
+    
+    if(widthScreen > 992 && userScroll < 30){
+
+        fixPositionLoginIndex.classList.remove('show-login-index')
+    }
 })
