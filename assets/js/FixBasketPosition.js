@@ -2,6 +2,8 @@ const newbasketCardSection = document.querySelector('.basket-card-section')
 
 function getElementTop(element) {
 
+    if (!element) return 0;
+
     const style = getComputedStyle(element);
     const topValue = style.top; 
     
@@ -46,6 +48,8 @@ window.addEventListener('scroll', function(event){
 
     let newTopIndex = currentTopIndex + myscrollIndex
 
+    if (!basketHorizontalMenuHtmlIndex) return 0;
+
     if(basketHorizontalMenuHtmlIndex){
 
         basketHorizontalMenuHtmlIndex.style.top = newTopIndex + "px";
@@ -64,10 +68,12 @@ const basketAsideMenu = document.querySelector('.basket-asideMenu');
 
 window.addEventListener('scroll', function(event){ 
 
-    let basketAsideScroll = document.documentElement.scrollTop; 
+    let basketAsideScroll = document.documentElement.scrollTop;
+    
+    if(!basketAsideMenu) return 0;
     
     if(basketAsideScroll > 380){
 
         basketAsideMenu.classList.remove('showBasketCard')
     }
- });
+})
