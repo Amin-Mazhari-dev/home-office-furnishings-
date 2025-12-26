@@ -316,6 +316,11 @@ div.basket-horizontalMenu-htmlIndex div.total-price a.pay:hover{
 
         top: -460px !important;
     }
+    div.basket-horizontalMenu-htmlIndex{
+
+        top: -630px;
+        
+    } 
 }
 @media only screen and (min-width: 1100px) and (max-width: 1200px){
 
@@ -328,7 +333,11 @@ div.basket-horizontalMenu-htmlIndex div.total-price a.pay:hover{
 
         top: -460px !important;
     }
+    div.basket-horizontalMenu-htmlIndex{
 
+        top: -630px;
+        
+    } 
 }
 @media only screen and (min-width: 1200px){
 
