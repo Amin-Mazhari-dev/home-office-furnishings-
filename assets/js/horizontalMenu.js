@@ -15,6 +15,7 @@ const basketCardSection = document.querySelector('.basket-card-section')
 const indexLogin = document.getElementById('index-login')
 const showProductsLogin = document.getElementById('showProducts-login')
 
+
 // This part is for products menu
 const titleOurProducts = document.querySelector('.title-our-products')
 const arrowProducts = document.querySelector('.arrow-products')
