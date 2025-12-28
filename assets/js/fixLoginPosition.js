@@ -1,5 +1,6 @@
 const fixPositionProduct = document.querySelector('.fix-position-product')
 const fixPositionLoginIndex = document.querySelector('.fix-position-login-index')
+const fixPositionCategoryProductLogin = document.querySelector('.fix-position-category-product-login')
 
 function getElementTopValue(elemProduct){
 
@@ -29,6 +30,20 @@ function getElementTopValueLogin(elemIndex){
 }
 let currentTopValueLogin = getElementTopValueLogin(fixPositionLoginIndex)
 
+function getElementTopValueCategoryProductLogin(elemCategoryProduct){
+
+    if(fixPositionCategoryProductLogin){
+
+        const styleElementCategoryProduct = getComputedStyle(elemCategoryProduct)
+        const elementCategoryProductTopValue = styleElementCategoryProduct.top;
+        
+        if(!elementCategoryProductTopValue || elementCategoryProductTopValue === 'auto') return 0;
+
+        return parseFloat(elementCategoryProductTopValue.replace(/px|rem|em|%/g, '')) || 0;
+    }
+}
+let currentTopValueCategoryProductLogin = getElementTopValueCategoryProductLogin(fixPositionCategoryProductLogin)
+
 window.addEventListener('scroll', function(event){
 
     let myScroll = document.documentElement.scrollTop;
@@ -47,6 +62,11 @@ window.addEventListener('scroll', function(event){
 
         let newTopLogin = (currentTopValueLogin - 70) + myScroll; 
         fixPositionLoginIndex.style.top = newTopLogin + "px";
+    }
+    if(fixPositionCategoryProductLogin){
+
+        let newTopCategoryProductLogin = currentTopValueCategoryProductLogin + myScroll;
+        fixPositionCategoryProductLogin.style.top = newTopCategoryProductLogin + "px";
     }
     
 })
