@@ -114,7 +114,7 @@ div.footer-wraper-img img{
     }
     div.footer-container-one{
 
-        margin-top: -255px;
+        margin-top: -180px;
     }
     div.footer-container-two{
 
@@ -142,20 +142,20 @@ div.footer-wraper-img img{
     }
     div.footer-container-one{
 
-        margin-top: -120px;
+        margin-top: -10px;
     }
     div.footer-container-two{
 
-        margin-top: -60px;
+        margin-top: -5px;
     }
     div.footer-container-three{
 
-        margin-top: -140px;
+        margin-top: 25px;
     }
     div.footer-wraper-img img{
 
         position: relative;
-        right: 27%;
+        right: 2%;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
