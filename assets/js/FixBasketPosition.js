@@ -55,10 +55,10 @@ window.addEventListener('scroll', function(event){
         basketHorizontalMenuHtmlIndex.style.top = newTopIndex + "px";
 
     } 
-    if(myscrollIndex < 680){
+    // if(myscrollIndex < 680){
 
-        basketHorizontalMenuHtmlIndex.classList.remove('showBasketCard')
-    }
+    //     basketHorizontalMenuHtmlIndex.classList.remove('showBasketCard')
+    // }
 
 })
 
@@ -75,5 +75,33 @@ window.addEventListener('scroll', function(event){
     if(basketAsideScroll > 380){
 
         basketAsideMenu.classList.remove('showBasketCard')
+    }
+})
+
+// These codes are for Basket - category - product - page
+
+const basketCategoryProduct = document.querySelector('.basket-category-product')
+
+function getElementTopBasketCategoryProduct(elemBasketCategory){
+
+    const styleBasketCategoryProduct = getComputedStyle(elemBasketCategory);
+    const topValueBasketCategoryProduct = styleBasketCategoryProduct.top;
+
+    if (!topValueBasketCategoryProduct || topValueBasketCategoryProduct === "auto") return 0;
+    
+    return parseFloat(topValueBasketCategoryProduct.replace(/px|rem|em|%/g, '')) || 0;
+}
+let currentTopValueBasketCategoryProduct = getElementTopBasketCategoryProduct(basketCategoryProduct);
+
+window.addEventListener('scroll', function(event){
+
+    let myScrollBasketCategoryProduct = document.documentElement.scrollTop
+
+    let newTopBasketCategoryProduct = currentTopValueBasketCategoryProduct + myScrollBasketCategoryProduct
+
+    if(basketCategoryProduct){
+
+        basketCategoryProduct.style.top = newTopBasketCategoryProduct + "px";
+
     }
 })
