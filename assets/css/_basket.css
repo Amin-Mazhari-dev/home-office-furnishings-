@@ -22,20 +22,27 @@ div.basket-horizontalMenu-htmlIndex{
     display: none;
     overflow: scroll;
 }
+div.basket-category-product{
+
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    right: 32%;
+    top: -33px;
+    height: 500px;
+    width: 50%;
+    z-index: 1000 !important;
+    display: none;
+    overflow: scroll;
+}
 
 div.basket-asideMenu{
 
     top: -510px;
     right: 35%;
 }
-div.basket-category-product{
-
-    top: -33px;
-    right: 32%;
-}
 
 div.basket-card-section div.basket-wrapper,
-div.basket-horizontalMenu-htmlIndex div.basket-wrapper{
+div.basket-horizontalMenu-htmlIndex div.basket-wrapper,
+div.basket-category-product div.basket-wrapper{
 
     display: flex;
     flex-direction: row;
@@ -43,7 +50,8 @@ div.basket-horizontalMenu-htmlIndex div.basket-wrapper{
     border-bottom: 1px solid #9c9a9a;
 }
 div.basket-card-section div.basket-wrapper div.basket-information-wrapper span.material-icons,
-div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-information-wrapper span.material-icons{
+div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-information-wrapper span.material-icons,
+div.basket-category-product div.basket-wrapper div.basket-information-wrapper span.material-icons{
 
     position: relative;
     font-size: 30px;
@@ -59,15 +67,22 @@ div.basket-horizontalMenu-htmlIndex div.basket-wrapper span.material-icons:hover
 
     cursor: pointer;
 }
+div.basket-category-product div.basket-wrapper span.material-icons :hover{
+
+    cursor: pointer;
+}
 div.basket-card-section div.basket-wrapper div.basket-information-wrapper,
-div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-information-wrapper{
+div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-information-wrapper,
+div.basket-category-product div.basket-wrapper div.basket-information-wrapper{
     display: flex;
     flex-direction: column;
 }
 div.basket-card-section div.basket-wrapper div.basket-information-wrapper div.basket-information-one,
 div.basket-card-section div.basket-wrapper div.basket-information-wrapper div.basket-information-two,
 div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-information-wrapper div.basket-information-one,
-div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-information-wrapper div.basket-information-two{
+div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-information-wrapper div.basket-information-two,
+div.basket-category-product div.basket-wrapper div.basket-information-wrapper div.basket-information-one,
+div.basket-category-product div.basket-wrapper div.basket-information-wrapper div.basket-information-two{
 
     display: flex;
     flex-direction: row;
@@ -78,25 +93,31 @@ div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-information-wr
 div.basket-card-section div.basket-wrapper div.basket-information-wrapper div.basket-information-one div.basket-info-one span.name-product,
 div.basket-card-section div.basket-wrapper div.basket-information-wrapper div.basket-information-one div.basket-info-two span.code-product,
 div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-information-wrapper div.basket-information-one div.basket-info-one span.name-product,
-div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-information-wrapper div.basket-information-one div.basket-info-two span.code-product{
+div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-information-wrapper div.basket-information-one div.basket-info-two span.code-product,
+div.basket-category-product div.basket-wrapper div.basket-information-wrapper div.basket-information-one div.basket-info-one span.name-product,
+div.basket-category-product div.basket-wrapper div.basket-information-wrapper div.basket-information-one div.basket-info-two span.code-product{
 
     padding-right: 10px;
 }
 
 div.basket-card-section div.basket-wrapper div.basket-information-wrapper div.basket-information-two,
-div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-information-wrapper div.basket-information-two{
+div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-information-wrapper div.basket-information-two,
+div.basket-category-product div.basket-wrapper div.basket-information-wrapper div.basket-information-two{
     padding-bottom: 20px;
     margin-top: 5px;
 }
 div.basket-card-section div.basket-wrapper div.basket-information-wrapper div.basket-information-one div.basket-info-two,
 div.basket-card-section div.basket-wrapper div.basket-information-wrapper div.basket-information-two div.basket-info-four,
 div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-information-wrapper div.basket-information-one div.basket-info-two,
-div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-information-wrapper div.basket-information-two div.basket-info-four{
+div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-information-wrapper div.basket-information-two div.basket-info-four,
+div.basket-category-product div.basket-wrapper div.basket-information-wrapper div.basket-information-one div.basket-info-two,
+div.basket-category-product div.basket-wrapper div.basket-information-wrapper div.basket-information-two div.basket-info-four{
 
     padding-right: 40px;
 }
 div.basket-card-section div.basket-wrapper div.basket-information-wrapper div.basket-information-two div.basket-info-three input.cart-quantity-input,
-div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-information-wrapper div.basket-information-two div.basket-info-three input.cart-quantity-input{
+div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-information-wrapper div.basket-information-two div.basket-info-three input.cart-quantity-input,
+div.basket-category-product div.basket-wrapper div.basket-information-wrapper div.basket-information-two div.basket-info-three input.cart-quantity-input{
 
   height: 34px;
   width: 132px;
@@ -112,34 +133,39 @@ div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-information-wr
 }
  
 div.basket-card-section div.basket-wrapper div.basket-img-wrapper img.basket-img,
-div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-img-wrapper img.basket-img{
+div.basket-horizontalMenu-htmlIndex div.basket-wrapper div.basket-img-wrapper img.basket-img,
+div.basket-category-product div.basket-wrapper div.basket-img-wrapper img.basket-img{
     width: 145px;
     height: 145px;
     padding-top: 45px;
     padding-left: 35px;
 }
 div.basket-card-section div.total-price,
-div.basket-horizontalMenu-htmlIndex div.total-price{
+div.basket-horizontalMenu-htmlIndex div.total-price,
+div.basket-category-product div.total-price{
 
     margin-top: 30px;
     margin-bottom: 50px;
     padding-right: 60px;
 }
 div.basket-card-section div.total-price span.titel-price,
-div.basket-horizontalMenu-htmlIndex div.total-price span.titel-price{
+div.basket-horizontalMenu-htmlIndex div.total-price span.titel-price,
+div.basket-category-product div.total-price span.titel-price{
 
     font-family: Sahel-Bold;
     font-size: 17px;
 }
 div.basket-card-section div.total-price span.sum-price,
-div.basket-horizontalMenu-htmlIndex div.total-price span.sum-price{
+div.basket-horizontalMenu-htmlIndex div.total-price span.sum-price,
+div.basket-category-product div.total-price span.sum-price{
 
     font-family: Sahel-Bold;
     padding-right: 20px;
     font-size: 17px;
 }
 div.basket-card-section div.total-price a.pay,
-div.basket-horizontalMenu-htmlIndex div.total-price a.pay{
+div.basket-horizontalMenu-htmlIndex div.total-price a.pay,
+div.basket-category-product div.total-price a.pay{
 
     margin-right: 50px;
     border: 1px solid darkblue;
@@ -157,6 +183,12 @@ div.basket-card-section div.total-price a.pay:hover{
     text-decoration: none;
 }
 div.basket-horizontalMenu-htmlIndex div.total-price a.pay:hover{
+
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
+    background-position: right center; 
+    text-decoration: none;
+}
+div.basket-category-product div.total-price a.pay:hover{
 
     background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
     background-position: right center; 
@@ -222,6 +254,12 @@ div.basket-horizontalMenu-htmlIndex div.total-price a.pay:hover{
 
         top: -1140px;
     } 
+    div.basket-category-product{
+
+        top: -520px;
+        width: 90%;
+        right: 5%;
+    }
 }
 
 @media only screen and (min-width: 460px) and (max-width: 576px){
@@ -275,7 +313,12 @@ div.basket-horizontalMenu-htmlIndex div.total-price a.pay:hover{
 
         top: -1110px;
     } 
+    div.basket-category-product{
 
+        top: -520px;
+        width: 90%;
+        right: 5%;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px){
@@ -291,6 +334,10 @@ div.basket-horizontalMenu-htmlIndex div.total-price a.pay:hover{
 
         top: -1110px;
     } 
+    div.basket-category-product{
+
+        top: -520px;
+    }
 
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
@@ -306,7 +353,11 @@ div.basket-horizontalMenu-htmlIndex div.total-price a.pay:hover{
 
         top: -1110px;
         
-    } 
+    }
+    div.basket-category-product{
+
+        top: -520px;
+    }
 }
 @media only screen and (min-width: 992px) and (max-width: 1100px){
 
@@ -324,7 +375,11 @@ div.basket-horizontalMenu-htmlIndex div.total-price a.pay:hover{
 
         top: -630px;
         
-    } 
+    }
+    div.basket-category-product{
+
+        top: -33px;
+    }
 }
 @media only screen and (min-width: 1100px) and (max-width: 1200px){
 
@@ -341,12 +396,20 @@ div.basket-horizontalMenu-htmlIndex div.total-price a.pay:hover{
 
         top: -630px;
         
-    } 
+    }
+    div.basket-category-product{
+
+        top: -33px;
+    }
 }
 @media only screen and (min-width: 1200px){
 
     div.basket-asideMenu{
 
         top: -510px !important;
+    }
+    div.basket-category-product{
+
+        top: -33px;
     }
 }
