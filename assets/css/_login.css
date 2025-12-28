@@ -4,6 +4,12 @@ div.modal-wrapper{
     display: none;
     z-index: 999;
 }
+div.modal-wrapper-category-product-login{
+
+    top: -33px; 
+    display: none;
+    z-index: 999;
+}
 div.fix-position-product{
 
     top: -1650px;
@@ -44,6 +50,10 @@ div.modal div.header-login span.close-index-login:hover{
     cursor: pointer;
 }
 div.modal div.header-login span.close-index-login-aside:hover{
+
+    cursor: pointer;
+}
+div.modal div.header-login span.close-category-product-login:hover{
 
     cursor: pointer;
 }
@@ -146,6 +156,10 @@ div.modal div.footer-login a.register{
 
     display: block !important;
     
+}
+.show-category-product-login{
+
+    display: block !important;
 }
 
 /* ............ These codes are for responsive ............ */
