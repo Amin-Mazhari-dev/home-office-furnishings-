@@ -28,7 +28,11 @@ div.basket-asideMenu{
     top: -510px;
     right: 35%;
 }
+div.basket-category-product{
 
+    top: -33px;
+    right: 32%;
+}
 
 div.basket-card-section div.basket-wrapper,
 div.basket-horizontalMenu-htmlIndex div.basket-wrapper{
