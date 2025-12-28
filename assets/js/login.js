@@ -27,6 +27,9 @@ document.addEventListener('open-login', function(event){
 
         container.classList.add('show-login-products')
 
+    }else if(container.id === 'category-product-login'){
+
+        container.classList.add('show-category-product-login')
     }
     
 })
@@ -38,6 +41,9 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const closeProductsLogin = document.querySelector('.close-products-login')
     const showProductsLogin = document.getElementById('showProducts-login')
+
+    const closeCategoryProductLogin = document.querySelector('.close-category-product-login')
+    const categoryProductLogin = document.getElementById('category-product-login')
     
     if(closeIndexLogin){
 
@@ -52,6 +58,13 @@ document.addEventListener('DOMContentLoaded', function(){
         closeProductsLogin.addEventListener('click', function(){
 
             showProductsLogin.classList.remove('show-login-products')
+        })
+    }
+    if(closeCategoryProductLogin){
+
+        closeCategoryProductLogin.addEventListener('click', function(){
+
+            categoryProductLogin.classList.remove('show-category-product-login')
         })
     }
 })
