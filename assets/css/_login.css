@@ -178,7 +178,10 @@ div.modal div.footer-login a.register{
         right: 0%;
         z-index: 1000;
     }
+    div.fix-position-category-product-login{
 
+        top: -530px;
+    }
     div.header-login h4{
 
         display: none;
@@ -247,7 +250,10 @@ div.modal div.footer-login a.register{
         right: 0%;
         z-index: 1000;
     }
+    div.fix-position-category-product-login{
 
+        top: -530px;
+    }
     div.header-login h4{
 
         display: none;
@@ -315,7 +321,10 @@ div.modal div.footer-login a.register{
         right: 0%;
         z-index: 1000;
     }
+    div.fix-position-category-product-login{
 
+        top: -530px;
+    }
     div.header-login h4{
 
         display: none;
@@ -383,7 +392,10 @@ div.modal div.footer-login a.register{
         right: 0%;
         z-index: 1000;
     }
+    div.fix-position-category-product-login{
 
+        top: -522px;
+    }
     div.header-login h4{
 
         display: none;
