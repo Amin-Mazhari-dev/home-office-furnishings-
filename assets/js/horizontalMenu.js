@@ -14,6 +14,7 @@ const basketCardSection = document.querySelector('.basket-card-section')
 
 const indexLogin = document.getElementById('index-login')
 const showProductsLogin = document.getElementById('showProducts-login')
+const categoryProductLogin = document.getElementById('category-product-login')
 
 
 // This part is for products menu
@@ -816,6 +817,10 @@ function handelCloseBasketLogin(){
     if(showProductsLogin){
 
         showProductsLogin.classList.remove('show-login-products')
+    }
+    if(categoryProductLogin){
+
+        categoryProductLogin.classList.remove('show-category-product-login')
     }
 }
 
