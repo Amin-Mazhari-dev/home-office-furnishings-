@@ -1,0 +1,66 @@
+nav#horizontal-Menu-products{
+
+    position: sticky;
+    top: 0; 
+    z-index: 999;
+}
+div.category-product-inner-wrapper{
+
+    box-shadow: 1px 1px 1px 1px #9c9b9b;
+    background-color: var(--Secondery-Color);
+}
+div.category-product-inner-wrapper div.category-product-body{
+
+    margin-top: 10px;
+}
+div.category-product-inner-wrapper div.category-product-body div.category-product-name{
+
+    margin-bottom: 10px;
+}
+div.category-product-inner-wrapper div.category-product-body div.category-product-name h3{
+
+    font-size: 16px;
+    display: inline-block;
+    color: rgb(22, 22, 165);
+}
+div.category-product-inner-wrapper div.category-product-body div.category-product-name :nth-child(1){
+
+    padding-right: 5%;
+}
+div.category-product-inner-wrapper div.category-product-body div.category-product-price{
+
+    margin-bottom: 10px;
+}
+div.category-product-inner-wrapper div.category-product-body div.category-product-price span{
+
+    font-size: 16px;
+    display: inline-block;
+    color: rgb(22, 22, 165);
+}
+div.category-product-inner-wrapper div.category-product-body div.category-product-price :nth-child(1){
+
+    padding-right: 5%;
+}
+div.category-product-inner-wrapper div.category-product-body div.category-product-more-detail{
+
+    padding-bottom: 25px;
+    text-align: center;
+}
+div.category-product-inner-wrapper div.category-product-body div.category-product-more-detail a{
+
+    color: var(--Third-Color);
+    font-family: Sahel-Bold;
+    border-bottom: 2px solid var(--Third-Color);
+}
+
+
+
+/* ........ These Codes are for Responsive .......... */
+
+@media only screen and (max-width: 992px){
+
+    nav#horizontal-Menu-products{
+
+        overflow: hidden;
+    }
+}
