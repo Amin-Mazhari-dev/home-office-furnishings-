@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/grid-system.css">
+    <link rel="stylesheet" href="assets/css/utility-classes.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Category of Products</title>
+</head>
+<body>
+
+    <!-- Start Horizontal menu -->
+        <nav class="container-fluid" id="horizontal-Menu-products">
+
+            <div class="row menu-wrapper">
+    
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+    
+                    <div class="home relative">
+                        <a href="#"><span class="material-icons">home</span></a>
+                    </div>
+    
+                    <div class="relative" id="our-products">
+    
+                        <div class="title-our-products">
+    
+                            <span id="title-one">محصولات </span>
+                            <span class="material-icons arrow-products">arrow_back_ios</span>
+    
+                        </div>
+    
+                        <div class="product-submenu">
+    
+                            <a class="product" href="#" data-category="furnishings-home">مبلمان منزل</a>
+                            <a class="product" href="#" data-category="office-furniture">مبلمان اداری</a>
+                            <a class="product" href="#" data-category="table">میز تحریر</a>
+                            <a class="product" href="#" data-category="table">میز کامپیوتر</a>
+                            <a class="product" href="#" data-category="chair">صندلی اداری و خانگی</a>
+                            <a class="product" href="#" data-category="bed">تختخواب</a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="relative" id="our-agency">
+    
+                        <div class="title-our-agency">
+    
+                            <span id="title-two">نمایندگی ها </span>
+                            <span class="material-icons arrow-agency">arrow_back_ios</span>
+    
+                        </div>
+    
+                        <div class="agency-submenu">
+    
+                            <a class="agency" href="#">تهران</a>
+                            <a class="agency" href="#">گیلان</a>
+                            <a class="agency" href="#">اصفهان</a>
+                            <a class="agency" href="#">شیراز</a>
+                            <a class="agency" href="#">تبریز</a>
+                            <a class="agency" href="#">کیش</a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="relative" id="social-media">
+    
+                        <div class="title-social-media">
+    
+                            <span id="title-three">شبکه های اجتماعی </span>
+                            <span class="material-icons arrow-social-media">arrow_back_ios</span>
+    
+                        </div>
+    
+                        <div class="social-media-submenu">
+    
+                            <a class="media" href="#"><i class="fas fa-rss"></i></a>
+                            <a class="media" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="media" href="#"><i class="fab fa-facebook"></i></a>
+                            <a class="media" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="media" href="#"><i class="fab fa-telegram-plane"></i></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="relative" id="abut-us">
+    
+                        <div class="title-abut-us">
+    
+                            <span id="title-four">در بــــاره مــــا</span>
+                            <span class="material-icons arrow-abut-us">arrow_back_ios</span>
+    
+                        </div>
+    
+                        <div class="abut-us-submenu">
+    
+                            <a class="abutUs" href="#">مدیریت فروش: وحید اسماعیلیان</a>
+                            <a class="abutUs" href="#">آدرس : رشت - گلسار، نبش خیابان 120</a>
+                            <a class="abutUs" href="#">شماره تماس: 66894157-013</a>
+                            <a class="abutUs" href="#">Email : Royal-city@gmail.com</a>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+    
+                    <div class="icon-section">
+    
+                        <span id="shopping" class="material-icons shopping-cart relative" data-target="#index-basket-category-product">shopping_cart</span>
+                        <span id="login" class="material-icons myLogin relative" data-targ="#category-product-login">perm_identity</span>
+                        <img class="img-responsive relative logo" src="assets/img/Logo-100.png" alt="">
+                        <i id="horizontalBars" class="fas fa-bars relative"></i>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </nav>
+    <!-- Ende Horizontal menu -->
+
+    <!-- Start Basket cart section -->
+
+        <div id="index-basket-category-product" class="basket-card-section basket-category-product relative">
+
+            <!-- <div class="basket-wrapper">
+    
+                <div class="basket-information-wrapper">
+    
+                    <span class="material-icons delete-product">cancel</span>
+    
+                    <div class="basket-information-one">
+    
+                        <div class="basket-info-one">
+    
+                            <span class="title-product">نــام محصــول:</span>
+                            <span class="name-product"></span>
+                            
+                        </div>
+                        <div class="basket-info-two">
+    
+                            <span class="title-code-product">کــد محصـول :</span>
+                            <span class="code-product"></span>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="basket-information-two">
+    
+                        <div class="basket-info-three">
+                            <input class="cart-quantity-input" type="number" value="1">
+                        </div>
+    
+                        <div class="basket-info-four">
+    
+                            <span class="title-price">قیمت :</span>
+                            <span class="product-price"></span>
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="basket-img-wrapper">
+                    <img class="basket-img" src="" alt="">
+                </div>
+    
+    
+            </div>
+    
+            <div class="total-price">
+                <span class="titel-price">جمع کل :</span>
+                <span class="sum-price"></span>
+            </div> -->
+    
+        </div>
+
+    <!-- Ende Basket cart section -->
+    
+    <!-- Start login section -->
+
+        <div id="category-product-login" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-lg-offset-4 col-xl-offset-4 modal-wrapper-category-product-login fix-position-category-product-login relative">
+    
+            <div class="modal">
+    
+                <div class="header-login">
+    
+                  <h4>ورود</h4>
+                  <span class="material-icons close-category-product-login">clear</span>
+    
+                </div>
+              
+                <form class="body-login relative" action="" method="" name="">
+    
+                   <label class="userName" for="user">نــام کــاربــری:</label>
+                   <input type="text" name="" id="user" autocomplete="off">
+                   <p class="userName-message"></p>
+    
+                   <label class="userPassword" for="pass">رمز عبور:</label>
+                   <input type="password" id="pass" autocomplete="off">
+                   <i id="show-pass" class="far fa-eye-slash"></i>
+                   <!-- <i class="far fa-eye"></i> -->
+                   <p class="password-message"></p>
+    
+                   <button class="absolute login-btn" type="submit">ورود</button>
+    
+                </form>
+    
+                <div class="footer-login">
+    
+                    <a class="password-recovery" href="">فـراموشی رمـز عبـور</a>
+                    <a class="register" href="">ثبت نـــام</a>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+
+    <!-- Ende login section -->
+
+    <!-- Start category product section -->
+
+    <section class="container">
+
+        <div class="row category-product-wrapper">
+
+            <!-- <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 ma-top-25 ma-bottom-25">
+
+                <div class="category-product-inner-wrapper">
+
+                    <div class="category-product-header">
+
+                        <img class="img-responsive" src="assets/img/Antique-01.png" alt="">
+
+                    </div>
+
+                    <div class="category-product-body">
+
+                        <div class="category-product-name">
+
+                            <h3>نـــام محصــول :</h3>
+                            <h3 class="name-category-product">california</h3>
+
+                        </div>
+
+                        <div class="category-product-price">
+
+                            <span>قیمت محصـول :</span>
+                            <span class="price-category-product">1100000</span>
+
+                        </div>
+
+                        <div class="category-product-more-detail">
+
+                            <a href="#">مشـاهـده بیشتـر ...</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+
+        </div>
+
+    </section>
+
+    <!-- Ende category product section -->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+
+
+
+    <script type="module" src="assets/js/horizontalMenu.js"></script>
+    <script type="module" src="assets/js/cart.js"></script>
+    <script type="module" src="assets/js/FixBasketPosition.js"></script>
+    <script type="module" src="assets/js/login.js"></script>
+    <script type="module" src="assets/js/fixLoginPosition.js"></script>
+    
+</body>
+</html>
