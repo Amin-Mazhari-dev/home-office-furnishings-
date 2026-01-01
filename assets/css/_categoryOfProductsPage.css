@@ -57,6 +57,67 @@ div.category-product-inner-wrapper div.category-product-body div.category-produc
 
 /* ........ These Codes are for Responsive .......... */
 
+@media only screen and (min-width: 360px) and (max-width: 460px){
+
+    section.container-product{
+
+        margin-bottom: 570px;
+    }
+    div.footer-container-one-category{
+
+        margin-top: 50px;
+    }
+    div.footer-container-three-category{
+
+        margin-top: -100px;
+    }
+}
+@media only screen and (min-width: 460px) and (max-width: 576px){
+
+    section.container-product{
+
+        margin-bottom: 570px;
+    }
+    div.footer-container-one-category{
+
+        margin-top: 50px;
+    }
+    div.footer-container-three-category{
+
+        margin-top: -100px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+    section.container-product{
+
+        margin-bottom: 400px;
+    }
+    div.footer-container-three-category div.footer-wraper-img img{
+
+        margin-right: 30%;
+        margin-top: -110px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+
+    section.container-product{
+
+        margin-bottom: 400px;
+    }
+    div.footer-container-three-category div.footer-wraper-img img{
+
+        margin-right: -5%; 
+        margin-top: 50px;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+
+    section.container-product{
+
+        margin-bottom: 200px;
+    }
+}
 @media only screen and (max-width: 992px){
 
     nav#horizontal-Menu-products{
