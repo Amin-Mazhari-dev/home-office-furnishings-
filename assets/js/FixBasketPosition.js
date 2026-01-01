@@ -83,7 +83,8 @@ window.addEventListener('scroll', function(event){
 const basketCategoryProduct = document.querySelector('.basket-category-product')
 
 function getElementTopBasketCategoryProduct(elemBasketCategory){
-
+    
+    if(!elemBasketCategory) return;
     const styleBasketCategoryProduct = getComputedStyle(elemBasketCategory);
     const topValueBasketCategoryProduct = styleBasketCategoryProduct.top;
 
