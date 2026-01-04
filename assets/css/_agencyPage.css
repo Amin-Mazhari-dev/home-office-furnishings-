@@ -62,11 +62,7 @@ table.info-agency tbody tr td a i{
 
     color: var(--Secondery-Color);
     padding-left: 18px;
-    font-size: 18px;
-}
-table.info-agency tbody tr td a:hover i{
-
-    color: var(--Third-Color);
+    font-size: 22px;
 }
 
 /* ....... These codes are for responsive ........ */
