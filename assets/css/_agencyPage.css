@@ -1,0 +1,188 @@
+/* ....... These codes are for Menu section ........ */
+
+nav#wrapper-Menu{
+
+    background-color: var(--Primary-Color);
+    height: 70px;
+}
+nav#wrapper-Menu div.home-icon-wrapper a{
+
+    padding-right: 7%;
+    top: 13px;
+}
+nav#wrapper-Menu div.home-icon-wrapper a span.material-icons{
+
+    font-size: 45px;
+    color: var(--Secondery-Color);
+    transition: .5s ease-in;
+}
+nav#wrapper-Menu div.home-icon-wrapper a:hover span.material-icons{
+
+    color: var(--Third-Color);
+}
+
+/* ....... These codes are for Banner-agency section ........ */
+
+div.banner-agency{
+    
+    width: 100%;
+}
+div.banner-agency img{
+
+    display: block;
+    width: 100%;
+    height: 88vh; 
+}
+
+/* ....... These codes are for Information-agency section ......... */
+
+section.info-agency-wrapper{
+
+    margin-bottom: 400px;
+}
+table.info-agency{
+
+    border: 2px solid #000;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px;
+}
+table.info-agency tbody tr,td{
+
+    text-align: center;
+    padding: 10px;
+}
+table.info-agency tbody tr td{
+
+    color: var(--Secondery-Color);
+    font-family: Sahel-Bold;
+    font-size: 18px;
+}
+table.info-agency tbody tr td a i{
+
+    color: var(--Secondery-Color);
+    padding-left: 18px;
+    font-size: 18px;
+}
+table.info-agency tbody tr td a:hover i{
+
+    color: var(--Third-Color);
+}
+table.info-agency tbody tr:nth-child(odd){
+
+    background-color: #779ac8;
+}
+table.info-agency tbody tr:nth-child(even){
+
+    background-color: #b6b0a8;
+}
+
+/* ....... These codes are for responsive ........ */
+
+@media only screen and (min-width: 360px) and (max-width: 460px){
+
+    section.info-agency-wrapper{
+
+        margin-bottom: 1000px;
+    }
+    section.info-agency-wrapper table.info-agency{
+
+        position: relative;
+        right: -7%;
+    }
+    section.info-agency-wrapper table.info-agency tbody tr td{
+
+        font-size: 14px;
+    }
+    footer.parent-footer div.footer-container-agency-one{
+
+        margin-top: 50px;
+    }
+    footer.parent-footer div.footer-container-agency-three{
+
+        margin-top: -100px;
+    }
+}
+@media only screen and (min-width: 460px) and (max-width: 576px){
+
+    section.info-agency-wrapper{
+
+        margin-bottom: 1000px;
+    }
+    section.info-agency-wrapper table.info-agency{
+
+        position: relative;
+        right: -7%;
+    }
+    section.info-agency-wrapper table.info-agency tbody tr td{
+
+        font-size: 14px;
+    }
+    footer.parent-footer div.footer-container-agency-one{
+
+        margin-top: 50px;
+    }
+    footer.parent-footer div.footer-container-agency-three{
+
+        margin-top: -100px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+    section.info-agency-wrapper{
+
+        margin-bottom: 800px;
+    }
+    section.info-agency-wrapper table.info-agency{
+
+        position: relative;
+        right: -3%;
+    }
+    section.info-agency-wrapper table.info-agency tbody tr td{
+
+        font-size: 16px;
+    }
+    footer.parent-footer div.footer-container-agency-one,
+    footer.parent-footer div.footer-container-agency-two{
+
+        margin-top: 50px;
+    }
+    footer.parent-footer div.footer-container-agency-three{
+
+        margin-top: 100px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+
+    section.info-agency-wrapper{
+
+        margin-bottom: 600px;
+    }
+    section.info-agency-wrapper table.info-agency{
+
+        position: relative;
+        right: -3%;
+    }
+    section.info-agency-wrapper table.info-agency tbody tr td{
+
+        font-size: 16px;
+    }
+    footer.parent-footer div.footer-container-agency-one,
+    footer.parent-footer div.footer-container-agency-two{
+
+        margin-top: 50px;
+    }
+    footer.parent-footer div.footer-container-agency-three{
+
+        margin-top: 100px;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1100px){
+
+    section.info-agency-wrapper table.info-agency{
+
+        position: relative;
+        right: -2%;
+    }
+}
+
