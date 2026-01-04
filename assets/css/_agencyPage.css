@@ -68,14 +68,6 @@ table.info-agency tbody tr td a:hover i{
 
     color: var(--Third-Color);
 }
-table.info-agency tbody tr:nth-child(odd){
-
-    background-color: #779ac8;
-}
-table.info-agency tbody tr:nth-child(even){
-
-    background-color: #b6b0a8;
-}
 
 /* ....... These codes are for responsive ........ */
 
