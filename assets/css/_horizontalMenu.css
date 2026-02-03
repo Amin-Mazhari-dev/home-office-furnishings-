@@ -230,46 +230,7 @@ div.menu-wrapper div.icon-section i.fas:hover{
 }
 
 
- /* .......... These codes are for responsive Menu (min-width:992px and max-width:1329px) ..... */
-
- .responsiveTop{
-
-    top: -204px !important;
- }
- .responsiveTopTwo{
-
-    top: -202px !important;
- }
- .responsiveTopThree{
-
-    top: -183px !important;
- }
- .responsiveTopFour{
-
-    top: -181px !important;
- }
- .responsiveTopFive{
-
-    top: -160px !important;
- }
- .responsiveHomeIconTop{
-
-    top: -192px !important;
- }
- .responsiveHomeIconTopTwo{
-
-    top: -170px !important;
- }
- .responsiveHomeIconTopThree{
-
-    top: -171px !important;
- }
- .responsiveHomeIconTopFour{
-
-    top: -150px !important;
- }
-
- @media only screen and (min-width: 992px) and (max-width: 1035px){
+@media only screen and (min-width: 992px) and (max-width: 1035px){
 
     div.menu-wrapper div#our-products div.product-submenu a{
 
@@ -312,7 +273,7 @@ div.menu-wrapper div.icon-section i.fas:hover{
         padding-left: 10px;
     }
     div.menu-wrapper div.icon-section span#shopping{
-        margin-right: 20px;
+        margin-right: 25px;
     }
 
     div.menu-wrapper div.icon-section span#login{
@@ -436,7 +397,8 @@ div.menu-wrapper div.icon-section i.fas:hover{
     .logo,
        #horizontalBars,
        #shopping,
-       #login {
+       #login,
+       .home{
        transition: top 0.4s ease-in-out;
     }
 
@@ -517,7 +479,7 @@ div.menu-wrapper div.icon-section i.fas:hover{
 
         display: block !important;
         position: relative;
-        right: -259% !important;
+        right: -249% !important;
         top: 26px !important;
         width: 70px;
         height: 50px;
