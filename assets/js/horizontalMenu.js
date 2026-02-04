@@ -10,7 +10,8 @@ const userLogin = document.getElementById('login')
 const menuWrapper = document.querySelector('.menu-wrapper')
 const myHorizontalBars = document.getElementById('horizontalBars')
 
-const basketCardSection = document.querySelector('.basket-card-section')
+const allBaskets = document.querySelectorAll('.basket-card-section')
+const indexBasket = document.getElementById('.index-basket')
 
 const indexLogin = document.getElementById('index-login')
 const showProductsLogin = document.getElementById('showProducts-login')
@@ -129,30 +130,6 @@ titleAbutUs.addEventListener('click', function(){
 
 })
 
-//This function fix home icon
-
-function homeIcon(homeIc){
-
-    let hasClassProductSection = productSubmenu.classList.contains('showCuntries')
-    let hasClassAgencySubmenu = agencySubmenu.classList.contains('showCuntries')
-    let hasClassSocialMediaSubmenu = socialMediaSubmenu.classList.contains('showCuntries')
-    let hasClassAbutUsSubmenu = abutUsSubmenu.classList.contains('showCuntries')
-
-    if(hasClassProductSection || hasClassAgencySubmenu || hasClassSocialMediaSubmenu){
-
-        homeIc.style.cssText = 'top: -193px;'
-    }else{
-
-        homeIc.style.cssText = 'top: 17px;'
-    }
-
-    if(hasClassAbutUsSubmenu){
-
-        homeIc.style.cssText = 'top: -134px;'
-    }
-
-}
-
 // This function removes the CSS classes that we added to the elements of the "our-products" section with JavaScript.
 
 function removeClassesFromProductSection(){
@@ -229,6 +206,69 @@ function removeClassesFromAbutUs(){
     }
 }
 
+
+
+//Each code block is responsible for ensuring that when any menu is clicked, that specific menu 
+//maintains its correct position. Furthermore, when other menus are clicked afterward, the 
+//previously selected menu must still preserve its proper and intended position.
+
+//This function fix home icon
+
+function homeIcon(homeIc){
+
+    let hasClassProductSection = productSubmenu.classList.contains('showCuntries')
+    let hasClassAgencySubmenu = agencySubmenu.classList.contains('showCuntries')
+    let hasClassSocialMediaSubmenu = socialMediaSubmenu.classList.contains('showCuntries')
+    let hasClassAbutUsSubmenu = abutUsSubmenu.classList.contains('showCuntries')
+
+    if(hasClassProductSection){
+
+        if(window.innerWidth <= 1033){
+
+            homeIc.style.top = '-190px'
+        }
+        else if(window.innerWidth > 1033 && window.innerWidth < 1050){
+
+            homeIc.style.top = '-220px'
+        }
+  
+    }else{
+
+        homeIc.style.top = '15px'
+    } 
+
+    if(hasClassProductSection && window.innerWidth > 1050){
+
+        homeIc.style.top = '-196px'
+
+    }else if(hasClassAgencySubmenu){
+
+        homeIc.style.top = '-196px'
+
+    }else if(hasClassSocialMediaSubmenu){
+
+        homeIc.style.top = '-195px'
+
+    }
+
+    if(hasClassAbutUsSubmenu){
+
+        if(window.innerWidth > 992 && window.innerWidth <= 1153){
+
+            homeIc.style.top = '-172px'
+
+        }else if(window.innerWidth > 1153 && window.innerWidth < 1180){
+
+            homeIc.style.top = '-151px'
+
+        }else if(window.innerWidth >= 1180){
+
+            homeIc.style.top = '-130px'
+        }
+    }
+
+}
+
 // This function fix position for "our-products" menu
 
 function fixPositionOurProductsMenu(ourProdu){
@@ -238,21 +278,44 @@ function fixPositionOurProductsMenu(ourProdu){
     let hasClassSocialMediaSubmenu = socialMediaSubmenu.classList.contains('showCuntries')
     let hasClassAbutUsSubmenu = abutUsSubmenu.classList.contains('showCuntries')
 
-    if(hasClassAgencySubmenu || hasClassSocialMediaSubmenu){
+    if(window.innerWidth > 992){
 
-        ourProdu.style.cssText = 'top: -202px;'
+        if(hasClassProductSection){
 
-    }else if(hasClassProductSection){
+            ourProdu.style.top = '20px';
 
-        ourProdu.style.cssText = 'top: 23px;'
-    }else{
-        ourProdu.style.cssText = 'top: 6px;'
+        }else if(hasClassAgencySubmenu){
+
+            ourProdu.style.top = '-204px';
+
+        }else if(hasClassSocialMediaSubmenu){
+
+            ourProdu.style.top = '-203px';
+            
+        }
+        else{
+
+            ourProdu.style.top = '7px'
+        }
+        
     }
 
     if(hasClassAbutUsSubmenu){
 
-        ourProdu.style.cssText = 'top: -142px;'
+        if(window.innerWidth > 992 && window.innerWidth <= 1153){
+
+            ourProdu.style.top = '-180px'
+
+        }else if(window.innerWidth > 1153 && window.innerWidth < 1180){
+
+            ourProdu.style.top = '-159px'
+
+        }else if(window.innerWidth >= 1180){
+
+            ourProdu.style.top = '-138px'
+        }
     }
+
 }
 
 // This function fix position for "our-agency" menu
@@ -264,22 +327,53 @@ function fixPositionOurAgencyMenu(ourAgen){
     let hasClassSocialMediaSubmenu = socialMediaSubmenu.classList.contains('showCuntries')
     let hasClassAbutUsSubmenu = abutUsSubmenu.classList.contains('showCuntries')
 
-    if(hasClassProductSection || hasClassSocialMediaSubmenu){
+    if(hasClassProductSection){
 
-        ourAgen.style.cssText = 'top: -201px;'
+        if(window.innerWidth <= 1033){
+
+            ourAgen.style.top = '-199px'
+        }
+        else if(window.innerWidth > 1033 && window.innerWidth < 1050){
+
+            ourAgen.style.top = '-229px'
+        }
+  
+    }else{
+
+        ourAgen.style.top = '6px'
+    } 
+
+    if(hasClassProductSection && window.innerWidth > 1050){
+
+        ourAgen.style.top = '-205px'
 
     }else if(hasClassAgencySubmenu){
 
-        ourAgen.style.cssText = 'top: 23px;'
-    }else{
+        ourAgen.style.top = '19px'
 
-        ourAgen.style.cssText = 'top: 6px;;'
+    }else if(hasClassSocialMediaSubmenu){
+
+        ourAgen.style.top = '-204px'
+
     }
 
     if(hasClassAbutUsSubmenu){
 
-        ourAgen.style.cssText = 'top: -142px;'
+        if(window.innerWidth > 992 && window.innerWidth <= 1153){
+
+            ourAgen.style.top = '-181px'
+
+        }else if(window.innerWidth > 1153 && window.innerWidth < 1180){
+
+            ourAgen.style.top = '-160px'
+
+        }else if(window.innerWidth >= 1180){
+
+            ourAgen.style.top = '-139px'
+        }
     }
+
+
 }
 
 // This function fix position for "social-media" menu
@@ -291,22 +385,51 @@ function fixPositionSocialMedia(socialMed){
     let hasClassSocialMediaSubmenu = socialMediaSubmenu.classList.contains('showCuntries')
     let hasClassAbutUsSubmenu = abutUsSubmenu.classList.contains('showCuntries')
 
-    if(hasClassProductSection || hasClassAgencySubmenu){
+    if(hasClassProductSection){
 
-        socialMed.style.cssText = 'top: -201px;'
+        if(window.innerWidth <= 1033){
 
-    }else if(hasClassSocialMediaSubmenu){
+            socialMed.style.top = '-199px'
+        }
+        else if(window.innerWidth > 1033 && window.innerWidth < 1050){
 
-        socialMed.style.cssText = 'top: 23px;'
+            socialMed.style.top = '-229px'
+        }
 
     }else{
 
-        socialMed.style.cssText = 'top: 6px;'
+        socialMed.style.top = '6px'
+    }
+
+
+    if(hasClassProductSection && window.innerWidth > 1050){
+
+        socialMed.style.top = '-205px'
+    }
+    else if(hasClassAgencySubmenu){
+
+        socialMed.style.top = '-205px'
+    }
+    else if(hasClassSocialMediaSubmenu){
+
+        socialMed.style.top = '19px'
+
     }
 
     if(hasClassAbutUsSubmenu){
 
-        socialMed.style.cssText = 'top: -142px;'
+        if(window.innerWidth > 992 && window.innerWidth <= 1153){
+
+            socialMed.style.top = '-181px'
+
+        }else if(window.innerWidth > 1153 && window.innerWidth < 1180){
+
+            socialMed.style.top = '-160px'
+
+        }else if(window.innerWidth >= 1180){
+
+            socialMed.style.top = '-139px'
+        }
     }
 }
 
@@ -319,279 +442,40 @@ function fixPositionAbutUs(abut){
     let hasClassSocialMediaSubmenu = socialMediaSubmenu.classList.contains('showCuntries')
     let hasClassAbutUsSubmenu = abutUsSubmenu.classList.contains('showCuntries')
 
-    if(hasClassProductSection || hasClassAgencySubmenu || hasClassSocialMediaSubmenu){
+    if(hasClassProductSection){
 
-        abut.style.cssText = 'top: -201px;'
-    }else if(hasClassAbutUsSubmenu){
+        if(window.innerWidth <=1033){
 
-        abut.style.cssText = 'top: 16px;'
+            abut.style.top = '-199px'
+        }
+        else if(window.innerWidth > 1033 && window.innerWidth < 1050){
 
+            abut.style.top = '-229px'
+        }
+        
     }else{
 
-        abut.style.cssText = 'top: 6px;'
+        abut.style.top = '6px'
     }
+
+    if(hasClassProductSection && window.innerWidth > 1050){
+
+        abut.style.top = '-205px'
+    }
+    else if(hasClassAgencySubmenu){
+
+        abut.style.top = '-205px'
+    }
+    else if(hasClassSocialMediaSubmenu){
+
+        abut.style.top = '-204px'
+    }
+    else if(hasClassAbutUsSubmenu){
+
+        abut.style.top = '19px'
+    }
+    
 }
-
-
-//......... This codes are for responsive Menu (min-width:992px and max-width:1329px) ............
-
-function handleCustomRangeDesktop(){
-
-    titleAbutUs.addEventListener('click', function(){
-
-        if(window.innerWidth >= 992 && window.innerWidth <= 1154){
-
-          socialMedia.classList.toggle('responsiveTop')
-          ourAgency.classList.toggle('responsiveTop')
-          ourProducts.classList.toggle('responsiveTop')
-          homeIconn.classList.toggle('responsiveHomeIconTop')
-            
-          abutUs.classList.remove('responsiveTopTwo')
-          socialMedia.classList.remove('responsiveTopTwo')
-          ourAgency.classList.remove('responsiveTopTwo')
-
-        }
-    })
-
-    titleSocialMedia.addEventListener('click', function(){
-
-        if(window.innerWidth >= 992 && window.innerWidth <= 1329){
-
-            socialMedia.classList.remove('responsiveTop')
-            ourProducts.classList.remove('responsiveTop')
-            ourAgency.classList.remove('responsiveTop')
-            homeIconn.classList.remove('responsiveHomeIconTop')
-
-            socialMedia.classList.remove('responsiveTopTwo')
-            ourAgency.classList.remove('responsiveTopTwo')
-            abutUs.classList.remove('responsiveTopTwo')
-
-        }
-    })
-
-    titleOurAgency.addEventListener('click', function(){
-
-        if(window.innerWidth >= 992 && window.innerWidth <= 1329){
-
-            ourAgency.classList.remove('responsiveTop')
-            socialMedia.classList.remove('responsiveTop')
-            ourProducts.classList.remove('responsiveTop')
-            homeIconn.classList.remove('responsiveHomeIconTop')
-
-            ourAgency.classList.remove('responsiveTopTwo')
-            socialMedia.classList.remove('responsiveTopTwo')
-            abutUs.classList.remove('responsiveTopTwo')
-
-        }
-    })
-
-    titleOurProducts.addEventListener('click', function(){
-
-        if(window.innerWidth >= 992 && window.innerWidth <= 1329){
-
-            ourProducts.classList.remove('responsiveTop')
-            socialMedia.classList.remove('responsiveTop')
-            ourAgency.classList.remove('responsiveTop')
-            homeIconn.classList.remove('responsiveHomeIconTop')
-
-            socialMedia.classList.remove('responsiveTopTwo')
-            ourAgency.classList.remove('responsiveTopTwo')
-            abutUs.classList.remove('responsiveTopTwo')
-
-        }
-    })
-}
-handleCustomRangeDesktop()
-
-window.addEventListener('resize', handleCustomRangeDesktop);
-
-
-function handleCustomRangeDesktopTwo(){
-
-    titleAbutUs.addEventListener('click', function(){
-
-        if(window.innerWidth >= 1155 && window.innerWidth <= 1274){
-            
-            socialMedia.classList.toggle('responsiveTopThree')
-            ourAgency.classList.toggle('responsiveTopThree')
-            ourProducts.classList.toggle('responsiveTopThree')
-            homeIconn.classList.toggle('responsiveHomeIconTopTwo')
-            
-            abutUs.classList.remove('responsiveTopTwo')
-            socialMedia.classList.remove('responsiveTopTwo')
-            ourAgency.classList.remove('responsiveTopTwo')
-        }
-    })
-
-    titleSocialMedia.addEventListener('click', function(){
-
-        if(window.innerWidth >= 1155 && window.innerWidth <= 1274){
-            
-            ourProducts.classList.remove('responsiveTopThree')
-            socialMedia.classList.remove('responsiveTopThree')
-            ourAgency.classList.remove('responsiveTopThree')
-            abutUs.classList.remove('responsiveTopThree')
-            homeIconn.classList.remove('responsiveHomeIconTopTwo')
-
-        }
-    })
-
-    titleOurAgency.addEventListener('click', function(){
-
-        if(window.innerWidth >= 1155 && window.innerWidth <= 1274){
-
-            ourProducts.classList.remove('responsiveTopThree')
-            ourAgency.classList.remove('responsiveTopThree')
-            socialMedia.classList.remove('responsiveTopThree')
-            abutUs.classList.remove('responsiveTopThree')
-            homeIconn.classList.remove('responsiveHomeIconTopTwo')
-
-        }
-    })
-
-    titleOurProducts.addEventListener('click', function(){
-
-        if(window.innerWidth >= 1155 && window.innerWidth <= 1274){
-
-            ourProducts.classList.remove('responsiveTopThree')
-            socialMedia.classList.remove('responsiveTopThree')
-            ourAgency.classList.remove('responsiveTopThree')
-            abutUs.classList.remove('responsiveTopThree')
-            homeIconn.classList.remove('responsiveHomeIconTopTwo')
-
-        }
-     })
-
-}
-handleCustomRangeDesktopTwo()
-
-window.addEventListener('resize', handleCustomRangeDesktopTwo);
-
-
-function handleCustomRangeDesktopThree(){
-
-    titleAbutUs.addEventListener('click', function(){
-
-        if(window.innerWidth >= 1275 && window.innerWidth <= 1286){
-           
-           socialMedia.classList.toggle('responsiveTopFour')
-           ourAgency.classList.toggle('responsiveTopFour')
-           ourProducts.classList.toggle('responsiveTopFour')
-           homeIconn.classList.toggle('responsiveHomeIconTopThree')
-            
-            abutUs.classList.remove('responsiveTopTwo')
-            socialMedia.classList.remove('responsiveTopTwo')
-            ourAgency.classList.remove('responsiveTopTwo')
-        }
-    })
-
-    titleSocialMedia.addEventListener('click', function(){
-
-        if(window.innerWidth >= 1275 && window.innerWidth <= 1286){
-
-            ourProducts.classList.remove('responsiveTopFour')
-            socialMedia.classList.remove('responsiveTopFour')
-            ourAgency.classList.remove('responsiveTopFour')
-            abutUs.classList.remove('responsiveTopFour')
-            homeIconn.classList.remove('responsiveHomeIconTopThree')
-
-        }
-    })
-
-    titleOurAgency.addEventListener('click', function(){
-
-        if(window.innerWidth >= 1275 && window.innerWidth <= 1286){
-
-            ourProducts.classList.remove('responsiveTopFour')
-            ourAgency.classList.remove('responsiveTopFour')
-            socialMedia.classList.remove('responsiveTopFour')
-            abutUs.classList.remove('responsiveTopFour')
-            homeIconn.classList.remove('responsiveHomeIconTopThree')
-
-        }
-    })
-
-    titleOurProducts.addEventListener('click', function(){
-
-        if(window.innerWidth >= 1275 && window.innerWidth <= 1286){
-
-            ourProducts.classList.remove('responsiveTopFour')
-            socialMedia.classList.remove('responsiveTopFour')
-            ourAgency.classList.remove('responsiveTopFour')
-            abutUs.classList.remove('responsiveTopFour')
-            homeIconn.classList.remove('responsiveHomeIconTopThree')
-
-        }
-    })
-
-
-}
-handleCustomRangeDesktopThree()
-
-window.addEventListener('resize', handleCustomRangeDesktopThree);
-
-
-function handleCustomRangeDesktopFour(){
-
-    titleAbutUs.addEventListener('click', function(){
-
-        if(window.innerWidth >= 1286 && window.innerWidth <= 1329){
-           
-           socialMedia.classList.toggle('responsiveTopFive')
-           ourAgency.classList.toggle('responsiveTopFive')
-           ourProducts.classList.toggle('responsiveTopFive')
-           homeIconn.classList.toggle('responsiveHomeIconTopFour')
-            
-            abutUs.classList.remove('responsiveTopTwo')
-            socialMedia.classList.remove('responsiveTopTwo')
-            ourAgency.classList.remove('responsiveTopTwo')
-        }
-    })
-
-    titleSocialMedia.addEventListener('click', function(){
-
-        if(window.innerWidth >= 1286 && window.innerWidth <= 1329){
-
-            ourProducts.classList.remove('responsiveTopFive')
-            socialMedia.classList.remove('responsiveTopFive')
-            ourAgency.classList.remove('responsiveTopFive')
-            abutUs.classList.remove('responsiveTopFive')
-            homeIconn.classList.remove('responsiveHomeIconTopFour')
-
-        }
-    })
-
-    titleOurAgency.addEventListener('click', function(){
-
-        if(window.innerWidth >= 1286 && window.innerWidth <= 1329){
-
-            ourProducts.classList.remove('responsiveTopFive')
-            ourAgency.classList.remove('responsiveTopFive')
-            socialMedia.classList.remove('responsiveTopFive')
-            abutUs.classList.remove('responsiveTopFive')
-            homeIconn.classList.remove('responsiveHomeIconTopFour')
-
-        }
-    })
-
-    titleOurProducts.addEventListener('click', function(){
-
-        if(window.innerWidth >= 1286 && window.innerWidth <= 1329){
-
-            ourProducts.classList.remove('responsiveTopFive')
-            socialMedia.classList.remove('responsiveTopFive')
-            ourAgency.classList.remove('responsiveTopFive')
-            abutUs.classList.remove('responsiveTopFive')
-            homeIconn.classList.remove('responsiveHomeIconTopFour')
-
-        }
-    })
-
-
-}
-handleCustomRangeDesktopFour()
-
-window.addEventListener('resize', handleCustomRangeDesktopFour);
 
 
 //......... This codes are for responsive Menu in Mobile & Tablet ............
@@ -600,7 +484,7 @@ function handleResponsiveClick(){
 
     let width = window.innerWidth
 
-    //This codes are for responsive Menu (min-width: 576px) and (max-width: 768px)
+    //This codes are for responsive Menu (min-width: 360px) and (max-width: 768px)
     if(width >= 360 && width <= 768){
 
         handelCloseBasketLogin()
@@ -804,26 +688,27 @@ function handleCustomRangeTablet(){
 //The following function is written so that when you click on the hamburger menu,
 //if the shopping cart and login are open, they will also be closed when the menu is closed.
 
-function handelCloseBasketLogin(){
-
-    if(basketCardSection){
-
-        basketCardSection.classList.remove('showBasketCard')
+function handelCloseBasketLogin() {
+    
+    allBaskets.forEach(function(basket) {
+      basket.classList.remove('showBasketCard');
+    });
+  
+    
+    if (indexLogin) {
+      indexLogin.classList.remove('show-login-index');
     }
-    if(indexLogin){
-
-        indexLogin.classList.remove('show-login-index')
+  
+    if (showProductsLogin) {
+      showProductsLogin.classList.remove('show-login-products');
     }
-    if(showProductsLogin){
-
-        showProductsLogin.classList.remove('show-login-products')
+  
+    if (categoryProductLogin) {
+      categoryProductLogin.classList.remove('show-category-product-login');
     }
-    if(categoryProductLogin){
 
-        categoryProductLogin.classList.remove('show-category-product-login')
-    }
-}
-
+  }
+  
 // ............ These codes show horizontalMenu in (min-width: 992px) .....................
 
 window.addEventListener('scroll', function(event){
