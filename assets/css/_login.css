@@ -4,6 +4,12 @@ div.modal-wrapper{
     display: none;
     z-index: 999;
 }
+div.modal-wrapper-aside{
+
+    top: -510px; 
+    display: none;
+    z-index: 999;
+}
 div.modal-wrapper-category-product-login{
 
     top: -33px; 
@@ -46,6 +52,10 @@ div.modal div.header-login span{
     color: var(--Secondery-Color);
 }
 div.modal div.header-login span.close-index-login:hover{
+
+    cursor: pointer;
+}
+div.modal div.header-login span.close-index-aside{
 
     cursor: pointer;
 }
@@ -149,6 +159,10 @@ div.modal div.footer-login a.register{
 /* ................... Add animation ..................... */
 
 .show-login-index{
+
+    display: block !important;
+}
+.show-login-aside{
 
     display: block !important;
 }
