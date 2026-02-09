@@ -654,7 +654,40 @@ function handleCustomRangeMobile(){
         abutUsSubmenu.classList.contains('showCuntries')
 
     ){
-        location.reload()
+        
+        homeIconn.classList.remove('responsiveHome', 'fixTopHomeIcon')
+        homeIconn.removeAttribute('style')
+
+        myShopping.classList.remove('responsiveShopping','fixTopShopping')
+
+        userLogin.classList.remove('responsiveLogin', 'fixTopLogin')
+
+        myLogo.classList.remove('responsiveLogo', 'fixTopLogoImg')
+
+        myHorizontalBars.classList.remove('responsiveBars', 'fixTopHorizontalBars')
+
+        ourProducts.classList.remove('responsiveAccordionMenu', 'responsiveOurProducts', 'fixTopProductMenu')
+        arrowProducts.classList.remove('animArrow')
+        productSubmenu.classList.remove('showCuntries')
+        showProduct.forEach(productsItems => productsItems.classList.remove('showItems'))
+
+        ourAgency.classList.remove('responsiveAccordionMenu', 'fixTopAgencyMenu')
+        ourAgency.removeAttribute('style')
+        arrowAgency.classList.remove('animArrow')
+        agencySubmenu.classList.remove('showCuntries')
+        showAgency.forEach(agencyItems => agencyItems.classList.remove('showItems'))
+        
+        socialMedia.classList.remove('responsiveAccordionMenu', 'fixTopSocialMediaMenu')
+        socialMedia.removeAttribute('style')
+        arrowSocialMedia.classList.remove('animArrow')
+        socialMediaSubmenu.classList.remove('showCuntries')
+        showMedia.forEach(mediaItems => mediaItems.classList.remove('showItems'))
+
+        abutUs.classList.remove('responsiveAccordionMenu', 'fixTopAbutUsMenu')
+        abutUs.removeAttribute('style')
+        arrowAbutUs.classList.remove('animArrow')
+        abutUsSubmenu.classList.remove('showCuntries')
+        showAbutUs.forEach(abutUsItems => abutUsItems.classList.remove('showItems'))
     }
 }
 
@@ -680,7 +713,40 @@ function handleCustomRangeTablet(){
         abutUsSubmenu.classList.contains('showCuntries')
     
     ){
-        location.reload()
+        
+        homeIconn.classList.remove('responsiveHomeTablet', 'fixTopHomeIcon')
+        homeIconn.removeAttribute('style')
+
+        myShopping.classList.remove('responsiveShoppingTablet', 'fixTopShopping')
+
+        userLogin.classList.remove('responsiveLoginTablet', 'fixTopLogin')
+
+        myLogo.classList.remove('responsiveLogoTablet', 'fixTopLogoImg')
+
+        myHorizontalBars.classList.remove('responsiveHorizontalBarsTablet', 'fixTopHorizontalBars')
+
+        ourProducts.classList.remove('responsiveAccordionMenuTablet', 'responsiveOurProducts', 'fixTopProductMenu')
+        arrowProducts.classList.remove('animArrow')
+        productSubmenu.classList.remove('showCuntries')
+        showProduct.forEach(productsItems => productsItems.classList.remove('showItems'))
+
+        ourAgency.classList.remove('responsiveAccordionMenuTablet','fixTopAgencyMenu')
+        ourAgency.removeAttribute('style')
+        arrowAgency.classList.remove('animArrow')
+        agencySubmenu.classList.remove('showCuntries')
+        showAgency.forEach(agencyItems => agencyItems.classList.remove('showItems'))
+        
+        socialMedia.classList.remove('responsiveAccordionMenuTablet','fixTopSocialMediaMenu')
+        socialMedia.removeAttribute('style')
+        arrowSocialMedia.classList.remove('animArrow')
+        socialMediaSubmenu.classList.remove('showCuntries')
+        showMedia.forEach(mediaItems => mediaItems.classList.remove('showItems'))
+
+        abutUs.classList.remove('responsiveAccordionMenuTablet','fixTopAbutUsMenu')
+        abutUs.removeAttribute('style')
+        arrowAbutUs.classList.remove('animArrow')
+        abutUsSubmenu.classList.remove('showCuntries')
+        showAbutUs.forEach(abutUsItems => abutUsItems.classList.remove('showItems'))
     }
     
 }
@@ -729,9 +795,3 @@ window.addEventListener('scroll', function(event){
 })
 
 
-//.........................................................................................
-
-window.addEventListener('resize', function(){
-
-    location.reload()
-})
