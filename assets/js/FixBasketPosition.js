@@ -1,108 +1,105 @@
-const newbasketCardSection = document.querySelector('.basket-card-section')
-
-function getElementTop(element) {
-
-    if (!element) return 0;
-
-    const style = getComputedStyle(element);
-    const topValue = style.top; 
-    
-    if (!topValue || topValue === "auto") return 0;
-    
-    return parseFloat(topValue.replace(/px|rem|em|%/g, '')) || 0;
-}
-let currentTop = getElementTop(newbasketCardSection);
-
-window.addEventListener('scroll', function(event){
-
-    let myscroll = document.documentElement.scrollTop
-
-    let newTop = currentTop + myscroll
-
-    if(newbasketCardSection){
-
-        newbasketCardSection.style.top = newTop + "px";
-    }
-
-})
-
-// These codes are for Basket - Horizontal - Menu - Html - Index
-
-const basketHorizontalMenuHtmlIndex = document.querySelector('.basket-horizontalMenu-htmlIndex')
-
-function getElementTopHtmlIndex(elementHtmlIndex){
-
-    const styleIndex = getComputedStyle(elementHtmlIndex);
-    const topValueIndex = styleIndex.top; 
-    
-    if (!topValueIndex || topValueIndex === "auto") return 0;
-    
-    return parseFloat(topValueIndex.replace(/px|rem|em|%/g, '')) || 0;
-
-}
-let currentTopIndex = getElementTop(basketHorizontalMenuHtmlIndex);
-
-window.addEventListener('scroll', function(event){
-
-    let myscrollIndex = document.documentElement.scrollTop
-
-    let newTopIndex = currentTopIndex + myscrollIndex
-
-    if (!basketHorizontalMenuHtmlIndex) return 0;
-
-    if(basketHorizontalMenuHtmlIndex){
-
-        basketHorizontalMenuHtmlIndex.style.top = newTopIndex + "px";
-
-    } 
-    // if(myscrollIndex < 680){
-
-    //     basketHorizontalMenuHtmlIndex.classList.remove('showBasketCard')
-    // }
-
-})
-
-// .......... These codes hide Basket-aside in (min-height: 380px)
-
+const basketHorizontalMenuHtmlIndex = document.querySelector('.basket-horizontalMenu-htmlIndex');
+const basketCategoryProduct = document.querySelector('.basket-category-product');
+const showProductBasket = document.querySelector('.show-product-basket');
 const basketAsideMenu = document.querySelector('.basket-asideMenu'); 
 
-window.addEventListener('scroll', function(event){ 
 
-    let basketAsideScroll = document.documentElement.scrollTop;
-    
-    if(!basketAsideMenu) return 0;
-    
-    if(basketAsideScroll > 380){
 
-        basketAsideMenu.classList.remove('showBasketCard')
-    }
-})
+function fixBasketPosition(element, myscroll){
 
-// These codes are for Basket - category - product - page
+    let getTop = getComputedStyle(element)
 
-const basketCategoryProduct = document.querySelector('.basket-category-product')
+    getTop = parseFloat(getTop.top.replace(/px|rem|em|%/g, '')) || 0;
 
-function getElementTopBasketCategoryProduct(elemBasketCategory){
-    
-    if(!elemBasketCategory) return;
-    const styleBasketCategoryProduct = getComputedStyle(elemBasketCategory);
-    const topValueBasketCategoryProduct = styleBasketCategoryProduct.top;
+    let newTopIndex = getTop + myscroll;
 
-    if (!topValueBasketCategoryProduct || topValueBasketCategoryProduct === "auto") return 0;
-    
-    return parseFloat(topValueBasketCategoryProduct.replace(/px|rem|em|%/g, '')) || 0;
+    element.style.top = newTopIndex + "px"
+
 }
-let currentTopValueBasketCategoryProduct = getElementTopBasketCategoryProduct(basketCategoryProduct);
+
 
 window.addEventListener('scroll', function(event){
 
-    let myScrollBasketCategoryProduct = document.documentElement.scrollTop
+    let myScrollPage = document.documentElement.scrollTop
 
-    let newTopBasketCategoryProduct = currentTopValueBasketCategoryProduct + myScrollBasketCategoryProduct
+    if (basketHorizontalMenuHtmlIndex){
+
+        if(window.innerWidth >= 360 && window.innerWidth <= 992){
+
+            basketHorizontalMenuHtmlIndex.style.top = '-1100px';
+            fixBasketPosition(basketHorizontalMenuHtmlIndex, myScrollPage)
+    
+        }else if(window.innerWidth > 992){
+            
+            basketHorizontalMenuHtmlIndex.style.top = '-627px';
+            fixBasketPosition(basketHorizontalMenuHtmlIndex, myScrollPage)
+            
+        }
+
+        if(myScrollPage < 670){
+
+            basketHorizontalMenuHtmlIndex.classList.remove('showBasketCard')
+        }
+    }
 
     if(basketCategoryProduct){
 
-        basketCategoryProduct.style.top = newTopBasketCategoryProduct + "px";
+        if(window.innerWidth >= 360 && window.innerWidth <= 992){
+
+            basketCategoryProduct.style.top = '-520px';
+            fixBasketPosition(basketCategoryProduct, myScrollPage)
+
+        }else if(window.innerWidth > 992){
+
+            basketCategoryProduct.style.top = '-30px';
+            fixBasketPosition(basketCategoryProduct, myScrollPage)
+        }
+    }
+
+    if(showProductBasket){
+
+        if(window.innerWidth >= 360 && window.innerWidth < 500){
+
+            showProductBasket.style.top = '-2780px';
+            fixBasketPosition(showProductBasket, myScrollPage)
+
+        }else if(window.innerWidth >= 500 && window.innerWidth <= 576){
+
+            showProductBasket.style.top = '-2700px';
+            fixBasketPosition(showProductBasket, myScrollPage)
+
+        }else if(window.innerWidth >= 576 && window.innerWidth <= 768){
+
+            showProductBasket.style.top = '-2840px';
+            fixBasketPosition(showProductBasket, myScrollPage)
+
+        }else if(window.innerWidth >= 768 && window.innerWidth <= 992){
+
+            showProductBasket.style.top = '-2050px';
+            fixBasketPosition(showProductBasket, myScrollPage)
+
+        }else if(window.innerWidth >= 992 && window.innerWidth <= 1200){
+
+            showProductBasket.style.top = '-1550px';
+            fixBasketPosition(showProductBasket, myScrollPage)
+
+        }else if(window.innerWidth > 1200){
+
+            showProductBasket.style.top = '-1650px';
+            fixBasketPosition(showProductBasket, myScrollPage)
+        }
 
     }
+
+    if(basketAsideMenu){
+
+        let basketAsideScroll = document.documentElement.scrollTop;
+
+        if(basketAsideScroll > 380){
+
+            basketAsideMenu.classList.remove('showBasketCard')
+        }
+    }
+
 })
+
