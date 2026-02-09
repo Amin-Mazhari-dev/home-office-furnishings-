@@ -4,7 +4,7 @@ div.basket-card-section{
 
     background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     right: 31%;
-    top: -1655px;
+    /* top: -1655px; */
     height: 500px;
     width: 50%;
     z-index: 999 !important;
@@ -250,16 +250,7 @@ div.basket-category-product div.total-price a.pay:hover{
 
         padding: 8px 10px !important;
     }
-    div.basket-horizontalMenu-htmlIndex{
 
-        top: -1140px;
-    } 
-    div.basket-category-product{
-
-        top: -520px;
-        width: 90%;
-        right: 5%;
-    }
 }
 
 @media only screen and (min-width: 460px) and (max-width: 576px){
@@ -309,16 +300,7 @@ div.basket-category-product div.total-price a.pay:hover{
 
         padding: 8px 10px !important;
     }
-    div.basket-horizontalMenu-htmlIndex{
 
-        top: -1110px;
-    } 
-    div.basket-category-product{
-
-        top: -520px;
-        width: 90%;
-        right: 5%;
-    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px){
@@ -329,14 +311,6 @@ div.basket-category-product div.total-price a.pay:hover{
         right: 3%;
         top: -2840px;
         z-index: 1000;
-    }
-    div.basket-horizontalMenu-htmlIndex{
-
-        top: -1110px;
-    } 
-    div.basket-category-product{
-
-        top: -520px;
     }
 
 }
@@ -349,15 +323,7 @@ div.basket-category-product div.total-price a.pay:hover{
         top: -2050px;
         z-index: 1000; 
     }
-    div.basket-horizontalMenu-htmlIndex{
 
-        top: -1110px;
-        
-    }
-    div.basket-category-product{
-
-        top: -520px;
-    }
 }
 @media only screen and (min-width: 992px) and (max-width: 1100px){
 
@@ -371,15 +337,7 @@ div.basket-category-product div.total-price a.pay:hover{
 
         top: -460px !important;
     }
-    div.basket-horizontalMenu-htmlIndex{
 
-        top: -630px;
-        
-    }
-    div.basket-category-product{
-
-        top: -33px;
-    }
 }
 @media only screen and (min-width: 1100px) and (max-width: 1200px){
 
@@ -392,24 +350,6 @@ div.basket-category-product div.total-price a.pay:hover{
 
         top: -460px !important;
     }
-    div.basket-horizontalMenu-htmlIndex{
 
-        top: -630px;
-        
-    }
-    div.basket-category-product{
-
-        top: -33px;
-    }
 }
-@media only screen and (min-width: 1200px){
 
-    div.basket-asideMenu{
-
-        top: -510px !important;
-    }
-    div.basket-category-product{
-
-        top: -33px;
-    }
-}
