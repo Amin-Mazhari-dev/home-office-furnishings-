@@ -7,7 +7,7 @@ div.modal-wrapper{
 div.modal-wrapper-aside{
 
     top: -510px; 
-    display: block;
+    display: none;
     z-index: 999;
 }
 div.modal-wrapper-category-product-login{
