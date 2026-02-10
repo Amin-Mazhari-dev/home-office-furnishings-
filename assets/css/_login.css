@@ -7,7 +7,7 @@ div.modal-wrapper{
 div.modal-wrapper-aside{
 
     top: -510px; 
-    display: none;
+    display: block;
     z-index: 999;
 }
 div.modal-wrapper-category-product-login{
@@ -22,14 +22,14 @@ div.fix-position-product{
     display: none;
     z-index: 100;
 }
-div.modal{
+div.modal, div.modal-aside{
 
     background-color: rgb(114, 114, 209);
     border-radius: 15px;
     width: 95%;
     height: 455px;
 }
-div.modal div.header-login{
+div.modal div.header-login, div.modal-aside div.header-login-aside{
     padding-top: 20px;
     margin-bottom: 40px;
     padding-right: 3%;
@@ -38,14 +38,14 @@ div.modal div.header-login{
     flex-direction: row;
     justify-content: space-between;
 }
-div.modal div.header-login h4{
+div.modal div.header-login h4, div.modal-aside div.header-login-aside h4{
 
     font-size: 18px;
     font-family: Sahel-Bold;
     color: var(--Secondery-Color);
     border-bottom: 2px solid var(--Secondery-Color);
 }
-div.modal div.header-login span{
+div.modal div.header-login span, div.modal-aside div.header-login-aside span{
 
     font-size: 26px;
     font-weight: 600;
@@ -55,7 +55,7 @@ div.modal div.header-login span.close-index-login:hover{
 
     cursor: pointer;
 }
-div.modal div.header-login span.close-index-aside:hover{
+div.modal-aside div.header-login-aside span.close-index-aside:hover{
 
     cursor: pointer;
 }
@@ -72,7 +72,9 @@ div.modal div.header-login span.close-products-login:hover{
     cursor: pointer;
 }
 div.modal form.body-login label.userName,
-div.modal form.body-login label.userPassword{
+div.modal-aside form.body-login-aside label.userName-aside,
+div.modal form.body-login label.userPassword,
+div.modal-aside form.body-login-aside label.userPassword-aside{
     display: block;
     font-size: 16px;
     color: var(--Secondery-Color);
@@ -80,7 +82,9 @@ div.modal form.body-login label.userPassword{
     margin-bottom: 15px;
 }
 div.modal form.body-login input#user,
-div.modal form.body-login input#pass{
+div.modal-aside form.body-login-aside input#user-aside,
+div.modal form.body-login input#pass,
+div.modal-aside form.body-login-aside input#pass-aside{
 
     margin-right: 2%;
     width: 45%;
@@ -96,7 +100,9 @@ div.modal form.body-login input#pass{
     font-family: Sahel-Bold;
 }
 div.modal form.body-login p.userName-message,
-div.modal form.body-login p.password-message{
+div.modal-aside form.body-login-aside p.userName-message-aside,
+div.modal form.body-login p.password-message,
+div.modal-aside form.body-login-aside p.password-message-aside{
 
     margin-bottom: 33px;
     padding-top: 4px;
@@ -113,14 +119,32 @@ div.modal form.body-login i.fa-eye{
     right: 32%;
     top: 150px;
 }
+div.modal-aside form.body-login-aside i.eye-slash-aside,
+div.modal-aside form.body-login-aside i.eye-aside{
+
+    position: absolute;
+    color: var(--Secondery-Color);
+    font-size: 16px;
+    right: 43%;
+    top: 150px;
+}
 div.modal form.body-login i.fa-eye-slash:hover{
+    cursor: pointer;
+}
+div.modal-aside form.body-login-aside i.eye-slash-aside:hover{
+
     cursor: pointer;
 }
 div.modal form.body-login i.fa-eye:hover{
 
     cursor: pointer;
 }
-div.modal form.body-login button{
+div.modal-aside form.body-login-aside i.eye-aside:hover{
+
+    cursor: pointer;
+}
+div.modal form.body-login button,
+div.modal-aside form.body-login-aside button{
 
     display: inline-block;
     color: var(--Secondery-Color);
@@ -138,14 +162,20 @@ div.modal form.body-login button:hover{
 
     background-color: rgb(94, 94, 216);
 }
-div.modal div.footer-login{
+div.modal-aside form.body-login-aside button:hover{
+
+    background-color: rgb(94, 94, 216);
+}
+div.modal div.footer-login, div.modal-aside div.footer-login-aside{
 
     margin-top: 95px;
     text-align: center;
     
 }
 div.modal div.footer-login a.password-recovery,
-div.modal div.footer-login a.register{
+div.modal-aside div.footer-login-aside a.password-recovery-aside,
+div.modal div.footer-login a.register,
+div.modal-aside div.footer-login-aside a.register-aside{
 
     color: var(--Secondery-Color);
     margin-left: 4%;
