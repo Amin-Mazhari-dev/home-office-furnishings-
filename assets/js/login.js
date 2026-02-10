@@ -69,6 +69,22 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 })
 
+// These codes show and hide aside-login
+
+const asideLoginIcon = document.querySelector('.asideLogin')
+const asideLogin = document.getElementById('aside-login')
+const closeIndexaside = document.querySelector('.close-index-aside')
+
+asideLoginIcon.addEventListener('click', function(){
+
+    asideLogin.classList.add('show-login-aside')
+})
+
+closeIndexaside.addEventListener('click', function(){
+
+    asideLogin.classList.remove('show-login-aside')
+})
+
 
 // These codes are for validation and display password
 
