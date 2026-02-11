@@ -236,11 +236,11 @@ function handlerEyeSlashPosition(eyeElem){
 
     }else if(window.innerWidth >= 992 && window.innerWidth <= 1200){
 
-        eyeSlash.style.cssText = 'position: relative; top: -30px; right: 62%;'
+        eyeSlash.style.cssText = 'position: relative; top: -30px; right: 58%;'
 
     }else{
 
-        eyeSlash.style.cssText = 'position: relative; top: -30px; right: 42%;'
+        eyeSlash.style.cssText = 'position: relative; top: -30px; right: 40%;'
     }
 }
 handlerEyeSlashPosition(eyeSlash)
