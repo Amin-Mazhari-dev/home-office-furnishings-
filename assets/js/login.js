@@ -86,7 +86,7 @@ closeIndexaside.addEventListener('click', function(){
 })
 
 
-// These codes are for validation and display password
+// These codes are for validation and display password in horizontal menu
 
 const userName = document.getElementById('user')
 const userNameMessage = document.querySelector('.userName-message')
@@ -151,6 +151,69 @@ function showPassword(){
     
 }
 
+// These codes are for validation and display password in aside-menu
+
+const userNameAside = document.getElementById('user-aside')
+const userNameMessageAside = document.querySelector('.userName-message-aside')
+
+const userPasswordAside = document.getElementById('pass-aside')
+const passwordMessageAside = document.querySelector('.password-message-aside')
+const eyeSlashAside = document.querySelector('.eye-slash-aside')
+
+const loginBtnAside = document.querySelector('.login-btn-aside')
+
+function userNameAsideValidation(){
+
+    let leng = userNameAside.value.trim().length;
+
+    if(leng < 3 || leng > 15){
+
+        userNameMessageAside.textContent = 'نام کاربری باید حداقل 3 کراکتر و حداکثر 15 کراکتر باشد (فضای خالی یک کراکتر محسوب میشود)'
+        userNameMessageAside.style.color = 'rgb(104, 4, 4)'
+        
+
+    }else{
+
+        userNameMessageAside.textContent = 'نام کاربری شما مناسب است'
+        userNameMessageAside.style.color = 'rgb(6, 82, 6)'
+    }
+}
+
+function userPasswordAsideValidation(){
+
+    let lengh = userPasswordAside.value.trim().length;
+
+    if(lengh < 8 || lengh > 12){
+
+        passwordMessageAside.textContent = 'رمز عبور باید حداقل 8 کراکتر و حداکثر 12 کراکتر باشد ( از ایجاد فضای خالی اجتناب کنید)'
+        passwordMessageAside.style.color = 'rgb(104, 4, 4)'
+
+    }else{
+
+        passwordMessageAside.textContent = 'رمز عبور شما مناسب است'
+        passwordMessageAside.style.color = 'rgb(6, 82, 6)'
+    }
+}
+
+function showPasswordAside(){
+
+    let elementHasClass = eyeSlashAside.classList.contains('fa-eye-slash')
+
+    if(elementHasClass){
+
+        eyeSlashAside.classList.remove('fa-eye-slash')
+        eyeSlashAside.classList.add('fa-eye')
+        userPasswordAside.setAttribute('type', 'text')
+
+    }else{
+
+        eyeSlashAside.classList.remove('fa-eye')
+        eyeSlashAside.classList.add('fa-eye-slash')
+        userPasswordAside.setAttribute('type', 'password')
+    }
+}
+
+
 // .... This function fix position of eye's icon
 
 function handlerEyeSlashPosition(eyeElem){
@@ -182,6 +245,31 @@ function handlerEyeSlashPosition(eyeElem){
 }
 handlerEyeSlashPosition(eyeSlash)
 
+
+const observer = new MutationObserver(function(mutationList){
+
+    for(const mutation of mutationList){
+
+        if(mutation.type === 'childList'){
+
+            if(userNameMessageAside.textContent.trim() !== ''){
+
+                eyeSlashAside.style.top = '170px';
+            }else{
+
+                eyeSlashAside.style.top = '150px';
+            }
+        }
+    }
+})
+observer.observe(userNameMessageAside, {childList: true, subtree: true});
+
+
 userName.addEventListener('input', userNamevalidation)
 userPassword.addEventListener('input', userPasswordvalidation)
 eyeSlash.addEventListener('click', showPassword)
+
+userNameAside.addEventListener('input', userNameAsideValidation)
+userPasswordAside.addEventListener('input', userPasswordAsideValidation)
+eyeSlashAside.addEventListener('click', showPasswordAside)
+
