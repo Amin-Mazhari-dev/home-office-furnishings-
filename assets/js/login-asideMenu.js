@@ -92,6 +92,17 @@ const observer = new MutationObserver(function(mutationList){
 observer.observe(userNameMessageAside, {childList: true, subtree: true});
 
 
+window.addEventListener('scroll', function(){
+
+    let scrollPageTop = document.documentElement.scrollTop
+    let hasClass = asideLogin.classList.contains('show-login-aside')
+
+    if(scrollPageTop > 370 && hasClass){
+
+        asideLogin.classList.remove('show-login-aside')
+    }
+})
+
 
 userNameAside.addEventListener('input', userNameAsideValidation);
 userPasswordAside.addEventListener('input', userPasswordAsideValidation);
