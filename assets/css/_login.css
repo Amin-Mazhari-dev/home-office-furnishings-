@@ -116,7 +116,7 @@ div.modal form.body-login i.fa-eye{
     position: absolute;
     color: var(--Secondery-Color);
     font-size: 16px;
-    right: 32%;
+    right: 42%;
     top: 150px;
 }
 div.modal-aside form.body-login-aside i.eye-slash-aside,
@@ -266,7 +266,7 @@ div.modal div.footer-login a.register{
     }
     p.password-message{
 
-        margin-top: -40px;
+        margin-top: -12px;
     }
     button.login-btn{
 
@@ -277,6 +277,17 @@ div.modal div.footer-login a.register{
     div.footer-login{
 
         margin-top: 90px !important;
+    }
+    div.modal form.body-login i.fa-eye-slash{
+
+        right: 75%;
+        top: 108px;
+
+    }
+    div.modal form.body-login i.fa-eye{
+
+        right: 75%;
+        top: 108px;
     }
 }
 
@@ -321,7 +332,7 @@ div.modal div.footer-login a.register{
     }
     p.userName-message{
 
-        margin-top: -23px;
+        margin-top: -26px;
     }
     label.userPassword{
 
@@ -338,7 +349,7 @@ div.modal div.footer-login a.register{
     }
     p.password-message{
 
-        margin-top: -42px;
+        margin-top: -17px;
     }
     button.login-btn{
 
@@ -349,6 +360,17 @@ div.modal div.footer-login a.register{
     div.footer-login{
 
         margin-top: 100px !important;
+    }
+    div.modal form.body-login i.fa-eye-slash{
+
+        right: 75%;
+        top: 108px;
+
+    }
+    div.modal form.body-login i.fa-eye{
+
+        right: 75%;
+        top: 108px;
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px){
@@ -409,7 +431,7 @@ div.modal div.footer-login a.register{
     }
     p.password-message{
 
-        margin-top: -40px;
+        margin-top: -17px;
     }
     button.login-btn{
 
@@ -420,6 +442,17 @@ div.modal div.footer-login a.register{
     div.footer-login{
 
         margin-top: 100px !important;
+    }
+    div.modal form.body-login i.fa-eye-slash{
+
+        right: 75%;
+        top: 108px;
+
+    }
+    div.modal form.body-login i.fa-eye{
+
+        right: 75%;
+        top: 108px;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
@@ -481,7 +514,7 @@ div.modal div.footer-login a.register{
     }
     p.password-message{
 
-        margin-top: -45px;
+        margin-top: -16px;
         padding-right: 5% !important;
     }
     button.login-btn{
@@ -493,6 +526,17 @@ div.modal div.footer-login a.register{
     div.footer-login{
 
         margin-top: 120px !important;
+    }
+    div.modal form.body-login i.fa-eye-slash{
+
+        right: 75%;
+        top: 108px;
+
+    }
+    div.modal form.body-login i.fa-eye{
+
+        right: 75%;
+        top: 108px;
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px){
@@ -523,17 +567,26 @@ div.modal div.footer-login a.register{
     }
     p.password-message{
 
-        margin-top: -25px
+        margin-top: 3px
     }
     div.footer-login{
 
         margin-top: 100px !important;
     }
+    div.modal form.body-login i.fa-eye-slash{
+
+        right: 60%;
+    }
+    div.modal form.body-login i.fa-eye{
+
+        right: 60%;
+    }
+
 }
 @media only screen and (min-width: 1200px){
 
-    p.password-message{
+    /* p.password-message{
 
         margin-top: -25px
-    }
+    } */
 }
