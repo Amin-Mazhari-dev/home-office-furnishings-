@@ -289,6 +289,10 @@ div.modal div.footer-login a.register{
         right: 75%;
         top: 108px;
     }
+    div.modal form.body-login button{
+
+        right: 15%;
+    }
 }
 
 @media only screen and (min-width: 460px) and (max-width: 576px){
@@ -372,6 +376,10 @@ div.modal div.footer-login a.register{
         right: 75%;
         top: 108px;
     }
+    div.modal form.body-login button{
+
+        right: 24%;
+    }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px){
 
@@ -453,6 +461,10 @@ div.modal div.footer-login a.register{
 
         right: 75%;
         top: 108px;
+    }
+    div.modal form.body-login button{
+
+        right: 29%;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
@@ -538,6 +550,10 @@ div.modal div.footer-login a.register{
         right: 75%;
         top: 108px;
     }
+    div.modal form.body-login button{
+
+        right: 33%;
+    }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px){
 
@@ -580,6 +596,10 @@ div.modal div.footer-login a.register{
     div.modal form.body-login i.fa-eye{
 
         right: 60%;
+    }
+    div.modal form.body-login button{
+
+        right: 33%;
     }
 
 }
