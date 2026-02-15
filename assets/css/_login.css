@@ -2,6 +2,8 @@ div.modal-wrapper{
 
     top: -510px; 
     display: none;
+    top: 75px;
+    position: fixed;
     z-index: 999;
 }
 div.modal-wrapper-aside{
@@ -12,15 +14,17 @@ div.modal-wrapper-aside{
 }
 div.modal-wrapper-category-product-login{
 
-    top: -33px; 
+    top: 80px; 
     display: none;
+    position: fixed;
     z-index: 999;
 }
 div.fix-position-product{
 
-    top: -1650px;
+    top: 80px;
     display: none;
-    z-index: 100;
+    position: fixed;
+    z-index: 999;
 }
 div.modal, div.modal-aside{
 
@@ -210,22 +214,6 @@ div.modal div.footer-login a.register{
 
 @media only screen and (min-width: 360px) and (max-width: 460px){
 
-    div.fix-position-login-index{
-
-        top: -1150px;
-        right: 0%;
-        z-index: 1000;
-    }
-    div.fix-position-product{
-
-        top: -3000px;
-        right: 0%;
-        z-index: 1000;
-    }
-    div.fix-position-category-product-login{
-
-        top: -530px;
-    }
     div.header-login h4{
 
         display: none;
@@ -297,22 +285,6 @@ div.modal div.footer-login a.register{
 
 @media only screen and (min-width: 460px) and (max-width: 576px){
 
-    div.fix-position-login-index{
-
-        top: -1120px;
-        right: 0%;
-        z-index: 1000;
-    }
-    div.fix-position-product{
-
-        top: -2720px;
-        right: 0%;
-        z-index: 1000;
-    }
-    div.fix-position-category-product-login{
-
-        top: -530px;
-    }
     div.header-login h4{
 
         display: none;
@@ -383,22 +355,6 @@ div.modal div.footer-login a.register{
 }
 @media only screen and (min-width: 576px) and (max-width: 768px){
 
-    div.fix-position-login-index{
-
-        top: -1120px;
-        right: 0%;
-        z-index: 1000;
-    }
-    div.fix-position-product{
-
-        top: -2720px;
-        right: 0%;
-        z-index: 1000;
-    }
-    div.fix-position-category-product-login{
-
-        top: -530px;
-    }
     div.header-login h4{
 
         display: none;
@@ -469,22 +425,6 @@ div.modal div.footer-login a.register{
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
 
-    div.fix-position-login-index{
-
-        top: -1112px;
-        right: 0%;
-        z-index: 1000;
-    }
-    div.fix-position-product{
-
-        top: -2050px;
-        right: 0%;
-        z-index: 1000;
-    }
-    div.fix-position-category-product-login{
-
-        top: -522px;
-    }
     div.header-login h4{
 
         display: none;
@@ -556,12 +496,6 @@ div.modal div.footer-login a.register{
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px){
-
-    div.fix-position-product{
-
-        top: -1552px;
-        z-index: 1000;
-    }
     
     div.modal{
 
@@ -602,11 +536,4 @@ div.modal div.footer-login a.register{
         right: 33%;
     }
 
-}
-@media only screen and (min-width: 1200px){
-
-    /* p.password-message{
-
-        margin-top: -25px
-    } */
 }
