@@ -101,6 +101,18 @@ const observer = new MutationObserver(function(mutationsList){
 })
 observer.observe(userNameMessage, {childList: true, subtree: true});
 
+window.addEventListener('scroll', function(){
+
+    let scrollPageTop = document.documentElement.scrollTop
+    let hasClass = indexLogin.classList.contains('show-login-index')
+
+    if(scrollPageTop < 680 && hasClass){
+
+        indexLogin.classList.remove('show-login-index')
+    }
+})
+
+
 
 LoginIndex.addEventListener('click', showLoinIndex);
 closeIndexLogin.addEventListener('click', closeLoginIndex);
