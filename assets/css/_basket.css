@@ -4,7 +4,6 @@ div.basket-card-section{
 
     background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     right: 31%;
-    /* top: -1655px; */
     height: 500px;
     width: 50%;
     z-index: 999 !important;
@@ -15,23 +14,30 @@ div.basket-horizontalMenu-htmlIndex{
 
     background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     right: 31%;
-    top: -630px;
+    top: 75px;
     height: 500px;
     width: 50%;
     z-index: 1000 !important;
     display: none;
+    position: fixed;
     overflow: scroll;
 }
 div.basket-category-product{
 
     background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     right: 32%;
-    top: -33px;
+    top: 75px;
     height: 500px;
     width: 50%;
     z-index: 1000 !important;
     display: none;
+    position: fixed;
     overflow: scroll;
+}
+div.show-product-basket{
+
+    top: 75px;
+    position: fixed;
 }
 
 div.basket-asideMenu{
@@ -209,7 +215,6 @@ div.basket-category-product div.total-price a.pay:hover{
 
         width: 90%;
         right: 5%;
-        top: -3000px;
         z-index: 1000;
     }
     span.title-product,span.name-product{
@@ -259,7 +264,6 @@ div.basket-category-product div.total-price a.pay:hover{
 
         width: 90%;
         right: 5%;
-        top: -2700px;
         z-index: 1000;
     }
     span.title-product,span.name-product{
@@ -309,7 +313,6 @@ div.basket-category-product div.total-price a.pay:hover{
 
         width: 95%;
         right: 3%;
-        top: -2840px;
         z-index: 1000;
     }
 
@@ -320,7 +323,6 @@ div.basket-category-product div.total-price a.pay:hover{
 
         width: 95%;
         right: 3%;
-        top: -2050px;
         z-index: 1000; 
     }
 
@@ -331,7 +333,6 @@ div.basket-category-product div.total-price a.pay:hover{
 
         width: 70%;
         right: 12%;
-        top: -1560px;
     }
     div.basket-asideMenu{
 
