@@ -1,0 +1,108 @@
+nav#wrapper-Menu-aboutUs{
+
+    background-color: var(--Primary-Color);
+    height: 70px;
+}
+nav#wrapper-Menu-aboutUs div.home-icon-wrapper-aboutUs a{
+
+    padding-right: 7%;
+    top: 13px;
+}
+nav#wrapper-Menu-aboutUs div.home-icon-wrapper-aboutUs a span.material-icons{
+
+    font-size: 45px;
+    color: var(--Secondery-Color);
+    transition: .5s ease-in;
+}
+nav#wrapper-Menu-aboutUs div.home-icon-wrapper-aboutUs a:hover span.material-icons{
+
+    color: var(--Third-Color);
+}
+
+div.banner-aboutUs{
+
+    width: 100%;
+}
+div.banner-aboutUs img.img-banner-aboutUs{
+
+    display: block;
+    width: 100%;
+    height: 88vh;
+}
+
+article.about-us-wrapper{
+
+    margin-top: 150px;
+    margin-bottom: 150px;
+    box-shadow: 1px 1px 7px #3c3939;
+    background-color: rgb(224, 222, 222);
+}
+article.about-us-wrapper h4.titel-about-us{
+
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding-right: 3%;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-family: Sahel-Bold;
+    width: 40%;
+    border-bottom: 1px solid #6b6969;
+}
+article.about-us-wrapper p{
+
+    text-align: justify;
+    font-size: 16px;
+    line-height: 30px;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+article.about-us-wrapper p span{
+
+    color: rgb(7, 7, 233);
+    font-weight: 1000;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 460px){
+
+    div.banner-aboutUs{
+
+        display: none;
+    }
+    article.about-us-wrapper{
+
+        margin-bottom: 550px;
+    }
+}
+@media only screen and (min-width: 460px) and (max-width: 576px){
+
+    article.about-us-wrapper{
+
+        margin-bottom: 450px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+    article.about-us-wrapper{
+
+        margin-bottom: 450px;
+    }
+    footer.parent-footer img.img-about-us{
+
+        right: 25%;
+    }
+    div.footer-wraper-img-about{
+
+        margin-top: -30px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+
+    div.footer-wraper-img-about{
+
+        margin-top: 100px;
+    }
+    footer.parent-footer img.img-about-us{
+
+        right: 3%;
+    }
+}
