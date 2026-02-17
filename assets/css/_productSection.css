@@ -336,6 +336,13 @@ section.back-wraper div.my-animat-6:hover{
         right: 35% !important;
     }
 }
+@media only screen and (min-width: 992px) and (max-width: 1275px){
+
+    section.back-wraper div.my-animat-6:hover{
+
+        transform: scale(1.1);
+    }
+}
 @media only screen and (min-width: 1200px) and (max-width: 1350px){
 
     h4.titel-product::after{
