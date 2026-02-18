@@ -214,6 +214,7 @@ div.header-section img{
     width: 111px;
     height: 65px;
     left: 8%;
+    top: -12px;
 }
 div.header-section input{
 
@@ -347,8 +348,8 @@ div.container-slider button.btn-slider:hover{
     div.header-section img{
 
         width: 80px;
-        height: 45px;
-        /* left: 8%; */
+        height: 55px;
+        top: -3px;
     }
     div.header-section input{
 
@@ -404,7 +405,8 @@ div.container-slider button.btn-slider:hover{
     div.header-section img{
 
         width: 80px;
-        height: 45px;
+        height: 60px;
+        top: -2px
     }
     div.header-section input{
 
@@ -460,7 +462,8 @@ div.container-slider button.btn-slider:hover{
     div.header-section img{
 
         width: 80px;
-        height: 45px;
+        height: 60px;
+        top: -2px
     }
     div.header-section input{
 
@@ -518,6 +521,7 @@ div.container-slider button.btn-slider:hover{
     }
     div.header-section img{
         width: 90px;
+        right: 79%;
     }
     div.container-slider div.slider button.next,
     div.container-slider div.slider button.prev{
@@ -539,6 +543,7 @@ div.container-slider button.btn-slider:hover{
     }
     div.header-section img{
         width: 90px;
+        right: 79%;
     }
     div.container-slider div.slider button.next,
     div.container-slider div.slider button.prev{
@@ -568,6 +573,9 @@ div.container-slider button.btn-slider:hover{
 
         height: 415px;
     }
+    div.header-section img{
+        right: 79%;
+    }
 }
 
 @media only screen and (min-width: 850px) and (max-width: 950px){
@@ -592,6 +600,9 @@ div.container-slider button.btn-slider:hover{
 
         height: 360px;
     }
+    div.header-section img{
+        right: 79%;
+    }
 }
 
 @media only screen and (min-width: 1101px) and (max-width: 1200px){
@@ -599,6 +610,9 @@ div.container-slider button.btn-slider:hover{
     div.container-slider div.slider{
 
         height: 397px;
+    }
+    div.header-section img{
+        right: 79%;
     }
 }
 
