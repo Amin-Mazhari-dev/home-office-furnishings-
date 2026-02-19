@@ -1,4 +1,4 @@
-div.line, div.line-show-products, div.line-recovery-password{
+div.line, div.line-show-products, div.line-recovery-password, div.line-register-page{
     position: relative;
     margin-top: 120px;
     height: 200px;
@@ -9,6 +9,10 @@ div.line, div.line-show-products, div.line-recovery-password{
 div.line-show-products{
 
     margin-top: -300px;
+}
+div.line-register-page{
+
+    margin-top: 333px;
 }
 footer.parent-footer{
 
