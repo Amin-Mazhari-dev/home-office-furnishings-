@@ -12,6 +12,12 @@ const trueIconPassTwo = document.getElementById('true-icon-pass-two')
 const falsIconPassTwo = document.getElementById('fals-icon-pass-two')
 const showPassRegisterTwo = document.getElementById('show-pass-register-two')
 
+const formRegister = document.querySelector('.form-register')
+const registerBtn = document.querySelector('.register-btn')
+
+const modalWrapper = document.querySelector('.modal-wrapper')
+const closeModal = document.querySelector('.close-modal')
+
 
 userName.addEventListener('input', function(){
 
@@ -96,4 +102,20 @@ showPassRegisterTwo.addEventListener('click', function(){
         showPassRegisterTwo.classList.add('fa-eye-slash')
         userPassTwo.setAttribute('type', 'password')
     }
+})
+
+formRegister.addEventListener('submit', function(event){
+
+    let userPassOneValue = userPassOne.value.trim()
+    let userPassTwoValue = userPassTwo.value.trim()
+
+    if(userPassOneValue !== userPassTwoValue){
+
+        event.preventDefault()
+        modalWrapper.classList.add('show-modal')
+    }
+})
+closeModal.addEventListener('click', function(){
+
+    modalWrapper.classList.remove('show-modal')
 })
