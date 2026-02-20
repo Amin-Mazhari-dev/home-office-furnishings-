@@ -96,7 +96,7 @@ div.form-wrapper form span#fals-icon-pass-one{
     top: 6px;
     color: red;
     opacity: 1;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 div.form-wrapper form i#show-pass-register-one{
 
@@ -110,7 +110,7 @@ div.form-wrapper form span#true-icon-pass-two{
     top: 6px;
     color: green;
     opacity: 0;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 div.form-wrapper form span#fals-icon-pass-two{
 
@@ -118,7 +118,7 @@ div.form-wrapper form span#fals-icon-pass-two{
     top: 6px;
     color: red;
     opacity: 1;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 div.form-wrapper form i#show-pass-register-two{
 
@@ -150,7 +150,41 @@ div.form-wrapper form button.register-btn:hover{
     text-decoration: none;
 }
 
-/* These classes show and hide icons of true or false */
+/* These codes are for modal */
+
+section.modal-wrapper{
+
+    width: 500px;
+    height: 200px;
+    background-color: red;
+    border-radius: 12px;
+    right: 30%;
+    display: none;
+    transition: all 3s ease;
+}
+section.modal-wrapper span{
+
+    right: 90%;
+    top: 15px;
+    color: #fffcfc;
+    font-weight: 600;
+}
+section.modal-wrapper span:hover{
+
+    cursor: pointer;
+}
+section.modal-wrapper p{
+
+    text-align: center;
+    padding-top: 80px;
+    font-size: 18px;
+    font-family: Sahel-Bold;
+    color: #fffcfc;
+}
+
+/* ................................ */
+
+/* These classes show and hide icons of true or false and show or hide modal */
 
 .show-icon{
 
@@ -159,6 +193,10 @@ div.form-wrapper form button.register-btn:hover{
 .hide-icon{
 
     opacity: 0 !important;
+}
+.show-modal{
+
+    display: block !important;
 }
 
 /* ................................................. */
@@ -220,6 +258,11 @@ div.form-wrapper form button.register-btn:hover{
 
         left: 16%;
     }
+    section.modal-wrapper{
+
+        width: 325px;
+        right: 5%;
+    }
 }
 @media only screen and (min-width: 460px) and (max-width: 576px){
 
@@ -268,6 +311,11 @@ div.form-wrapper form button.register-btn:hover{
     div.form-wrapper form i.eye-pass-register-two{
 
         left: 16%;
+    }
+    section.modal-wrapper{
+
+        width: 435px;
+        right: 5%;
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px){
@@ -318,6 +366,11 @@ div.form-wrapper form button.register-btn:hover{
 
         left: 16%;
     }
+    section.modal-wrapper{
+
+        width: 510px;
+        right: 5%;
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
 
@@ -366,5 +419,10 @@ div.form-wrapper form button.register-btn:hover{
     div.form-wrapper form i.eye-pass-register-two{
 
         left: 13%;
+    }
+    section.modal-wrapper{
+
+        width: 700px;
+        right: 5%;
     }
 }
