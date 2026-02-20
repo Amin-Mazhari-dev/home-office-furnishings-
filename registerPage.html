@@ -48,7 +48,7 @@
 
                             <div class="relative">
 
-                                <input type="text" placeholder="نام کاربری (باید حداقل 3 کراکتر و حداکثر 15 کراکتر باشد)" minlength="3" maxlength="15" required>
+                                <input id="user-name" type="text" placeholder="نام کاربری (باید حداقل 3 کراکتر و حداکثر 15 کراکتر باشد)" minlength="3" maxlength="15" required>
                                 <span class="material-icons absolute" id="true-icon-userName">check_circle</span>
                                 <span class="material-icons absolute" id="fals-icon-userName">cancel</span>
 
@@ -56,7 +56,7 @@
 
                             <div class="relative">
 
-                                <input type="password" placeholder="رمز عبور (باید حداقل 8 کراکتر و حداکثر 12 کراکتر باشد)" minlength="8" maxlength="12" required>
+                                <input id="user-pass-one" type="password" placeholder="رمز عبور (باید حداقل 8 کراکتر و حداکثر 12 کراکتر باشد)" minlength="8" maxlength="12" required>
                                 <span class="material-icons absolute" id="true-icon-pass-one">check_circle</span>
                                 <span class="material-icons absolute" id="fals-icon-pass-one">cancel</span>
                                 <i id="show-pass-register-one" class="far fa-eye-slash absolute"></i>
@@ -66,7 +66,7 @@
 
                             <div class="relative">
 
-                                <input type="password" placeholder="تکـرار رمــز عبـور..." minlength="8" maxlength="12" required>
+                                <input id="user-pass-two" type="password" placeholder="تکـرار رمــز عبـور..." minlength="8" maxlength="12" required>
                                 <span class="material-icons absolute" id="true-icon-pass-two">check_circle</span>
                                 <span class="material-icons absolute" id="fals-icon-pass-two">cancel</span>
                                 <i id="show-pass-register-two" class="far fa-eye-slash absolute"></i>
@@ -152,6 +152,8 @@
     
         </footer>
     <!-- Ende Footer section -->
+
+    <script type="module" src="assets/js/registerPage.js"></script>
     
 </body>
 </html>
