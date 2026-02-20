@@ -104,13 +104,6 @@ div.form-wrapper form i#show-pass-register-one{
     top: 9px;
     font-size: 20px;
 }
-div.form-wrapper form i.eye-pass-register-one{
-    
-    position: absolute;
-    left: 22%;
-    top: 9px;
-    font-size: 20px;
-}
 div.form-wrapper form span#true-icon-pass-two{
 
     left: 17%;
@@ -133,13 +126,7 @@ div.form-wrapper form i#show-pass-register-two{
     top: 9px;
     font-size: 20px;
 }
-div.form-wrapper form i.eye-pass-register-two{
 
-    position: absolute;
-    left: 22%;
-    top: 9px;
-    font-size: 20px;
-}
 div.form-wrapper form button.register-btn{
 
     width: 50%;
@@ -162,6 +149,20 @@ div.form-wrapper form button.register-btn:hover{
     color: #fff;
     text-decoration: none;
 }
+
+/* These classes show and hide icons of true or false */
+
+.show-icon{
+
+    opacity: 1 !important;
+}
+.hide-icon{
+
+    opacity: 0 !important;
+}
+
+/* ................................................. */
+
 
 @media only screen and (min-width: 360px) and (max-width: 460px){
 
