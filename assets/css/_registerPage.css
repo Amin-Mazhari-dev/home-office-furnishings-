@@ -1,0 +1,369 @@
+/* These codes are for menu */
+
+nav#wrapper-Menu-register{
+
+    background-color: var(--Primary-Color);
+    height: 70px;
+}
+nav#wrapper-Menu-register div.home-icon-wrapper-register a{
+
+    padding-right: 7%;
+    top: 13px;
+}
+nav#wrapper-Menu-register div.home-icon-wrapper-register a span.material-icons{
+
+    font-size: 45px;
+    color: var(--Secondery-Color);
+    transition: .5s ease-in;
+}
+nav#wrapper-Menu-register div.home-icon-wrapper-register a:hover span.material-icons{
+
+    color: var(--Third-Color);
+}
+
+/* These codes are for form */
+
+section.form-container{
+
+    margin-top: 325px;
+}
+div.form-wrapper{
+
+    width: 70%;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0px 0px 2px 1px;
+    border-radius: 10px;
+}
+div.form-wrapper h4{
+
+    margin-bottom: 20px;
+    margin-top: 35px;
+    text-align: center;
+    font-size: 19px;
+    font-family: Sahel-Bold;
+}
+div.form-wrapper form{
+
+    width: 100%;
+}
+div.form-wrapper form div{
+
+    margin-bottom: 25px;
+    text-align: center;
+}
+div.form-wrapper form div input{
+
+    border: 1px solid #bebdbd;
+    height: 38px;
+    width: 70%;
+    border-radius: 5px;
+    padding-right: 2%;
+    font-size: 13px;
+}
+div.form-wrapper form div:nth-child(4) input{
+
+    padding-left: 2%;
+}
+div.form-wrapper form span#true-icon-userName{
+    left: 17%;
+    top: 6px;
+    color: green;
+    opacity: 0;
+    transition: all 3s ease;
+}
+div.form-wrapper form span#fals-icon-userName{
+
+    left: 17%;
+    top: 6px;
+    color: red;
+    opacity: 1;
+    transition: all 3s ease;
+}
+div.form-wrapper form span#true-icon-pass-one{
+
+    left: 17%;
+    top: 6px;
+    color: green;
+    opacity: 0;
+    transition: all 3s ease;
+}
+div.form-wrapper form span#fals-icon-pass-one{
+
+    left: 17%;
+    top: 6px;
+    color: red;
+    opacity: 1;
+    transition: all 3s ease;
+}
+div.form-wrapper form i#show-pass-register-one{
+
+    left: 22%;
+    top: 9px;
+    font-size: 20px;
+}
+div.form-wrapper form i.eye-pass-register-one{
+    
+    position: absolute;
+    left: 22%;
+    top: 9px;
+    font-size: 20px;
+}
+div.form-wrapper form span#true-icon-pass-two{
+
+    left: 17%;
+    top: 6px;
+    color: green;
+    opacity: 0;
+    transition: all 3s ease;
+}
+div.form-wrapper form span#fals-icon-pass-two{
+
+    left: 17%;
+    top: 6px;
+    color: red;
+    opacity: 1;
+    transition: all 3s ease;
+}
+div.form-wrapper form i#show-pass-register-two{
+
+    left: 22%;
+    top: 9px;
+    font-size: 20px;
+}
+div.form-wrapper form i.eye-pass-register-two{
+
+    position: absolute;
+    left: 22%;
+    top: 9px;
+    font-size: 20px;
+}
+div.form-wrapper form button.register-btn{
+
+    width: 50%;
+    height: 45px;
+    font-size: 16px;
+    font-family: Sahel-Bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+}
+div.form-wrapper form button.register-btn:hover{
+
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 460px){
+
+    div.form-wrapper{
+
+        width: 100%;
+    }
+    div.form-wrapper form div input{
+
+        width: 90%;
+    }
+    div.form-wrapper form div:nth-child(5) input{
+
+        font-size: 10px;
+    }
+    div.form-wrapper form span#fals-icon-userName{
+        left: 7%;
+    }
+    div.form-wrapper form span#true-icon-userName{
+        left: 7%;
+    }
+    div.form-wrapper form div:nth-child(6) input{
+
+        font-size: 10px;
+    }
+    div.form-wrapper form span#fals-icon-pass-one{
+
+        left: 7%;
+    }
+    div.form-wrapper form span#true-icon-pass-one{
+
+        left: 7%;
+    }
+    div.form-wrapper form i#show-pass-register-one{
+
+        left: 16%;
+    }
+    div.form-wrapper form i.eye-pass-register-one{
+
+        left: 16%;
+    }
+    div.form-wrapper form span#fals-icon-pass-two{
+
+        left: 7%;
+    }
+    div.form-wrapper form span#true-icon-pass-two{
+
+        left: 7%;
+    }
+    div.form-wrapper form i#show-pass-register-two{
+
+        left: 16%;
+    }
+    div.form-wrapper form i.eye-pass-register-two{
+
+        left: 16%;
+    }
+}
+@media only screen and (min-width: 460px) and (max-width: 576px){
+
+    div.form-wrapper{
+
+        width: 100%;
+    }
+    div.form-wrapper form div input{
+
+        width: 90%;
+    }
+    div.form-wrapper form span#fals-icon-userName{
+        left: 7%;
+    }
+    div.form-wrapper form span#true-icon-userName{
+        left: 7%;
+    }
+    div.form-wrapper form span#fals-icon-pass-one{
+
+        left: 7%;
+    }
+    div.form-wrapper form span#true-icon-pass-one{
+
+        left: 7%;
+    }
+    div.form-wrapper form i#show-pass-register-one{
+
+        left: 16%;
+    }
+    div.form-wrapper form i.eye-pass-register-one{
+
+        left: 16%;
+    }
+    div.form-wrapper form span#fals-icon-pass-two{
+
+        left: 7%;
+    }
+    div.form-wrapper form span#true-icon-pass-two{
+
+        left: 7%;
+    }
+    div.form-wrapper form i#show-pass-register-two{
+
+        left: 16%;
+    }
+    div.form-wrapper form i.eye-pass-register-two{
+
+        left: 16%;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+    div.form-wrapper{
+
+        width: 100%;
+    }
+    div.form-wrapper form div input{
+
+        width: 90%;
+    }
+    div.form-wrapper form span#fals-icon-userName{
+        left: 8%;
+    }
+    div.form-wrapper form span#true-icon-userName{
+        left: 8%;
+    }
+    div.form-wrapper form span#fals-icon-pass-one{
+
+        left: 8%;
+    }
+    div.form-wrapper form span#true-icon-pass-one{
+
+        left: 8%;
+    }
+    div.form-wrapper form i#show-pass-register-one{
+
+        left: 16%;
+    }
+    div.form-wrapper form i.eye-pass-register-one{
+
+        left: 16%;
+    }
+    div.form-wrapper form span#fals-icon-pass-two{
+
+        left: 8%;
+    }
+    div.form-wrapper form span#true-icon-pass-two{
+
+        left: 8%;
+    }
+    div.form-wrapper form i#show-pass-register-two{
+
+        left: 16%;
+    }
+    div.form-wrapper form i.eye-pass-register-two{
+
+        left: 16%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+
+    div.form-wrapper{
+
+        width: 100%;
+    }
+    div.form-wrapper form div input{
+
+        width: 90%;
+    }
+    div.form-wrapper form span#fals-icon-userName{
+        left: 8%;
+    }
+    div.form-wrapper form span#true-icon-userName{
+        left: 8%;
+    }
+    div.form-wrapper form span#fals-icon-pass-one{
+
+        left: 8%;
+    }
+    div.form-wrapper form span#true-icon-pass-one{
+
+        left: 8%;
+    }
+    div.form-wrapper form i#show-pass-register-one{
+
+        left: 13%;
+    }
+    div.form-wrapper form i.eye-pass-register-one{
+
+        left: 13%;
+    }
+    div.form-wrapper form span#fals-icon-pass-two{
+
+        left: 8%;
+    }
+    div.form-wrapper form span#true-icon-pass-two{
+
+        left: 8%;
+    }
+    div.form-wrapper form i#show-pass-register-two{
+
+        left: 13%;
+    }
+    div.form-wrapper form i.eye-pass-register-two{
+
+        left: 13%;
+    }
+}
