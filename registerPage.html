@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/grid-system.css">
+    <link rel="stylesheet" href="assets/css/utility-classes.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Register</title>
+</head>
+<body>
+
+    <!-- Start Menu section -->
+        <nav class="container-fluid" id="wrapper-Menu-register">
+
+            <div class="home-icon-wrapper-register relative">
+
+               <a href="index.html" class="absolute"><span class="material-icons">home</span></a>
+
+            </div>
+
+        </nav>
+    <!-- Ende Menu section -->
+
+    <!-- Start register section -->
+        
+        <section class="container form-container">
+
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 relative">
+
+                    <div class="form-wrapper absolute">
+
+                        <h4>فـــرم ثبـت نــــام</h4>
+
+                        <form action="" method="" name="" autocomplete="off">
+
+                            <div><input type="text" placeholder="نـــام ..." required /></div>
+
+                            <div><input type="text" placeholder="نــام خـانـوادگـی ..." required></div>
+
+                            <div><input type="text" placeholder="ایمیــل ..." required></div>
+
+                            <div><input type="tel" pattern="^(\+98|0)?9\d{9}$"  placeholder="+98..." required></div>
+
+                            <div class="relative">
+
+                                <input type="text" placeholder="نام کاربری (باید حداقل 3 کراکتر و حداکثر 15 کراکتر باشد)" minlength="3" maxlength="15" required>
+                                <span class="material-icons absolute" id="true-icon-userName">check_circle</span>
+                                <span class="material-icons absolute" id="fals-icon-userName">cancel</span>
+
+                            </div>
+
+                            <div class="relative">
+
+                                <input type="password" placeholder="رمز عبور (باید حداقل 8 کراکتر و حداکثر 12 کراکتر باشد)" minlength="8" maxlength="12" required>
+                                <span class="material-icons absolute" id="true-icon-pass-one">check_circle</span>
+                                <span class="material-icons absolute" id="fals-icon-pass-one">cancel</span>
+                                <i id="show-pass-register-one" class="far fa-eye-slash absolute"></i>
+                                <!-- <i class="far fa-eye eye-pass-register-one"></i> -->
+
+                            </div>
+
+                            <div class="relative">
+
+                                <input type="password" placeholder="تکـرار رمــز عبـور..." minlength="8" maxlength="12" required>
+                                <span class="material-icons absolute" id="true-icon-pass-two">check_circle</span>
+                                <span class="material-icons absolute" id="fals-icon-pass-two">cancel</span>
+                                <i id="show-pass-register-two" class="far fa-eye-slash absolute"></i>
+                                <!-- <i class="far fa-eye eye-pass-register-two"></i> -->
+
+                            </div>
+
+                            <div class="ma-top-30 ma-bottom-20"><button class="register-btn" type="submit">ثبـت نــام</button></div>
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    <!-- Ende register section -->
+
+    <!-- Start Footer section -->
+        <div class=" container-fluid line-register-page"></div>
+        <footer class="container-fluid parent-footer">
+    
+            <div class="row">
+      
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 footer-container-agency-one">
+    
+                    <div class="footer-wraper">
+    
+                        <ul>
+    
+                          <li><span class="material-icons">arrow_back_ios_new</span><a href="">محصولات ما</a></li>
+                          <li><span class="material-icons">arrow_back_ios_new</span><a href="">نمایندگی های ما</a></li>
+                          <li><span class="material-icons">arrow_back_ios_new</span><a href="">درباره ما</a></li>
+                          <li><span class="material-icons">arrow_back_ios_new</span><a href="">نظرات مشتریان</a></li>
+                          <li><span class="material-icons">arrow_back_ios_new</span><a href="">پیشنهادها و انتقادات</a></li>
+                          <li><span class="material-icons">arrow_back_ios_new</span><a href="">شبکه های اجتماعی ما</a></li>
+                          <a class="sosial-icon" target="_blank" href="https://www.pinterest.com"><i class="fab fa-brands fa-pinterest"></i></a>
+                          <a class="sosial-icon" target="_blank" href="https://www.whatsapp.com"><i class="fab fa-brands fa-whatsapp"></i></a>
+                          <a class="sosial-icon" target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook sosial-icon-1"></i></a>
+                          <a class="sosial-icon" target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram sosial-icon-1"></i></a>
+                          <a class="sosial-icon" target="_blank" href="https://telegram.org"><i class="fab fa-telegram-plane sosial-icon-1"></i></a>
+    
+                        </ul>
+    
+                    </div>
+    
+                </div>
+      
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 footer-container-agency-two">
+    
+                    <div class="footer-wraper">
+    
+                        <ul>
+    
+                          <li><span class="material-icons">arrow_back_ios_new</span><a href="">اعتبار گارانتی محصولات</a></li>
+                          <li><span class="material-icons">arrow_back_ios_new</span><a href="">تمـــدیــد گـــارانتــــی</a></li>
+                          <li><span class="material-icons">arrow_back_ios_new</span><a href="">امــور حمل و نقــل</a></li>
+                          <li><span class="material-icons">arrow_back_ios_new</span><a href="">کدهای تخفیف ویژه</a></li>
+                          <li><span class="material-icons">arrow_back_ios_new</span><a href="">کارت طلایی</a></li>
+                          <li><span class="material-icons">arrow_back_ios_new</span><a href="">شماره تماس دفاتر فروش</a></li>
+    
+                        </ul>
+    
+                    </div>
+    
+                </div>
+      
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 footer-container-agency-three">
+    
+                    <div class="footer-wraper-img footer-wraper-img-about">
+    
+                      <img class="img-responsive img-about-us relative" src="assets/img/Logo.jpg" alt=""> 
+    
+                    </div>
+    
+                </div>
+      
+            </div>
+    
+        </footer>
+    <!-- Ende Footer section -->
+    
+</body>
+</html>
