@@ -94,17 +94,25 @@ const indexBasketAside = document.getElementById('index-basket-aside')
 window.addEventListener('scroll', function(){
 
     let scrollPageTop = document.documentElement.scrollTop
-    let hasClass = indexBasket.classList.contains('showBasketCard')
-    let hasClassAsidBasket = indexBasketAside.classList.contains('showBasketCard')
 
-    if(scrollPageTop < 680 && hasClass){
+    if(indexBasket){
 
-        indexBasket.classList.remove('showBasketCard')
+        let hasClass = indexBasket.classList.contains('showBasketCard')
+
+        if(scrollPageTop < 680 && hasClass){
+
+            indexBasket.classList.remove('showBasketCard')
+        }
     }
 
-    if(scrollPageTop > 400 && hasClassAsidBasket){
+    if(indexBasketAside){
+        
+        let hasClassAsidBasket = indexBasketAside.classList.contains('showBasketCard')
+        
+        if(scrollPageTop > 400 && hasClassAsidBasket){
 
-        indexBasketAside.classList.remove('showBasketCard')
+            indexBasketAside.classList.remove('showBasketCard')
+        }
     }
 })
 
