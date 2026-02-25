@@ -175,12 +175,12 @@ home-office-furnishings/
 ├── recoveryPassword.html
 │
 ├── assets/
-│   ├── css/        # فایل‌های استایل ماژولار (Grid System، Utility Classes و استایل صفحات)
-│   ├── fonts/      # فونت‌های پروژه (Sahel)
-│   ├── img/        # تصاویر محصولات، اسلایدر، نمایندگی‌ها و ...
-│   └── js/         # اسکریپت‌های ماژولار صفحات مختلف
+│   ├── css/        
+│   ├── fonts/      
+│   ├── img/         
+│   └── js/         
 │
-├── Screenshot/     # اسکرین‌شات‌های نسخه دسکتاپ و موبایل
+├── Screenshot/      
 │
 └── README.md
 
