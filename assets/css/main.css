@@ -32,25 +32,25 @@ body{
 
 @font-face {
     font-family: "Sahel-Bold";
-    src: url("/Assets/fonts/Sahel-Bold-FD.eot") format("eot"), 
-    url("/Assets/fonts/Sahel-Bold-FD.ttf") format("ttf"), 
-    url("/Assets/fonts/Sahel-Bold-FD.woff") format("woff");
+    src: url("../fonts/Sahel-Bold-FD.eot") format("eot"), 
+    url("../fonts/Sahel-Bold-FD.ttf") format("ttf"), 
+    url("../fonts/Sahel-Bold-FD.woff") format("woff");
     font-weight: 750;
     font-style: bold;
 }
 @font-face {
     font-family: "Sahel-Black";
-    src: url("/Assets/fonts/Sahel-Black-FD.eot") format("eot"), 
-    url("/Assets/fonts/Sahel-Black-FD.ttf") format("ttf"), 
-    url("/Assets/fonts/Sahel-Black-FD.woff") format("woff");
+    src: url("..fonts/Sahel-Black-FD.eot") format("eot"), 
+    url("../fonts/Sahel-Black-FD.ttf") format("ttf"), 
+    url("../fonts/Sahel-Black-FD.woff") format("woff");
     font-weight: 750;
     font-style: bold; 
 }
 @font-face {
     font-family: "Sahel-Medium";
-    src: url("/Assets/fonts/Sahel-FD.eot") format("eot"), 
-    url("/Assets/fonts/Sahel-FD.ttf") format("ttf"), 
-    url("/Assets/fonts/Sahel-FD.woff") format("woff");
+    src: url("../fonts/Sahel-FD.eot") format("eot"), 
+    url("../fonts/Sahel-FD.ttf") format("ttf"), 
+    url("../fonts/Sahel-FD.woff") format("woff");
     font-weight: 600;
     font-style: "normal";
 }
