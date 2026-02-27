@@ -3,7 +3,7 @@
 ## 🔗 Live Demo
 مشاهده نسخهٔ آنلاین پروژه (GitHub Pages):
 
-[**مشاهده دمو**](https://amin-mazhari-dev.github.io/home-office-furnishings-/) [![Open Demo](https://img.shields.io/badge/Live%20Demo-Visit-blue?style=for-the-badge)](https://amin-mazhari-dev.github.io/home-office-furnishings-/)
+[![Open Demo](https://img.shields.io/badge/Live%20Demo-Visit-blue?style=for-the-badge)](https://amin-mazhari-dev.github.io/home-office-furnishings-/)
 
 یک پروژه فروشگاهی کامل، ریسپانسیو و بدون استفاده از هیچ فریم‌ورک است. ساخته شده با HTML, CSS, JavaScript  Vanilla
 
